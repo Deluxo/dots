@@ -1,24 +1,23 @@
-#define base00 #2a2734
-#define base01 #312e3d
-#define base02 #a791fd
-#define base03 #464257
-#define base04 #413d51
-!#define base05 #6d6783
-#define base05 #787094
-#define base06 #312e3d
-#define base07 #49425f
-#define base08 #6d6783
-#define base09 #cc99ff
-#define base0A #efebff
-#define base0B #cc99ff
-#define base0C #756e7c
-#define base0D #9e58e4
-#define base0E #c6b8fe
-#define base0F #a852ff
+#define base00 #263238
+#define base01 #37474f
+#define base02 #ff9800
+#define base03 #ffa74d
+#define base04 #8bc34a
+#define base05 #9ccc65
+#define base06 #ffc107
+#define base07 #ffa000
+#define base08 #03a9f4
+#define base09 #81d4fa
+#define base0A #e91e63
+#define base0B #ad1457
+#define base0C #009688
+#define base0D #26a69a
+#define base0E #cfd8dc
+#define base0F #eceff1
 
-*.foreground:   base05
+*.foreground:   base0F
 *.background:   base00
-*.cursorColor:  base05
+*.cursorColor:  base0F
 *.color0:       base00
 *.color1:       base08
 *.color2:       base0B
@@ -41,7 +40,6 @@
 *.color19:      base02
 *.color20:      base04
 *.color21:      base06
-
 
 URxvt.keysym.C-Up:     font-size:increase
 URxvt.keysym.C-Down:   font-size:decrease

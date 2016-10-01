@@ -33,13 +33,13 @@ bspc rule -a mpv state=floating sticky=on
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
 #violet
-bspc config active_border_color '#312e3d'
-bspc config normal_border_color '#312e3d'
-bspc config focused_border_color '#59507b'
+#bspc config active_border_color '#312e3d'
+#bspc config normal_border_color '#312e3d'
+#bspc config focused_border_color '#59507b'
 
 #pink/dark green
-#bspc config normal_border_color '#5a7e74'
-#bspc config active_border_color '#5a7e74'
-#bspc config focused_border_color '#c24485'
+bspc config active_border_color '#21324d'
+bspc config normal_border_color '#21324d'
+bspc config focused_border_color '#8ca1c2'
 
 exec ~/.config/bspwm/startup.sh &
