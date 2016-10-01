@@ -1,0 +1,3 @@
+#! /bin/sh
+
+bspc config top_padding 0

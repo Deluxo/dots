@@ -1,0 +1,111 @@
+;=====================================================
+;
+;   To learn more about how to configure Lemonbuddy
+;   go to https://github.com/jaagr/lemonbuddy
+;
+;=====================================================
+
+[settings]
+;throttle_limit = 5
+;throttle_ms = 50
+
+[bar/example]
+dock = true
+width = 100%
+height = 31
+offset_y = 10
+
+background = #00ffffff
+foreground = #fff
+
+spacing = 1
+lineheight = 1
+padding_left = 6
+padding_right = 6
+module_margin_left = 2
+module_margin_right = 2
+
+font-0 = Roboto:size=11:weight=heavy;0
+font-1 = FontAwesome:size=10:weight=heavy;-2
+
+modules-left = xtitle
+modules-center = bspwm
+modules-right = volume clock menu
+wm_name = bar
+
+[module/bspwm]
+type = internal/bspwm
+label-active = 
+label-active-padding = 1
+label-occupied = 
+label-occupied-padding = 1
+label-empty = 
+label-empty-padding = 1
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6601
+interval = 2
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP0
+poll_interval = 60
+
+[module/xtitle]
+type = custom/script
+exec = xtitle -s
+tail = true
+
+[module/cpu]
+type = internal/cpu
+label = CPU: %percentage%
+format-background = #c42
+format-underline = #f75
+format-overline = #f75
+format-padding = 2
+
+[module/ram]
+type = internal/memory
+label = RAM: %percentage_used%
+format-background = #42c
+format-underline = #75f
+format-overline = #75f
+format-padding = 2
+
+[module/clock]
+type = internal/date
+date = %b %e %a, %H:%M
+format-padding = 2
+click-left = gsimplecal
+
+[module/volume]
+type = internal/volume
+
+format-volume-padding = 2
+format-muted-padding = 2
+format-volume = <ramp-volume> <label-volume>
+
+label-muted =  muted
+label-muted-foreground = #666
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+[module/menu]
+type = custom/menu
+label-open = 
+menu-0-0 = Compositing
+menu-0-0-exec = menu_open-1
+menu-0-0-foreground = #fff
+menu-1-0 = On
+menu-1-0-exec = ~/.scripts/lightmode.sh start
+menu-1-0-foreground = #fff
+menu-1-1 = Off
+menu-1-1-exec = ~/.scripts/lightmode.sh kill
+menu-1-1-foreground = #fff
+
+; vim:ft=dosini
