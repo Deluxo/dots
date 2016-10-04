@@ -10,7 +10,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config focus_by_distance    true
 bspc config history_aware_focus  true
-bspc config focus_follows_pointer true
+#bspc config focus_follows_pointer true
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
@@ -29,7 +29,6 @@ bspc rule -a SkullGirls.x86_64-pc-linux-gn desktop=^6
 bspc rule -a Ranger desktop=^8
 bspc rule -a mpv state=floating sticky=on
 
-#bspc rule -a Plank layer=above manage=on border=off focus=off locked=on
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
 #violet
@@ -37,9 +36,12 @@ bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 #bspc config normal_border_color '#312e3d'
 #bspc config focused_border_color '#59507b'
 
-#pink/dark green
+#blue
 bspc config active_border_color '#21324d'
 bspc config normal_border_color '#21324d'
 bspc config focused_border_color '#8ca1c2'
 
-exec ~/.config/bspwm/startup.sh &
+compton --config ~/.config/compton/compton.conf --dbus &!
+~/.scripts/bar.sh &!
+~/.scripts/start-conkies.sh &!
+mopidy &!
