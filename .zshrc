@@ -78,3 +78,12 @@ transfer() {
 runx() {
 	xinit "$1" -- :1 vt$XDG_VTNR
 }
+
+printer() {
+	if [[ "$1" == "ls" ]]; then
+		lpq -a
+	elif [ "$1" == "rm" ]; then
+		lprm
+		lpq -a
+	fi
+}

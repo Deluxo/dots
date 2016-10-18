@@ -1,24 +1,24 @@
-#define base00 #263238
-#define base01 #37474f
-#define base02 #ff9800
-#define base03 #ffa74d
-#define base04 #8bc34a
-#define base05 #9ccc65
-#define base06 #ffc107
-#define base07 #ffa000
-#define base08 #03a9f4
-#define base09 #81d4fa
-#define base0A #e91e63
-#define base0B #ad1457
-#define base0C #009688
-#define base0D #26a69a
-#define base0E #cfd8dc
-#define base0F #eceff1
+#define base00 #11111b
+#define base01 #11111b
+#define base02 #6673bf
+#define base03 #899aff
+#define base04 #3ea290
+#define base05 #52ad91
+#define base06 #b0ead9
+#define base07 #98c9bb
+#define base08 #31658c
+#define base09 #477ab3
+#define base0A #596196
+#define base0B #7882bf
+#define base0C #8292b2
+#define base0D #95a7cc
+#define base0E #c8cacc
+#define base0F #edeff2
 
-*.foreground:   base0F
-*.background:   base00
-*.cursorColor:  base0F
-*.color0:       base00
+*.foreground:   #c6c6be
+*.background:   base01
+*.cursorColor:  #c6c6be
+*.color0:       base01
 *.color1:       base08
 *.color2:       base0B
 *.color3:       base0A
@@ -60,10 +60,10 @@ urxvt.depth: 32
 urxvt.scrollBar: false
 
 ! State:           'bg'    'fg'    'bgalt' 'hlbg'  'hlfg'
-rofi.color-normal: base00, base05, base00, base00, base0E
-rofi.color-urgent: base00, base05, base00, base00, base0F
-rofi.color-active: base00, base05, base00, base00, base09
-rofi.color-window: base00, base05
+rofi.color-normal: base00, base03, base00, base00, base05
+rofi.color-urgent: base00, base03, base00, base00, base0F
+rofi.color-active: base00, base03, base00, base00, base09
+rofi.color-window: base00, base03
 rofi.eh: 1
 rofi.lines: 5
 rofi.bw: 4

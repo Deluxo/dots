@@ -37,11 +37,17 @@ bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 #bspc config focused_border_color '#59507b'
 
 #blue
-bspc config active_border_color '#21324d'
-bspc config normal_border_color '#21324d'
-bspc config focused_border_color '#8ca1c2'
+#bspc config active_border_color '#21324d'
+#bspc config normal_border_color '#21324d'
+#bspc config focused_border_color '#8ca1c2'
+
+#bw
+bspc config active_border_color '#666666'
+bspc config normal_border_color '#666666'
+bspc config focused_border_color '#aaaaaa'
 
 compton --config ~/.config/compton/compton.conf --dbus &!
-~/.scripts/bar.sh &!
+#bspc config top_padding 30
+#lemonbuddy legacy &!
 ~/.scripts/start-conkies.sh &!
 mopidy &!

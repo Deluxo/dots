@@ -6,32 +6,36 @@
 ;=====================================================
 
 [settings]
-;throttle_limit = 5
-;throttle_ms = 50
+;throttle-limit = 5
+;throttle-ms = 50
 
-[bar/example]
+[bar/legacy]
 dock = true
-width = 100%
-height = 31
-offset_y = 10
+width = 1887
+height = 25
+offset-y = 10
+offset-x = 20
 
-background = #00ffffff
-foreground = #fff
+background = #00fffff
+foreground = #78beca
 
 spacing = 1
 lineheight = 1
-padding_left = 6
-padding_right = 6
-module_margin_left = 2
-module_margin_right = 2
+padding-left = 0
+padding-right = 0
+module-margin-left = 0
+module-margin-right = 0
 
 font-0 = Roboto:size=11:weight=heavy;0
 font-1 = FontAwesome:size=10:weight=heavy;-2
 
+tray-position = right
+
 modules-left = xtitle
 modules-center = bspwm
-modules-right = volume clock menu
-wm_name = bar
+modules-right = volume clock
+wm-name = bar
+wm-restack =  bspwm
 
 [module/bspwm]
 type = internal/bspwm
@@ -52,7 +56,7 @@ interval = 2
 type = internal/battery
 battery = BAT0
 adapter = ADP0
-poll_interval = 60
+poll-interval = 60
 
 [module/xtitle]
 type = custom/script
@@ -69,7 +73,7 @@ format-padding = 2
 
 [module/ram]
 type = internal/memory
-label = RAM: %percentage_used%
+label = RAM: %percentage-used%
 format-background = #42c
 format-underline = #75f
 format-overline = #75f
@@ -77,29 +81,30 @@ format-padding = 2
 
 [module/clock]
 type = internal/date
-date = %b %e %a, %H:%M
+date = %b %e %a, %%{F#7dd4a2}%H:%M
 format-padding = 2
 click-left = gsimplecal
 
 [module/volume]
 type = internal/volume
-
 format-volume-padding = 2
 format-muted-padding = 2
 format-volume = <ramp-volume> <label-volume>
-
 label-muted =  muted
 label-muted-foreground = #666
-
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
+label-volume-foreground = #7dd4a2
+speaker-mixer = Master
+headphone-mixer = Master
+master-mixer = Master
 
 [module/menu]
 type = custom/menu
 label-open = 
 menu-0-0 = Compositing
-menu-0-0-exec = menu_open-1
+menu-0-0-exec = menu-open-1
 menu-0-0-foreground = #fff
 menu-1-0 = On
 menu-1-0-exec = ~/.scripts/lightmode.sh start
