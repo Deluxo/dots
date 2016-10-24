@@ -2,8 +2,8 @@
 
 sxhkd -m -1 &
 
-bspc config border_width        5
-bspc config window_gap          20
+bspc config border_width        2
+bspc config window_gap          10
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
@@ -42,12 +42,12 @@ bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 #bspc config focused_border_color '#8ca1c2'
 
 #bw
-bspc config active_border_color '#666666'
-bspc config normal_border_color '#666666'
-bspc config focused_border_color '#aaaaaa'
+bspc config active_border_color '#444444'
+bspc config normal_border_color '#444444'
+bspc config focused_border_color '#ffffff'
 
 compton --config ~/.config/compton/compton.conf --dbus &!
-#bspc config top_padding 30
-#lemonbuddy legacy &!
+bspc config top_padding 20
+lemonbuddy legacy &!
 ~/.scripts/start-conkies.sh &!
 mopidy &!
