@@ -65,7 +65,7 @@ rofi.color-urgent: base00, base03, base00, base00, base0F
 rofi.color-active: base00, base03, base00, base00, base09
 rofi.color-window: base00, base03
 rofi.eh: 1
-rofi.lines: 5
+rofi.lines: 20
 rofi.bw: 4
 rofi.opacity: 95
 rofi.padding: 16

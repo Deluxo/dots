@@ -13,7 +13,7 @@
 dock = true
 width = 1887
 height = 24
-offset-y = 5
+offset-y = 2
 offset-x = 20
 
 background = #00ff0000
