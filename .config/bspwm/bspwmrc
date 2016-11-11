@@ -45,9 +45,9 @@ bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 #bspc config focused_border_color '#8ca1c2'
 
 #bw
-bspc config active_border_color '#444444'
-bspc config normal_border_color '#444444'
-bspc config focused_border_color '#ffffff'
+bspc config active_border_color '#8292f2'
+bspc config normal_border_color '#8292f2'
+bspc config focused_border_color '#4ea48b'
 
 compton --config ~/.config/compton/compton.conf --dbus &!
 bspc config top_padding 20
