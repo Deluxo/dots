@@ -1,0 +1,16 @@
+#! /bin/sh
+
+if [ -z "$@" ]
+then
+	echo Subscribtions;
+	echo Popular
+else
+	if [ "$@" == "Subscribtions" ]; then
+		gotwitch streams -b
+	elif [ "$@" == "Popular" ]; then
+		gotwitch streams
+	else
+		channel=$(echo $@ | awk '{print $1;}')
+		gotwitch -s $channel
+	fi
+fi
