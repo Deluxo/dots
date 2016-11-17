@@ -17,7 +17,7 @@ offset-y = 2
 offset-x = 20
 
 background = #00ff0000
-foreground = #8292f2
+foreground = #212832
 
 spacing = 1
 lineheight = 0

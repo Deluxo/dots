@@ -13,6 +13,8 @@ elif [[ $context =~ "magnet:" ]]; then
 	peerflix "$context" -f "Downloads/" -k &!
 elif [[ $context =~ ".torrent" ]]; then
 	peerflix "$context" -f "Downloads/" -k &!
+elif [[ $context =~ "http" ]]; then
+	mpv $context
 else
 	notify-send "Clipboard" "No possible solutions to clipboard data found";
 fi
