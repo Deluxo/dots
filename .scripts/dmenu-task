@@ -2,7 +2,7 @@
 
 if [ -z "$1" ]
 then
-	task ls | head -n -2 | tail -n +4
+	task ls | head -n -2 | tail -n +4 | sort
 else
 	if [[ "$1" =~ ^\+  ]]; then
 		task add "$(echo $1 | tail -c +2)"

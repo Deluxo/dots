@@ -24,6 +24,7 @@ bspc rule -a ncmpcpp desktop=^4
 bspc rule -a spotify desktop=^4
 bspc rule -a Steam desktop=^5
 bspc rule -a discord desktop=^5
+bspc rule -a RocketLeague desktop=^6
 bspc rule -a dota2 desktop=^6
 bspc rule -a FTL desktop=^6
 bspc rule -a csgo_linux desktop=^6
