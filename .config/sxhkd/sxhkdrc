@@ -15,21 +15,17 @@ XF86AudioRaiseVolume
 XF86AudioLowerVolume
 	pactl set-sink-volume 1 -2%
 
-XF86AudioStop
-	#MPD_PORT=6601 mpc stop
-	playerctl stop
+{_,alt + }XF86AudioStop
+	{playerctl stop, MPD_PORT=6601 mpc stop}
 
-XF86AudioPlay
-	#MPD_PORT=6601 mpc toggle
-	playerctl play-pause
+{_,alt + }XF86AudioPlay
+	{playerctl play-pause, MPD_PORT=6601 mpc toggle}
 
-XF86AudioNext
-	#MPD_PORT=6601 mpc next
-	playerctl next
+{_,alt + }XF86AudioNext
+	{playerctl next, MPD_PORT=6601 mpc next}
 
-XF86AudioPrev
-	#MPD_PORT=6601 mpc prev
-	playerctl previous
+{_,alt + }XF86AudioPrev
+	{playerctl previous, MPD_PORT=6601 mpc prev}
 
 {_,shift + }Pause
 	{systemctl suspend, shutdown now}
