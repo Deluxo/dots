@@ -52,6 +52,6 @@ bspc config focused_border_color '#4ea48b'
 
 compton --config ~/.config/compton/compton.conf --dbus &!
 bspc config top_padding 20
-lemonbuddy legacy &!
+polybar legacy &!
 ~/.scripts/start-conkies.sh &!
 mopidy &!

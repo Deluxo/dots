@@ -52,10 +52,10 @@ URxvt.internalBorder: 0
 URxvt.externalBorder: 0
 urxvt --help 2>&1| sed -n '/:  /s/^ */URxvt*/gp' >> ~/.Xresources
 URxvt.perl-ext-common: default,matcher,font-size,urxvt-colors
-urxvt.font:                xft:Roboto Mono for Powerline:size=12,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12
-urxvt.boldFont:            xft:Roboto Mono for Powerline:size=12:bold,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12
-urxvt.italicFont:          xft:Roboto Mono for Powerline:size=12:italic,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12
-urxvt.boldItalicFont:      xft:Roboto Mono for Powerline:size=12:bold:italic,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12
+urxvt.font:                xft:Roboto Mono for Powerline:size=12,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
+urxvt.boldFont:            xft:Roboto Mono for Powerline:size=12:bold,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
+urxvt.italicFont:          xft:Roboto Mono for Powerline:size=12:italic,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
+urxvt.boldItalicFont:      xft:Roboto Mono for Powerline:size=12:bold:italic,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
 urxvt.depth: 32
 urxvt.scrollBar: false
 
