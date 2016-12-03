@@ -1,41 +1,41 @@
-#define base00 #11111b
-#define base01 #11111b
-#define base02 #6673bf
-#define base03 #899aff
-#define base04 #3ea290
-#define base05 #52ad91
-#define base06 #b0ead9
-#define base07 #98c9bb
-#define base08 #31658c
-#define base09 #477ab3
-#define base0A #596196
-#define base0B #7882bf
-#define base0C #8292b2
-#define base0D #95a7cc
-#define base0E #c8cacc
-#define base0F #edeff2
+#define base00 #E5345D
+#define base01 #2F2636
+#define base02 #46283F
+#define base03 #CF415C
+#define base04 #262626
+#define base05 #CA4483
+#define base06 #733192
+#define base07 #AE3B8D
+#define base08 #4E2968
+#define base09 #A43365
+#define base0a #D1376E
+#define base0b #A94189
+#define base0c #592C5D
+#define base0d #FF8C8D
+#define base0e #C73B84
+#define base0f #8E378E
 
-*.foreground:   #c6c6be
+*.foreground:   base0d
 *.background:   base01
-*.cursorColor:  #c6c6be
+*.cursorcolor:  base0d
 *.color0:       base01
 *.color1:       base08
-*.color2:       base0B
-*.color3:       base0A
-*.color4:       base0D
-*.color5:       base0E
-*.color6:       base0C
+*.color2:       base0b
+*.color3:       base0a
+*.color4:       base0d
+*.color5:       base0e
+*.color6:       base0c
 *.color7:       base05
 *.color8:       base03
 *.color9:       base08
-*.color10:      base0B
-*.color11:      base0A
-*.color12:      base0D
-*.color13:      base0E
-*.color14:      base0C
+*.color10:      base0b
+*.color11:      base0a
+*.color12:      base0d
+*.color13:      base0e
+*.color14:      base0c
 *.color15:      base07
 *.color16:      base09
-*.color17:      base0F
+*.color17:      base0f
 *.color18:      base01
 *.color19:      base02
 *.color20:      base04
@@ -51,7 +51,7 @@ URxvt.cursorUnderline: true
 URxvt.internalBorder: 0
 URxvt.externalBorder: 0
 urxvt --help 2>&1| sed -n '/:  /s/^ */URxvt*/gp' >> ~/.Xresources
-URxvt.perl-ext-common: default,matcher,font-size,urxvt-colors
+URxvt.perl-ext-common: default,font-size,urxvt-colors
 urxvt.font:                xft:Roboto Mono for Powerline:size=12,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
 urxvt.boldFont:            xft:Roboto Mono for Powerline:size=12:bold,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
 urxvt.italicFont:          xft:Roboto Mono for Powerline:size=12:italic,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
@@ -60,10 +60,10 @@ urxvt.depth: 32
 urxvt.scrollBar: false
 
 ! State:           'bg'    'fg'    'bgalt' 'hlbg'  'hlfg'
-rofi.color-normal: base00, base03, base00, base00, base05
-rofi.color-urgent: base00, base03, base00, base00, base0F
-rofi.color-active: base00, base03, base00, base00, base09
-rofi.color-window: base00, base03
+rofi.color-normal: base01, base0e, base01, base01, base0d
+rofi.color-urgent: base01, base0d, base01, base01, base0e
+rofi.color-active: base01, base0e, base01, base01, base0d
+rofi.color-window: base01, base0d
 rofi.eh: 1
 rofi.lines: 20
 rofi.bw: 4

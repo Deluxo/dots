@@ -35,23 +35,15 @@ bspc rule -a mpv state=floating sticky=on
 
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
-#violet
-#bspc config active_border_color '#312e3d'
-#bspc config normal_border_color '#312e3d'
-#bspc config focused_border_color '#59507b'
+bspc config active_border_color '#262626'
+bspc config normal_border_color '#512A5B'
+bspc config focused_border_color '#BB3775'
 
-#blue
-#bspc config active_border_color '#21324d'
-#bspc config normal_border_color '#21324d'
-#bspc config focused_border_color '#8ca1c2'
-
-#bw
-bspc config active_border_color '#8292f2'
-bspc config normal_border_color '#8292f2'
-bspc config focused_border_color '#4ea48b'
-
-compton --config ~/.config/compton/compton.conf --dbus &!
 bspc config top_padding 20
 polybar legacy &!
+sleep 5
+compton --config ~/.config/compton/compton.conf --dbus &!
+sleep 20
 ~/.scripts/start-conkies.sh &!
+sleep 10
 mopidy &!
