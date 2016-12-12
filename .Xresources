@@ -1,45 +1,45 @@
-#define base00 #72837C
-#define base01 #14141C
-#define base02 #1E2228
-#define base03 #3A4647
-#define base04 #757F81
-#define base05 #AAB0A5
-#define base06 #7A8B83
-#define base07 #B1B4AA
-#define base08 #272D31
-#define base09 #C4C6BB
-#define base0a #576865
-#define base0b #100F17
-#define base0c #1B1C22
-#define base0d #939E95
-#define base0e #343E40
-#define base0f #8B768F
+#define base00 #0A0D20
+#define base01 #6A2486
+#define base02 #FEFDFE
+#define base03 #7C8FBE
+#define base04 #55639C
+#define base05 #91B0D8
+#define base06 #0F0F28
+#define base07 #A0D9FC
+#define base08 #562C89
+#define base09 #8AD8FF
+#define base0a #CC1289
+#define base0b #DFD1E9
+#define base0c #35306B
+#define base0d #CC1289
+#define base0e #A5208D
+#define base0f #93D6FA
 
 *.foreground:   base0f
 *.background:   base00
 *.cursorcolor:  base0d
-*.color0:       base01
-*.color1:       base08
-*.color2:       base0b
-*.color3:       base0a
-*.color4:       base0d
-*.color5:       base0e
-*.color6:       base0c
-*.color7:       base0f
-*.color8:       base03
-*.color9:       base08
-*.color10:      base0b
-*.color11:      base0a
-*.color12:      base0d
-*.color13:      base0e
-*.color14:      base0c
-*.color15:      base07
-*.color16:      base09
-*.color17:      base0f
-*.color18:      base01
-*.color19:      base02
-*.color20:      base04
-*.color21:      base06
+*.color0:       base00
+*.color1:       base01
+*.color2:       base02
+*.color3:       base03
+*.color4:       base04
+*.color5:       base05
+*.color6:       base06
+*.color7:       base07
+*.color8:       base08
+*.color9:       base09
+*.color10:      base0a
+*.color11:      base0b
+*.color12:      base0c
+*.color13:      base0d
+*.color14:      base0e
+*.color15:      base0f
+!*.color16:      base09
+!*.color17:      base0f
+!*.color18:      base01
+!*.color19:      base02
+!*.color20:      base04
+!*.color21:      base06
 
 URxvt.keysym.C-Up:     font-size:increase
 URxvt.keysym.C-Down:   font-size:decrease
