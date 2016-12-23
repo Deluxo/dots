@@ -6,9 +6,9 @@ then
 	echo Popular
 else
 	if [ "$@" == "Subscribtions" ]; then
-		gotwitch streams -b
+		gotwitch streams -ba
 	elif [ "$@" == "Popular" ]; then
-		gotwitch streams
+		gotwitch streams -a
 	else
 		channel=$(echo $@ | awk '{print $1;}')
 		gotwitch -s $channel

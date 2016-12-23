@@ -175,8 +175,8 @@ done
 
 case "$1" in
 	--generate | -g)
-		generate $3 16 $output_16
-		generate $3 8 $output_8
+		generate $2 16 $output_16
+		generate $2 8 $output_8
 		;;
 	--randomize | -r)
 		if [[ $2 =~ "x" ]]

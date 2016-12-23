@@ -1,19 +1,19 @@
-#define base00 #241E31
-#define base01 #F9F6F8
-#define base02 #483FAB
-#define base03 #E8DADC
-#define base04 #BB58C2
-#define base05 #542E4F
-#define base06 #251B5F
-#define base07 #645557
-#define base08 #AE465E
-#define base09 #E76366
-#define base0a #F4E4A0
-#define base0b #EAA59A
-#define base0c #BBAAB8
-#define base0d #F8946F
-#define base0e #B7B477
-#define base0f #64958C
+#define base00 #121B29
+#define base01 #F5F0DF
+#define base02 #259BA0
+#define base03 #F0DBAF
+#define base04 #1F2933
+#define base05 #E0AE99
+#define base06 #E33160
+#define base07 #255865
+#define base08 #28688E
+#define base09 #5C6366
+#define base0a #1E3151
+#define base0b #54B3AC
+#define base0c #8E827D
+#define base0d #9FB0A2
+#define base0e #5A324C
+#define base0f #B44B65
 
 *.foreground:   base0f
 *.background:   base00
@@ -52,10 +52,10 @@ URxvt.internalBorder: 0
 URxvt.externalBorder: 0
 urxvt --help 2>&1| sed -n '/:  /s/^ */URxvt*/gp' >> ~/.Xresources
 URxvt.perl-ext-common: default,font-size,urxvt-colors,config-reload
-urxvt.font:                xft:Roboto Mono for Powerline:size=12,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
-urxvt.boldFont:            xft:Roboto Mono for Powerline:size=12:bold,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
-urxvt.italicFont:          xft:Roboto Mono for Powerline:size=12:italic,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
-urxvt.boldItalicFont:      xft:Roboto Mono for Powerline:size=12:bold:italic,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
+urxvt.font:                xft:unscii:size=12,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
+urxvt.boldFont:            xft:unscii:size=12:bold,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
+urxvt.italicFont:          xft:unscii:size=12:italic,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
+urxvt.boldItalicFont:      xft:unscii:size=12:bold:italic,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
 urxvt.depth: 32
 urxvt.scrollBar: false
 
@@ -74,5 +74,5 @@ rofi.fullscreen: false
 rofi.width: 400
 rofi.position: 0
 rofi.separator-style: none
-rofi.font: Roboto Sans for Powerline Bold 13
+rofi.font: unscii 13
 rofi.hide-scrollbar: true
