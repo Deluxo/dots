@@ -48,7 +48,7 @@ URxvt.keysym.C-S-Down: font-size:decglobal
 URxvt.font-size.step: 1
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: true
-URxvt.internalBorder: 0
+URxvt.internalBorder: 10
 URxvt.externalBorder: 0
 urxvt --help 2>&1| sed -n '/:  /s/^ */URxvt*/gp' >> ~/.Xresources
 URxvt.perl-ext-common: default,font-size,urxvt-colors,config-reload
