@@ -1,22 +1,25 @@
-#define base00 #121B29
-#define base01 #54B3AC
-#define base02 #259BA0
-#define base03 #5A324C
-#define base04 #F5F0DF
-#define base05 #E0AE99
-#define base06 #B44B65
-#define base07 #255865
-#define base08 #1E3151
-#define base09 #5C6366
-#define base0a #28688E
-#define base0b #F0DBAF
-#define base0c #8E827D
-#define base0d #9FB0A2
-#define base0e #1F2933
-#define base0f #E33160
+#define backgr #1d1f21
+#define foregr #c5c8c6
+#define base00 #282a2e
+#define base01 #373b41
+#define base02 #a54242
+#define base03 #cc6666
+#define base04 #8c9440
+#define base05 #b5bd68
+#define base06 #de935f
+#define base07 #f0c674
+#define base08 #5f819d
+#define base09 #81a2be
+#define base0a #85678f
+#define base0b #b294bb
+#define base0c #5e8d87
+#define base0d #8abeb7
+#define base0e #707880
+#define base0f #c5c8c6
+#define leFont terminus
 
-*.foreground:   base0f
-*.background:   [90]base00
+*.foreground:   foregr
+*.background:   backgr
 *.cursorcolor:  base0d
 *.color0:       base00
 *.color1:       base01
@@ -34,12 +37,6 @@
 *.color13:      base0d
 *.color14:      base0e
 *.color15:      base0f
-!*.color16:      base09
-!*.color17:      base0f
-!*.color18:      base01
-!*.color19:      base02
-!*.color20:      base04
-!*.color21:      base06
 
 URxvt.keysym.C-Up:     font-size:increase
 URxvt.keysym.C-Down:   font-size:decrease
@@ -52,12 +49,13 @@ URxvt.internalBorder: 10
 URxvt.externalBorder: 0
 urxvt --help 2>&1| sed -n '/:  /s/^ */URxvt*/gp' >> ~/.Xresources
 URxvt.perl-ext-common: default,font-size,urxvt-colors,config-reload
-urxvt.font:                xft:unscii:size=12,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
-urxvt.boldFont:            xft:unscii:size=12:bold,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
-urxvt.italicFont:          xft:unscii:size=12:italic,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
-urxvt.boldItalicFont:      xft:unscii:size=12:bold:italic,xft:DejaVu Sans Mono for Powerline:size=12,xft:FontAwesome:size=12,xft:Symbola:size=12
+urxvt.font: -*-terminus-medium-r-*-*-20-*-*-*-*-*-iso10646-*
+urxvt.boldFont: -*-terminus-bold-r-*-*-20-*-*-*-*-*-iso10646-*
+urxvt.italicFont: -*-roboto mono-medium-i-*-*-20-*-*-*-*-*-iso10646-*
+urxvt.boldItalicFont: -*-roboto mono-bold-i-*-*-20-*-*-*-*-*-iso10646-*
 urxvt.depth: 32
 urxvt.scrollBar: false
+urxvt.background: [95]backgr
 
 ! State:           'bg'    'fg'    'bgalt' 'hlbg'  'hlfg'
 rofi.color-normal: base00, base0e, base00, base00, base0f
@@ -74,5 +72,5 @@ rofi.fullscreen: false
 rofi.width: 400
 rofi.position: 0
 rofi.separator-style: none
-rofi.font: unscii 13
+rofi.font: leFont 13
 rofi.hide-scrollbar: true

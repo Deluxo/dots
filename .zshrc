@@ -1,5 +1,5 @@
 export ZSH=/home/lukas/.oh-my-zsh
-ZSH_THEME="arrow"
+ZSH_THEME="minimal"
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
