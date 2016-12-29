@@ -37,8 +37,8 @@ super + Return
 	urxvt
 
 # program launcher
-super + {_,shift,ctrl + }space
-	rofi -combi-modi "window,run" -show combi -modi "window,combi,drun,run,gotwitch:~/.scripts/dmenu-gotwitch.sh,task:~/.scripts/dmenu-task.sh"
+super + {_,ctrl + ,shift + }space
+	rofi -combi-modi "window,run" -show {combi,gotwitch,tasker} -modi "window,combi,drun,run,gotwitch:~/.scripts/dmenu-gotwitch.sh,tasker:~/.scripts/dmenu-task.sh"
 
 alt + space
 	rofi -show window

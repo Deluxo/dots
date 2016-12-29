@@ -35,9 +35,9 @@ bspc rule -a mpv state=floating sticky=on
 
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
-bspc config active_border_color '#192936'
-bspc config normal_border_color '#6D708C'
-bspc config focused_border_color '#A19FA5'
+bspc config active_border_color '#231F20'
+bspc config normal_border_color '#44ABA0'
+bspc config focused_border_color '#D3AC59'
 
 bspc config top_padding 20
 polybar legacy &!
