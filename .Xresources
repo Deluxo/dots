@@ -5,15 +5,15 @@
 #define base02 #64AE9B
 #define base03 #96B18E
 #define base04 #734577
-#define base05 #272524
-#define base06 #D1AD56
-#define base07 #954872
-#define base08 #D5AB5C
+#define base05 #954872
+#define base06 #5F2E4B
+#define base07 #D5AB5C
+#define base08 #272524
 #define base09 #A03667
-#define base0a #5F2E4B
+#define base0a #35172C
 #define base0b #CE325B
 #define base0c #614986
-#define base0d #35172C
+#define base0d #D1AD56
 #define base0e #8A5783
 #define base0f #51C5CC
 #define leFont terminus
@@ -58,19 +58,15 @@ urxvt.scrollBar: false
 urxvt.background: [95]backgr
 
 ! State:           'bg'    'fg'    'bgalt' 'hlbg'  'hlfg'
-rofi.color-normal: base00, base0e, base00, base00, base0f
-rofi.color-urgent: base00, base0f, base00, base00, base0e
-rofi.color-active: base00, base0e, base00, base00, base0f
-rofi.color-window: base00, base0f
-rofi.eh: 1
-rofi.lines: 20
-rofi.bw: 4
-rofi.opacity: 95
-rofi.padding: 16
-rofi.scroll-method: 1
-rofi.fullscreen: false
-rofi.width: 400
-rofi.position: 0
-rofi.separator-style: none
-rofi.font: leFont 13
+rofi.color-normal: backgr, base0e, backgr, backgr, base0f
+rofi.color-urgent: backgr, base0f, backgr, backgr, base0e
+rofi.color-active: backgr, base0e, backgr, backgr, base0f
+rofi.color-window: backgr, base01, base07
+rofi.location: 0
+rofi.separator-style: solid
+rofi.fullscreen: true
+rofi.padding: 350
 rofi.hide-scrollbar: true
+rofi.line-margin: 15
+rofi.bw: 0
+rofi.font: leFont 13
