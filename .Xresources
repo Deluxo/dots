@@ -3,7 +3,7 @@
 #define base00 #160B2A
 #define base01 #281A28
 #define base02 #555C66
-#define base03 #1F1D4B
+#define base03 #5F698A
 #define base04 #34314B
 #define base05 #887A86
 #define base06 #778B9B
@@ -12,7 +12,7 @@
 #define base09 #50556A
 #define base0a #89A4AC
 #define base0b #281530
-#define base0c #5F698A
+#define base0c #1F1D4B
 #define base0d #7C93C3
 #define base0e #9FBFD9
 #define base0f #494FC0

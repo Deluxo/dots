@@ -5,7 +5,6 @@ rofi.padding: 10
 rofi.hide-scrollbar: false
 rofi.line-margin: 15
 rofi.bw: 2
-rofi.font: leFont 13
 rofi.yoffset: 40
 rofi.xoffset: 20
 rofi.sidebar-mode: true
