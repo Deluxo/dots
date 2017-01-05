@@ -1,21 +1,21 @@
 #define backgr #1d1f21
 #define foregr #c5c8c6
-#define base00 #231F20
-#define base01 #24A8A5
-#define base02 #64AE9B
-#define base03 #96B18E
-#define base04 #734577
-#define base05 #954872
-#define base06 #5F2E4B
-#define base07 #D5AB5C
-#define base08 #272524
-#define base09 #A03667
-#define base0a #35172C
-#define base0b #CE325B
-#define base0c #614986
-#define base0d #D1AD56
-#define base0e #8A5783
-#define base0f #51C5CC
+#define base00 #160B2A
+#define base01 #281A28
+#define base02 #555C66
+#define base03 #1F1D4B
+#define base04 #34314B
+#define base05 #887A86
+#define base06 #778B9B
+#define base07 #69768C
+#define base08 #413C51
+#define base09 #50556A
+#define base0a #89A4AC
+#define base0b #281530
+#define base0c #5F698A
+#define base0d #7C93C3
+#define base0e #9FBFD9
+#define base0f #494FC0
 #define leFont terminus
 
 *.foreground:   foregr
@@ -62,11 +62,4 @@ rofi.color-normal: backgr, base0e, backgr, backgr, base0f
 rofi.color-urgent: backgr, base0f, backgr, backgr, base0e
 rofi.color-active: backgr, base0e, backgr, backgr, base0f
 rofi.color-window: backgr, base01, base07
-rofi.location: 0
-rofi.separator-style: solid
-rofi.fullscreen: true
-rofi.padding: 350
-rofi.hide-scrollbar: true
-rofi.line-margin: 15
-rofi.bw: 0
 rofi.font: leFont 13

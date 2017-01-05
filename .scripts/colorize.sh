@@ -223,7 +223,7 @@ case "$1" in
 			cycle $0 "polybar" "" 2
 		elif [[ $2 =~ "conky" ]]
 		then
-			cycle $0 "conky" "" 2
+			cycle $0 "conky" "" 3
 		fi
 		;;
 	--everything | -e)

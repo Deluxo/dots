@@ -38,7 +38,7 @@ super + Return
 
 # program launcher
 super + {_,ctrl + ,shift + }space
-	rofi -combi-modi "window,run" -show {combi,gotwitch,tasker} -modi "window,combi,drun,run,gotwitch:~/.scripts/dmenu-gotwitch.sh,tasker:~/.scripts/dmenu-task.sh"
+	rofi -show {combi,gotwitch,tasker}
 
 alt + space
 	rofi -show window
