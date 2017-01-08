@@ -28,7 +28,7 @@ XF86AudioLowerVolume
 	{playerctl previous, MPD_PORT=6601 mpc prev}
 
 {_,shift + }Pause
-	{systemctl suspend, shutdown now}
+	{systemctl suspend, sleep 1 && xset dpms force standby}
 
 super + q
 	bspc node -c
