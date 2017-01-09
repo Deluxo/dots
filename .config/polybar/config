@@ -1,0 +1,108 @@
+=====================================================
+;
+;   To learn more about how to configure Lemonbuddy
+;   go to https://github.com/jaagr/lemonbuddy
+;
+;=====================================================
+
+[settings]
+;throttle-limit = 5
+;throttle-ms = 50
+
+[bar/legacy]
+width = 1900
+height = 24
+offset-y = 8
+offset-x = 10
+
+border-size = 1
+border-color = #00259BA0
+
+background = #000A0D20
+foreground = #C3D4DB
+
+spacing = 1
+underline-size = 0
+overline-size = 0
+padding-left = 1
+padding-right = 1
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = -*-terminus-medium-r-*-*-14-*-*-*-*-*-iso10646-*;-1
+font-1 = FontAwesome:size=11:weight=normal;-1
+font-2 = DejaVu Sans:size=10;0
+
+modules-left = menu title
+modules-center = bspwm
+modules-right = volume clock
+wm-name = bar
+wm-restack = bspwm
+
+[module/bspwm]
+type = internal/bspwm
+label-focused =
+;label-dimmed-focused =
+label-focused-padding = 1
+label-occupied =
+label-occupied-padding = 1
+;label-occupied-foreground = #f3ffffff
+label-empty =
+label-empty-padding = 1
+;label-empty-foreground = #d0ffffff
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6601
+interval = 2
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP0
+poll-interval = 60
+
+[module/title]
+type = internal/xwindow
+
+[module/cpu]
+type = internal/cpu
+label = CPU: %percentage%
+format-background = #c42
+format-underline = #f75
+format-overline = #f75
+format-padding = 2
+
+[module/ram]
+type = internal/memory
+label = RAM: %percentage-used%
+format-background = #42c
+format-underline = #75f
+format-overline = #75f
+format-padding = 2
+
+[module/clock]
+type = internal/date
+date = %b %e %a, %H:%M
+format-padding = 0
+click-left = gsimplecal
+
+[module/volume]
+type = internal/volume
+format-volume-padding = 0
+format-muted-padding = 0
+format-volume = <ramp-volume> <label-volume>
+label-muted =  muted
+label-muted-foreground = #666
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+;label-volume-foreground = #7dd4a2
+
+[module/menu]
+type = custom/text
+content = 
+click-left = rofi -config ~/.config/rofi/polybar -show run
+
+; vim:ft=dosini
