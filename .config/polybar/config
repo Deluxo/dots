@@ -50,6 +50,9 @@ label-occupied-padding = 1
 label-empty =
 label-empty-padding = 1
 ;label-empty-foreground = #d0ffffff
+label-urgent =
+label-urgent-padding = 1
+label-urgent-foreground= #ff87b6
 
 [module/mpd]
 type = internal/mpd
@@ -102,7 +105,7 @@ ramp-volume-2 = 
 
 [module/menu]
 type = custom/text
-content = 
+content = 
 click-left = rofi -config ~/.config/rofi/polybar -show run
 
 ; vim:ft=dosini
