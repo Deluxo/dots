@@ -89,3 +89,10 @@ printer() {
 		lpq -a
 	fi
 }
+
+rs() {
+	for p in $@
+	do
+		killall -KILL $p && $p &!
+	done
+}

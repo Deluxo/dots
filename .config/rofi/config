@@ -7,4 +7,4 @@ rofi.line-margin: 15
 rofi.bw: 0
 rofi.sidebar-mode: true
 rofi.combi-modi: window,combi,run,gotwitch:~/.scripts/dmenu-gotwitch.sh,tasker:~/.scripts/dmenu-task.sh,files:~/.scripts/dmenu-files.sh
-rofi.modi: files:~/.scripts/dmenu-files.sh
+rofi.modi: files:~/.scripts/dmenu-files.sh,gotwitch:~/.scripts/dmenu-gotwitch.sh,tasker:~/.scripts/dmenu-task.sh

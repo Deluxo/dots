@@ -19,7 +19,7 @@ border-size = 1
 border-color = #00259BA0
 
 background = #000A0D20
-foreground = #C3D4DB
+foreground = #AAABA9
 
 spacing = 1
 underline-size = 0
@@ -35,7 +35,7 @@ font-2 = DejaVu Sans:size=10;0
 
 modules-left = menu title
 modules-center = bspwm
-modules-right = volume clock
+modules-right = volume cal clock
 wm-name = bar
 wm-restack = bspwm
 
@@ -89,7 +89,6 @@ format-padding = 2
 type = internal/date
 date = %b %e %a, %H:%M
 format-padding = 0
-click-left = gsimplecal
 
 [module/volume]
 type = internal/volume
@@ -107,5 +106,10 @@ ramp-volume-2 = 
 type = custom/text
 content = 
 click-left = rofi -config ~/.config/rofi/polybar -show run
+
+[module/cal]
+type = custom/text
+content = 
+click-left = gsimplecal
 
 ; vim:ft=dosini
