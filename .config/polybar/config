@@ -15,6 +15,9 @@ height = 24
 offset-y = 8
 offset-x = 10
 
+tray-position = right
+
+
 border-size = 1
 border-color = #00259BA0
 

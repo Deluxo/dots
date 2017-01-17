@@ -20,6 +20,7 @@ bspc monitor -d I II III IV V VI VII VIII IX X
 bspc rule -a Firefox desktop=^1
 bspc rule -a vim desktop=^2
 bspc rule -a Skype desktop=^3
+bspc rule -a qTox desktop=^3
 bspc rule -a ncmpcpp desktop=^4
 bspc rule -a spotify desktop=^4
 bspc rule -a Steam desktop=^5

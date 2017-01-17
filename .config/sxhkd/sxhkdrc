@@ -4,7 +4,7 @@
 	{maim, maim -s}
 
 super + ctrl + {1-9}
-	{firefox, urxvt -e vim, qtox, urxvt -e ncmpcpp, ~/.scripts/new-livestreamer.sh, _, _, urxvt -e ranger, urxvt -e htop}
+	{firefox, urxvt -e vim, qtox, urxvt -e ncmpcpp, notify-send "`task ls`", _, _, urxvt -e ranger, urxvt -e htop}
 
 XF86AudioMute
 	pactl set-sink-mute 1 toggle

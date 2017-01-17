@@ -39,7 +39,7 @@
 # ----------------------------------------------------------------------
 
 [global]
-    font = Roboto Sans 11
+    font = xos4 Terminus 13
 
     allow_markup = yes
 
@@ -53,8 +53,8 @@
     word_wrap = yes
     ignore_newline = no
 
-    geometry = "500x400-20-20"
-    shrink = no
+	geometry = "1000-20-20"
+    shrink = yes
     padding = 18
     horizontal_padding = 18
 

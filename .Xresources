@@ -14,7 +14,7 @@
 #define base0d #8fa1b3
 #define base0e #b48ead
 #define base0f #ab7967
-#define leFont terminus
+#define leFont xos4 terminus
 #define backgr base00
 #define foregr base05
 
@@ -45,7 +45,7 @@ URxvt.keysym.C-S-Down: font-size:decglobal
 URxvt.font-size.step: 1
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: true
-URxvt.internalBorder: 10
+URxvt.internalBorder: 0
 URxvt.externalBorder: 0
 urxvt --help 2>&1| sed -n '/:  /s/^ */URxvt*/gp' >> ~/.Xresources
 URxvt.perl-ext-common: default,font-size,urxvt-colors,config-reload
@@ -62,4 +62,4 @@ rofi.color-normal: backgr, base0e, backgr, backgr, base0f
 rofi.color-urgent: backgr, base0f, backgr, backgr, base0e
 rofi.color-active: backgr, base0e, backgr, backgr, base0f
 rofi.color-window: backgr, base01, base07
-rofi.font: leFont 13
+rofi.font: leFont 11
