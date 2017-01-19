@@ -1,42 +1,27 @@
-#define base00 #2b303b
-#define base01 #96b5b4
-#define base02 #a3be8c
-#define base03 #65737e
-#define base04 #a7adba
-#define base05 #c0c5ce
-#define base06 #4f5b66
-#define base07 #eff1f5
-#define base08 #bf616a
-#define base09 #d08770
-#define base0a #ebcb8b
-#define base0b #343d46
-#define base0c #dfe1e8
-#define base0d #8fa1b3
-#define base0e #b48ead
-#define base0f #ab7967
+#include "/home/lukas/.config/xres/base16-xresources/xresources/base16-google-dark.Xresources"
 #define leFont xos4 terminus
 #define backgr base00
 #define foregr base05
 
-*.foreground:   foregr
-*.background:   backgr
-*.cursorcolor:  foregr
-*.color0:       base00
-*.color1:       base01
-*.color2:       base02
-*.color3:       base03
-*.color4:       base04
-*.color5:       base05
-*.color6:       base06
-*.color7:       base07
-*.color8:       base08
-*.color9:       base09
-*.color10:      base0a
-*.color11:      base0b
-*.color12:      base0c
-*.color13:      base0d
-*.color14:      base0e
-*.color15:      base0f
+!*.foreground:   foregr
+!*.background:   backgr
+!*.cursorcolor:  foregr
+!*.color0:       base00
+!*.color1:       base01
+!*.color2:       base02
+!*.color3:       base03
+!*.color4:       base04
+!*.color5:       base05
+!*.color6:       base06
+!*.color7:       base07
+!*.color8:       base08
+!*.color9:       base09
+!*.color10:      base0a
+!*.color11:      base0b
+!*.color12:      base0c
+!*.color13:      base0d
+!*.color14:      base0e
+!*.color15:      base0f
 
 URxvt.keysym.C-Up:     font-size:increase
 URxvt.keysym.C-Down:   font-size:decrease
@@ -55,7 +40,7 @@ urxvt.italicFont: -*-roboto mono-medium-i-*-*-20-*-*-*-*-*-iso10646-*
 urxvt.boldItalicFont: -*-roboto mono-bold-i-*-*-20-*-*-*-*-*-iso10646-*
 urxvt.depth: 32
 urxvt.scrollBar: false
-urxvt.background: [95]backgr
+!urxvt.background: [95]backgr
 
 ! State:           'bg'    'fg'    'bgalt' 'hlbg'  'hlfg'
 rofi.color-normal: backgr, base0e, backgr, backgr, base0f
