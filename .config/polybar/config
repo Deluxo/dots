@@ -16,13 +16,14 @@ offset-y = 8
 offset-x = 10
 
 tray-position = right
-
+tray-transparent = false
+tray-detached = false
 
 border-size = 1
-border-color = #00259BA0
+border-color = #99D5C8C0
 
-background = #000A0D20
-foreground = #AAABA9
+background = #cc0A0D20
+foreground = #D5C8C0
 
 spacing = 1
 underline-size = 0

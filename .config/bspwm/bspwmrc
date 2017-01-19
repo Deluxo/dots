@@ -37,9 +37,9 @@ bspc rule -a Galculator state=floating sticky=on
 
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
-bspc config active_border_color '#AAABA9'
-bspc config normal_border_color '#181924'
-bspc config focused_border_color '#C6C6BE'
+bspc config active_border_color '#191919'
+bspc config normal_border_color '#21232D'
+bspc config focused_border_color '#D5C8C0'
 
 bspc config top_padding 20
 polybar legacy &!
@@ -51,3 +51,8 @@ sleep 10
 mopidy &!
 sleep 5
 qtox &!
+
+touch $HOME/.dbus/Xdbus
+chmod 600 $HOME/.dbus/Xdbus
+env | grep DBUS_SESSION_BUS_ADDRESS > $HOME/.dbus/Xdbus
+echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
