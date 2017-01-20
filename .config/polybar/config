@@ -33,9 +33,8 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = -*-terminus-medium-r-*-*-14-*-*-*-*-*-iso10646-*;-1
-font-1 = FontAwesome:size=11:weight=normal;-1
-font-2 = DejaVu Sans:size=10;0
+font-0 = -*-terminus-medium-r-*-*-12-*-*-*-*-*-iso10646-*;0
+font-1 = FontAwesome:size=9:weight=normal;0
 
 modules-left = menu title
 modules-center = bspwm

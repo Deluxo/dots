@@ -14,10 +14,10 @@ URxvt.internalBorder: 0
 URxvt.externalBorder: 0
 urxvt --help 2>&1| sed -n '/:  /s/^ */URxvt*/gp' >> ~/.Xresources
 URxvt.perl-ext-common: default,font-size,urxvt-colors,config-reload
-urxvt.font: -*-terminus-medium-r-*-*-20-*-*-*-*-*-iso10646-*
-urxvt.boldFont: -*-terminus-bold-r-*-*-20-*-*-*-*-*-iso10646-*
-urxvt.italicFont: -*-roboto mono-medium-i-*-*-20-*-*-*-*-*-iso10646-*
-urxvt.boldItalicFont: -*-roboto mono-bold-i-*-*-20-*-*-*-*-*-iso10646-*
+urxvt.font: -*-terminus-medium-r-*-*-14-*-*-*-*-*-iso10646-*
+urxvt.boldFont: -*-terminus-bold-r-*-*-14-*-*-*-*-*-iso10646-*
+urxvt.italicFont: -*-roboto mono-medium-i-*-*-14-*-*-*-*-*-iso10646-*
+urxvt.boldItalicFont: -*-roboto mono-bold-i-*-*-14-*-*-*-*-*-iso10646-*
 urxvt.depth: 32
 urxvt.scrollBar: false
 urxvt.background: [95]backgr
