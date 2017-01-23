@@ -20,9 +20,9 @@ tray-transparent = false
 tray-detached = false
 
 border-size = 1
-border-color = #99D5C8C0
+border-color = #00D5C8C0
 
-background = #cc0A0D20
+background = #000A0D20
 foreground = #D5C8C0
 
 spacing = 1
