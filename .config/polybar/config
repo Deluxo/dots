@@ -20,10 +20,10 @@ tray-transparent = false
 tray-detached = false
 
 border-size = 1
-border-color = #ccD5C8C0
+border-color = #0D5C8C00
 
-background = #cc0A0D20
-foreground = #D5C8C0
+background = #00000000
+foreground = #FFFFFF
 
 spacing = 1
 underline-size = 0
@@ -33,7 +33,7 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = -*-terminus-medium-r-*-*-12-*-*-*-*-*-iso10646-*;0
+font-0 = xos4 terminus:size=11:weight=normal;0
 font-1 = FontAwesome:size=9:weight=normal;0
 
 modules-left = menu title
