@@ -37,9 +37,9 @@ bspc rule -a Galculator state=floating sticky=on
 
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
-bspc config active_border_color '#6C9563'
-bspc config normal_border_color '#55903D'
-bspc config focused_border_color '#A0D967'
+bspc config active_border_color '#135A3D'
+bspc config normal_border_color '#011D30'
+bspc config focused_border_color '#D6E4C0'
 
 bspc config top_padding 20
 polybar legacy &!
