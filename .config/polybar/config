@@ -10,10 +10,10 @@
 ;throttle-ms = 50
 
 [bar/legacy]
-width = 1900
+width = 1912
 height = 24
-offset-y = 8
-offset-x = 10
+offset-y = 2
+offset-x = 4
 
 tray-position = right
 tray-transparent = false
