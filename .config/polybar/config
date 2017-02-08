@@ -10,19 +10,19 @@
 ;throttle-ms = 50
 
 [bar/legacy]
-width = 1912
+width = 1920
 height = 24
-offset-y = 2
-offset-x = 4
+offset-y = 0
+offset-x = 0
 
 tray-position = right
 tray-transparent = false
 tray-detached = false
 
-border-size = 1
-border-color = #A0D967
+border-bottom-size = 0
+border-bottom-color = #A0D967
 
-background = #AA00051B
+background = #00999
 foreground = #fff
 
 spacing = 1
