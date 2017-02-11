@@ -19,10 +19,10 @@ tray-position = right
 tray-transparent = false
 tray-detached = false
 
-border-bottom-size = 0
-border-bottom-color = #A0D967
+border-bottom-size = 1
+border-bottom-color = #758585
 
-background = #00999
+background = #dd000000
 foreground = #fff
 
 spacing = 1

@@ -124,7 +124,8 @@ recolor_polybar(){
 	config="$HOME/.config/polybar/config"
 	config_backup="$config-backup"
 	xres=$(cat $config)
-	identifiers=("foreground =")
+	#identifiers=("foreground =" "border-bottom-color =")
+	identifiers=("border-bottom-color =")
 	rand=$(shuf -i 0-$[${#colors[@]}-1] -n 1)
 	echo $rand
 	if [ ! -f $config_backup ]
