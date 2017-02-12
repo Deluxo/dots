@@ -4,6 +4,20 @@
 ;   go to https://github.com/jaagr/lemonbuddy
 ;
 ;=====================================================
+[vars]
+color-bg-0 = #77000000
+color-bg-1 = #aa000000
+color-fg = #ffffff
+color-fg-0 = #77ffffff
+color-1 = #ffffff
+color-2 = #ff87b6
+color-border = #0000ff
+
+font0 = xos4 terminus:size=12:weight=normal;1
+font1 = FontAwesome:size=11:weight=normal;1
+underline-size = 1
+padding-0 = 1
+padding-1 = 2
 
 [settings]
 ;throttle-limit = 5
@@ -18,44 +32,64 @@ offset-x = 0
 tray-position = right
 tray-transparent = false
 tray-detached = false
+tray-background = #3f4747
 
-border-bottom-size = 1
-border-bottom-color = #758585
+border-bottom-size = 0
+border-bottom-color = ${vars.color-border}
 
-background = #dd000000
-foreground = #fff
+background = ${vars.color-bg-0}
+foreground = ${vars.color-fg}
 
 spacing = 1
-underline-size = 0
+underline-size = ${vars.underline-size}
 overline-size = 0
-padding-left = 1
-padding-right = 1
-module-margin-left = 1
-module-margin-right = 1
+padding-left = ${vars.padding-0}
+padding-right = ${vars.padding-0}
+module-margin-left = ${vars.padding-0}
+module-margin-right = ${vars.padding-0}
 
-font-0 = xos4 terminus:size=12:weight=normal;1
-font-1 = FontAwesome:size=9:weight=normal;1
+font-0 = ${vars.font0}
+font-1 = ${vars.font1}
 
-modules-left = menu title
-modules-center = bspwm
+modules-left = menu bspwm
+modules-center = title
 modules-right = volume cal clock
 wm-name = bar
 wm-restack = bspwm
 
 [module/bspwm]
 type = internal/bspwm
-label-focused =
-;label-dimmed-focused =
-label-focused-padding = 1
-label-occupied =
-label-occupied-padding = 1
-;label-occupied-foreground = #f3ffffff
-label-empty =
-label-empty-padding = 1
-;label-empty-foreground = #d0ffffff
-label-urgent =
-label-urgent-padding = 1
-label-urgent-foreground= #ff87b6
+
+label-focused = %icon%
+label-occupied = %icon%
+label-empty = %icon%
+label-urgent = %icon%
+
+label-focused-padding = ${vars.padding-1}
+label-occupied-padding = ${vars.padding-1}
+label-empty-padding = ${vars.padding-1}
+label-urgent-padding = ${vars.padding-1}
+
+label-focused-background = ${vars.color-bg-1}
+
+label-occupied-foreground = ${vars.color-fg}
+label-empty-foreground = ${vars.color-fg-0}
+label-urgent-foreground= ${vars.color-2}
+
+label-focused-underline = ${vars.color-1}
+label-urgent-underline= ${vars.color-2}
+
+
+ws-icon-0 = I;
+ws-icon-1 = II;
+ws-icon-2 = III;
+ws-icon-3 = IV;
+ws-icon-4 = V;
+ws-icon-5 = VI;
+ws-icon-6 = VII;
+ws-icon-7 = VIII;
+ws-icon-8 = IX;
+ws-icon-9 = X;
 
 [module/mpd]
 type = internal/mpd
@@ -63,31 +97,9 @@ host = 127.0.0.1
 port = 6601
 interval = 2
 
-[module/battery]
-type = internal/battery
-battery = BAT0
-adapter = ADP0
-poll-interval = 60
-
 [module/title]
 type = internal/xwindow
 label-maxlen = 100
-
-[module/cpu]
-type = internal/cpu
-label = CPU: %percentage%
-format-background = #c42
-format-underline = #f75
-format-overline = #f75
-format-padding = 2
-
-[module/ram]
-type = internal/memory
-label = RAM: %percentage-used%
-format-background = #42c
-format-underline = #75f
-format-overline = #75f
-format-padding = 2
 
 [module/clock]
 type = internal/date
@@ -100,11 +112,10 @@ format-volume-padding = 0
 format-muted-padding = 0
 format-volume = <ramp-volume> <label-volume>
 label-muted =  muted
-label-muted-foreground = #666
+label-muted-foreground = ${vars.color-1}
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
-;label-volume-foreground = #7dd4a2
 
 [module/menu]
 type = custom/text
