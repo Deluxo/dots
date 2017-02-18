@@ -2,6 +2,8 @@
 #define leFont xos4 terminus
 #define backgr base00
 #define foregr base05
+#define rofibg #CE000000
+#define rofibt #00000000
 
 URxvt.keysym.C-Up:     font-size:increase
 URxvt.keysym.C-Down:   font-size:decrease
@@ -20,11 +22,11 @@ urxvt.italicFont: -*-roboto mono-medium-i-*-*-14-*-*-*-*-*-iso10646-*
 urxvt.boldItalicFont: -*-roboto mono-bold-i-*-*-14-*-*-*-*-*-iso10646-*
 urxvt.depth: 32
 urxvt.scrollBar: false
-urxvt.background: [75]backgr
+urxvt.background: [85]backgr
 
-! State:           'bg'    'fg'    'bgalt' 'hlbg'  'hlfg'
-rofi.color-normal: backgr, base0E, backgr, backgr, base0F
-rofi.color-urgent: backgr, base0F, backgr, backgr, base0E
-rofi.color-active: backgr, base0E, backgr, backgr, base0F
-rofi.color-window: backgr, base01, base07
-rofi.font: leFont 11
+! State:           bg,     fg,     bgalt,  hlbg,   hlfg
+rofi.color-normal: rofibt, base05, rofibt, rofibt, base0C
+rofi.color-urgent: rofibt, base05, rofibt, rofibt, base06
+rofi.color-active: rofibt, base05, rofibt, rofibt, base0F
+rofi.color-window: rofibg, base01, rofibt, rofibt
+rofi.font: leFont 13

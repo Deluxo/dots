@@ -5,16 +5,18 @@
 ;
 ;=====================================================
 [vars]
-color-bg-0 = #77000000
-color-bg-1 = #aa000000
+color-bg-0 = #99000000
+color-bg-1 = #CC000000
 color-fg = #ffffff
-color-fg-0 = #77ffffff
+color-fg-0 = #55ffffff
 color-1 = #ffffff
 color-2 = #ff87b6
 color-border = #0000ff
 
-font0 = xos4 terminus:size=12:weight=normal;1
-font1 = FontAwesome:size=11:weight=normal;1
+font0 = Overpass:size=10:weight=light;1
+font1 = FontAwesome:size=11:weight=light;1
+font2 = xos4 terminus:size=12:weight=normal;1
+font3 = URW Gothic:size=9:weight=normal;1
 underline-size = 1
 padding-0 = 1
 padding-1 = 2
@@ -32,10 +34,12 @@ offset-x = 0
 tray-position = right
 tray-transparent = false
 tray-detached = false
-tray-background = #3f4747
+tray-background = #040404
 
 border-bottom-size = 0
 border-bottom-color = ${vars.color-border}
+
+padding = ${vars.padding-1}
 
 background = ${vars.color-bg-0}
 foreground = ${vars.color-fg}
@@ -43,8 +47,6 @@ foreground = ${vars.color-fg}
 spacing = 1
 underline-size = ${vars.underline-size}
 overline-size = 0
-padding-left = ${vars.padding-0}
-padding-right = ${vars.padding-0}
 module-margin-left = ${vars.padding-0}
 module-margin-right = ${vars.padding-0}
 
