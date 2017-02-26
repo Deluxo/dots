@@ -2,7 +2,7 @@
 #define leFont xos4 terminus
 #define backgr base00
 #define foregr base05
-#define rofibg #CE000000
+#define rofibg #DD000000
 #define rofibt #00000000
 
 URxvt.keysym.C-Up:     font-size:increase
@@ -29,4 +29,4 @@ rofi.color-normal: rofibt, base05, rofibt, rofibt, base0C
 rofi.color-urgent: rofibt, base05, rofibt, rofibt, base06
 rofi.color-active: rofibt, base05, rofibt, rofibt, base0F
 rofi.color-window: rofibg, base01, rofibt, rofibt
-rofi.font: leFont 13
+rofi.font: leFont 14

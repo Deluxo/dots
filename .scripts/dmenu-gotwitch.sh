@@ -4,15 +4,12 @@ tmpDir="/tmp"
 filePrefix="gotwitch-"
 subscriptionsFile="$tmpDir"/"$filePrefix"subscriptions
 popularFile="$tmpDir"/"$filePrefix"popular
-updateFreqInSec="60"
+updateFreqInSec="30"
 
 if [[ ! -e "$popularFile" ]]; then
 	gotwitch streams -a > $popularFile;
-fi
-if [[ ! -e "$subscriptionsFile" ]]; then
 	gotwitch streams -ba > $subscriptionsFile;
 fi
-
 
 fileModDate=$(stat -c %Y "$popularFile")
 now=$(date +%s)
@@ -20,12 +17,8 @@ freshness=$(($now-$fileModDate))
 
 if [[ $freshness -gt $updateFreqInSec ]]; then
 	gotwitch streams -a > $popularFile;
-fi
-
-if [[ $freshness -gt $updateFreqInSec ]]; then
 	gotwitch streams -ba > $subscriptionsFile;
 fi
-
 
 if [ -z "$@" ] || [ "$@" == "Back" ]
 then
