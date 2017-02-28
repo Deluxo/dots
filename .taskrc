@@ -31,4 +31,4 @@ include /usr/share/doc/task/rc/solarized-dark-256.theme
 
 report.ls.labels=ID,Description,Tag,Due,Scheduled
 report.ls.columns=id,description,tags,due.remaining,scheduled.remaining
-report.ls.sort=tags+\/,scheduled+\/,due+\/,id+\/,description
+report.ls.sort=tags+\/,due+\/,scheduled+\/,id+\/,description
