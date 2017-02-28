@@ -4,6 +4,8 @@
 #define foregr base05
 #define rofibg #DD000000
 #define rofibt #00000000
+#define rofifg base16
+#define rofihl base16
 
 URxvt.keysym.C-Up:     font-size:increase
 URxvt.keysym.C-Down:   font-size:decrease
@@ -25,8 +27,8 @@ urxvt.scrollBar: false
 urxvt.background: [90]backgr
 
 ! State:           bg,     fg,     bgalt,  hlbg,   hlfg
-rofi.color-normal: rofibt, base05, rofibt, rofibt, base0C
-rofi.color-urgent: rofibt, base05, rofibt, rofibt, base06
-rofi.color-active: rofibt, base05, rofibt, rofibt, base0F
+rofi.color-normal: rofibt, rofifg, rofibt, rofibt, base0B
+rofi.color-urgent: rofibt, rofifg, rofibt, rofibt, base06
+rofi.color-active: rofibt, rofifg, rofibt, rofibt, base0F
 rofi.color-window: rofibg, base01, rofibt, rofibt
 rofi.font: leFont 14

@@ -5,8 +5,8 @@
 ;
 ;=====================================================
 [vars]
-color-bg-0 = #99000000
-color-bg-1 = #CC000000
+color-bg-0 = #000
+color-bg-1 = #222
 color-fg = #ffffff
 color-fg-0 = #55ffffff
 color-1 = #ffffff
@@ -34,7 +34,7 @@ offset-x = 0
 tray-position = right
 tray-transparent = false
 tray-detached = false
-tray-background = #002626
+tray-background = #020202
 
 border-bottom-size = 0
 border-bottom-color = ${vars.color-border}

@@ -1,7 +1,7 @@
 #! /bin/sh
 
 main() {
-	task ls | head -n -2 | tail -n +4 | sort
+	task ls | head -n -2 | sed '/^\s*$/d' | sed '2d'
 }
 
 add() {

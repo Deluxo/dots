@@ -29,5 +29,6 @@ include /usr/share/doc/task/rc/solarized-dark-256.theme
 #include /usr/share/doc/task/rc/solarized-light-256.theme
 #include /usr/share/doc/task/rc/no-color.theme
 
-report.ls.labels=ID,Description,Tag,Due
-report.ls.columns=id,description,tags,due.remaining
+report.ls.labels=ID,Description,Tag,Due,Scheduled
+report.ls.columns=id,description,tags,due.remaining,scheduled.remaining
+report.ls.sort=tags+\/,scheduled+\/,due+\/,id+\/,description
