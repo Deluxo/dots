@@ -40,7 +40,7 @@ ssh-add ~/.ssh/gitlab
 export _JAVA_AWT_WM_NONREPARENTING=1
 export SXHDK_SHELL=/bin/bash
 export MPD_HOST=/home/lukas/.config/mpd/socket
-
+export PATH="$HOME/.scripts:$PATH"
 xsetroot -cursor_name left_ptr
 ~/.fehbg &
 exec bspwm

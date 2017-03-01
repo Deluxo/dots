@@ -24,7 +24,7 @@ urxvt.italicFont: -*-roboto mono-medium-i-*-*-14-*-*-*-*-*-iso10646-*
 urxvt.boldItalicFont: -*-roboto mono-bold-i-*-*-14-*-*-*-*-*-iso10646-*
 urxvt.depth: 32
 urxvt.scrollBar: false
-urxvt.background: [90]backgr
+urxvt.background: [78]backgr
 
 ! State:           bg,     fg,     bgalt,  hlbg,   hlfg
 rofi.color-normal: rofibt, rofifg, rofibt, rofibt, base0B
