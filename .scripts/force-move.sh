@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 CLASS=$1
 DESKTOP=$2
