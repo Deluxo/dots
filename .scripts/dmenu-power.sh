@@ -2,27 +2,27 @@
 
 if [ -z "$@" ]
 then
-	echo Screen off;
-	echo Sleep Now;
-	echo Sleep After 1h;
-	echo Sleep After 30m;
-	echo Restart;
-	echo Turn Off;
-	echo KILL ME;
+	echo screen off;
+	echo sleep now;
+	echo sleep after 1h;
+	echo sleep after 30m;
+	echo restart;
+	echo shutdown;
+	echo kill wm;
 else
-	if [ "$@" == "Sleep Now" ]; then
+	if [ "$@" == "sleep now" ]; then
 		systemctl suspend
-	elif [ "$@" == "Sleep After 1h" ]; then
+	elif [ "$@" == "sleep after 1h" ]; then
 		systemctl suspend &!
-	elif [ "$@" == "Sleep After 30m" ]; then
+	elif [ "$@" == "sleep after 30m" ]; then
 		systemctl suspend &!
-	elif [ "$@" == "Restart" ]; then
+	elif [ "$@" == "restart" ]; then
 		reboot
-	elif [ "$@" == "Turn Off" ]; then
+	elif [ "$@" == "shutdown" ]; then
 		shutdown now
-	elif [ "$@" == "KILL ME" ]; then
+	elif [ "$@" == "killL wm" ]; then
 		killall bspwm
-	elif [ "$@" == "Screen off" ]; then
+	elif [ "$@" == "screen off" ]; then
 		sleep 1 && xset dpms force standby
 	fi
 fi

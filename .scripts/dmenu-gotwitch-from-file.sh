@@ -6,5 +6,5 @@ if [[ -z "$@" ]]; then
 	cat /tmp/gotwitch-popular
 else
 	channel=$(echo $@ | awk '{print $1;}')
-	gotwitch -s $channel
+	gotwitch -w $channel
 fi
