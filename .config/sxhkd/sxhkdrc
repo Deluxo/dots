@@ -1,7 +1,7 @@
  #custom
 
 {_,shift + }Print
-	{maim, maim -s}
+	{~/.scripts/screenshot.sh, ~/.scripts/screenshot.sh area}
 
 super + ctrl + {1-9}
 	{firefox, urxvt -e vim, qtox, urxvt -e ncmpcpp, notify-send "`task ls`", ~/.scripts/./context-runner.sh, _, urxvt -e ranger, urxvt -e htop}
