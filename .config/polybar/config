@@ -5,12 +5,12 @@
 ;
 ;=====================================================
 [vars]
-color-bg-0 = #000
-color-bg-1 = #222
-color-fg = #ffffff
-color-fg-0 = #55ffffff
-color-1 = #ffffff
-color-2 = #ff87b6
+color-bg-0 = #16142A
+color-bg-1 = #23203C
+color-fg = #F8BB38
+color-fg-0 = #44ffffff
+color-1 = #F8BB38
+color-urgent = #E04E46
 color-border = #0000ff
 
 font0 = Overpass:size=10:weight=light;1
@@ -34,7 +34,7 @@ offset-x = 0
 tray-position = right
 tray-transparent = false
 tray-detached = false
-tray-background = #020202
+tray-background = ${vars.color-bg-0}
 
 border-bottom-size = 0
 border-bottom-color = ${vars.color-border}
@@ -76,10 +76,10 @@ label-focused-background = ${vars.color-bg-1}
 
 label-occupied-foreground = ${vars.color-fg}
 label-empty-foreground = ${vars.color-fg-0}
-label-urgent-foreground= ${vars.color-2}
+label-urgent-foreground= ${vars.color-urgent}
 
 label-focused-underline = ${vars.color-1}
-label-urgent-underline= ${vars.color-2}
+label-urgent-underline= ${vars.color-urgent}
 
 
 ws-icon-0 = I;
