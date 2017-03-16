@@ -1,4 +1,4 @@
-=====================================================
+;=====================================================
 ;
 ;   To learn more about how to configure Lemonbuddy
 ;   go to https://github.com/jaagr/lemonbuddy
@@ -7,12 +7,11 @@
 [vars]
 color-bg-0 = #16142A
 color-bg-1 = #23203C
-color-fg = #F8BB38
+color-fg = #9D9FD5
 color-fg-0 = #44ffffff
-color-1 = #F8BB38
+color-1 = #9D9FD5
 color-urgent = #E04E46
 color-border = #0000ff
-
 font0 = Overpass:size=10:weight=light;1
 font1 = FontAwesome:size=11:weight=light;1
 font2 = xos4 terminus:size=12:weight=normal;1
@@ -22,8 +21,9 @@ padding-0 = 1
 padding-1 = 2
 
 [settings]
-;throttle-limit = 5
-;throttle-ms = 50
+throttle-limit =5
+throttle-ms = 50
+throttle-input-for = 50
 
 [bar/legacy]
 width = 1920
@@ -35,6 +35,7 @@ tray-position = right
 tray-transparent = false
 tray-detached = false
 tray-background = ${vars.color-bg-0}
+tray-padding = 4
 
 border-bottom-size = 0
 border-bottom-color = ${vars.color-border}
@@ -61,27 +62,20 @@ wm-restack = bspwm
 
 [module/bspwm]
 type = internal/bspwm
-
 label-focused = %icon%
 label-occupied = %icon%
 label-empty = %icon%
 label-urgent = %icon%
-
 label-focused-padding = ${vars.padding-1}
 label-occupied-padding = ${vars.padding-1}
 label-empty-padding = ${vars.padding-1}
 label-urgent-padding = ${vars.padding-1}
-
 label-focused-background = ${vars.color-bg-1}
-
 label-occupied-foreground = ${vars.color-fg}
 label-empty-foreground = ${vars.color-fg-0}
 label-urgent-foreground= ${vars.color-urgent}
-
 label-focused-underline = ${vars.color-1}
 label-urgent-underline= ${vars.color-urgent}
-
-
 ws-icon-0 = I;
 ws-icon-1 = II;
 ws-icon-2 = III;

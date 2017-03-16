@@ -16,9 +16,9 @@ if [ -z "$1" ]
 then
 	main
 else
-	if [[ "$1" =~ ^\+  ]]; then
-			add "$1"
-	elif [[ "$1" =~ ^-.[0-9] ]]; then
+	if [[ "$@" =~ ^\+  ]]; then
+		add "$1"
+	elif [[ "$@" =~ ^-.[0-9] ]]; then
 		finish $@
 	fi
 	main

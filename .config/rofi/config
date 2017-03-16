@@ -6,7 +6,7 @@ rofi.hide-scrollbar: true
 rofi.line-margin: 15
 rofi.bw: 0
 rofi.sidebar-mode: true
-rofi.combi-modi: window,combi,run,gotwitch:~/.scripts/dmenu-gotwitch-from-file.sh,power:~/.scripts/dmenu-power.sh,pass:~/.scripts/dmenu-pass.sh
-rofi.modi: files:~/.scripts/dmenu-files.sh,gotwitch:~/.scripts/dmenu-gotwitch-from-file.sh,tasker:~/.scripts/dmenu-task.sh,run,power:~/.scripts/dmenu-power.sh,pass:~/.scripts/dmenu-pass.sh
+rofi.combi-modi: window,combi,run,gotwitch:~/.scripts/dmenu-gotwitch-from-file.sh,power:~/.scripts/dmenu-power.sh,pass:~/.scripts/dmenu-pass.sh,protonvpn:~/.scripts/dmenu-protonvpn.sh
+rofi.modi: files:~/.scripts/dmenu-files.sh,gotwitch:~/.scripts/dmenu-gotwitch-from-file.sh,tasker:~/.scripts/dmenu-task.sh,run,power:~/.scripts/dmenu-power.sh,pass:~/.scripts/dmenu-pass.sh,protonvpn:~/.scripts/dmenu-protonvpn.sh
 rofi.lazy-grab: true
 rofi.disable-history: true

@@ -36,22 +36,23 @@ bspc rule -a Gimp desktop=^10
 bspc rule -a mpv state=floating sticky=on
 bspc rule -a Galculator state=floating sticky=on
 bspc rule -a "Android Emulator" state=floating
+bspc rule -a "Peek" state=floating
 
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
-bspc config active_border_color '#1A1F44'
-bspc config normal_border_color '#2C2445'
-bspc config focused_border_color '#DF4149'
+bspc config active_border_color '#0B1B5D'
+bspc config normal_border_color '#2953AB'
+bspc config focused_border_color '#5299DA'
 
 bspc config top_padding 4
 polybar legacy &!
-sleep 5
+sleep 2
 compton --config ~/.config/compton/compton.conf --dbus &!
-sleep 20
+sleep 2
 ~/.scripts/start-conkies.sh &!
-sleep 10
-mopidy &!
-sleep 5
+sleep 2
+mpd &!
+sleep 2
 qtox &!
 
 touch $HOME/.dbus/Xdbus
