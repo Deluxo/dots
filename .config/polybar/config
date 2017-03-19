@@ -7,9 +7,9 @@
 [vars]
 color-bg-0 = #16142A
 color-bg-1 = #23203C
-color-fg = #9D9FD5
+color-fg = #BED2B7
 color-fg-0 = #44ffffff
-color-1 = #9D9FD5
+color-1 = #BED2B7
 color-urgent = #E04E46
 color-border = #0000ff
 font0 = Overpass:size=10:weight=light;1
