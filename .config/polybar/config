@@ -56,7 +56,7 @@ font-1 = ${vars.font1}
 
 modules-left = bspwm
 modules-center = title
-modules-right = volume cal clock
+modules-right = battery volume cal clock
 wm-name = bar
 wm-restack = bspwm
 
@@ -123,4 +123,29 @@ type = custom/text
 content = 
 click-left = gsimplecal
 
+
+[module/battery]
+type = internal/battery
+; ls -1 /sys/class/power_supply/
+battery = BAT0
+adapter = AC0
+poll-interval = 5
+time-format = %H:%M
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+label-charging = %percentage%%
+label-discharging = %percentage%%
+label-full = Fully charged
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+bar-capacity-width = 10
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 750
 ; vim:ft=dosini
