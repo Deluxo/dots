@@ -1,0 +1,5 @@
+[user]
+	email = l.levickas@protonmail.com
+	name = Lukas Levickas
+[alias]
+	aw = log --graph --all --color --stat --oneline --pretty=format:'%C(red)%h%C(yellow)% d %C(green)% s%C(blue)% aN, %aE%C(magenta)% ci%+b'
