@@ -26,7 +26,7 @@ export ANDROID_SDK_ROOT=$ANDROID_HOME
 # Aliases
 alias g='gotwitch --streamer '
 alias p='sudo pacman -Syu'
-alias gl='git log --graph --all --color --stat --oneline --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
+alias gl='git log --graph --all --color --stat --oneline --pretty=format:"%C(red)%h%C(yellow)% d %C(green)% s%C(blue)% aN, %aE%C(magenta)% ci%+b"'
 alias weather='curl wttr.in'
 alias extip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias c='~/.scripts/colorize.sh'

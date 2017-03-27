@@ -40,9 +40,9 @@ bspc rule -a "Peek" state=floating
 
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
-bspc config active_border_color '#6D978E'
-bspc config normal_border_color '#324F53'
-bspc config focused_border_color '#BED2B7'
+bspc config active_border_color '#2C2445'
+bspc config normal_border_color '#5C2D3F'
+bspc config focused_border_color '#F8BB38'
 
 bspc config top_padding 4
 polybar legacy &!
