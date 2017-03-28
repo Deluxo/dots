@@ -2,6 +2,7 @@
 
 XDG_CONFIG_HOME=$HOME/.config
 userresources=$HOME/.Xresources
+WWW_HOME=duckduckgo.com
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap

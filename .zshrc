@@ -15,7 +15,8 @@ source $ZSH/oh-my-zsh.sh
 # Paths
 NPM_PACKAGES="${HOME}/.npm-packages"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
-SCRIPTS="${HOME}/.scripts"
+SCRIPTS="$HOME/.scripts"
+KRYPTIS="$HOME/Documents/kryptis"
 PATH="$NPM_PACKAGES/bin:$SCRIPTS:$PATH"
 export GOPATH=$HOME/Documents/Dev/go
 export GOBIN="$HOME/Documents/Dev/go/bin"
