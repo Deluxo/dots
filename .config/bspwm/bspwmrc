@@ -2,7 +2,7 @@
 
 sxhkd -m -1 &
 
-bspc config border_width        1
+bspc config border_width        2
 bspc config window_gap          25
 
 bspc config split_ratio          0.5
@@ -40,9 +40,9 @@ bspc rule -a "Peek" state=floating
 
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
-bspc config active_border_color '#2C2445'
-bspc config normal_border_color '#5C2D3F'
-bspc config focused_border_color '#F8BB38'
+bspc config active_border_color '#D6AB9A'
+bspc config normal_border_color '#FFFFFF'
+bspc config focused_border_color '#C2554E'
 
 bspc config top_padding 4
 polybar legacy &!

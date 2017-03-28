@@ -120,7 +120,7 @@ recolor_bspwm(){
 
 recolor_polybar(){
 	echo "recoloring polybar..."
-	colors=($(<$output_8))
+	colors=($(<$output_16))
 	config="$HOME/.config/polybar/config"
 	config_backup="$config-backup"
 	xres=$(cat $config)
