@@ -11,10 +11,10 @@ XF86AudioMute
 	pactl set-sink-mute 1 toggle
 
 XF86AudioRaiseVolume
-	pactl set-sink-volume 1 +2%
+	pactl set-sink-volume 1 +10%
 
 XF86AudioLowerVolume
-	pactl set-sink-volume 1 -2%
+	pactl set-sink-volume 1 -10%
 
 {_,alt + }XF86AudioStop
 	{playerctl stop, MPD_PORT=6601 mpc stop}
