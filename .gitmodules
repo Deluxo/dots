@@ -1,3 +1,6 @@
 [submodule ".config/xres/base16-xresources"]
 	path = .config/xres/base16-xresources
 	url = https://github.com/chriskempson/base16-xresources
+[submodule ".urxvt/ext/urxvt-config-reload"]
+	path = .urxvt/ext/urxvt-config-reload
+	url = https://github.com/regnarg/urxvt-config-reload
