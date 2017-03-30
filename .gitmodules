@@ -4,3 +4,6 @@
 [submodule ".urxvt/ext/urxvt-config-reload"]
 	path = .urxvt/ext/urxvt-config-reload
 	url = https://github.com/regnarg/urxvt-config-reload
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh
