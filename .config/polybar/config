@@ -5,19 +5,19 @@
 ;
 ;=====================================================
 [vars]
-color-bg-0 = #16142A
-color-bg-1 = #23203C
-color-fg = #E3B5F0
+color-bg-0 = #0016142A
+color-bg-1 = #ff23203C
+color-fg = #fff
 color-fg-0 = #44ffffff
 color-1 = #E3B5F0
 color-urgent = #E04E46
 color-border = #0000ff
-font0 = Overpass:size=10:weight=light;1
+font0 = Overpass:size=10:weight=heavy;1
 font1 = FontAwesome:size=11:weight=light;2
 font2 = xos4 terminus:size=12:weight=normal;1
 font3 = URW Gothic:size=9:weight=normal;1
-underline-size = 1
-padding-0 = 4
+underline-size = 0
+padding-0 = 2
 padding-1 = 2
 
 [settings]
@@ -26,10 +26,10 @@ throttle-ms = 50
 throttle-input-for = 50
 
 [bar/legacy]
-;width = 1920
+width = 98%
 height = 24
-offset-y = 0
-offset-x = 0
+offset-y = 1%
+offset-x = 1%
 
 tray-position = right
 tray-transparent = false
@@ -70,8 +70,9 @@ label-focused-padding = ${vars.padding-1}
 label-occupied-padding = ${vars.padding-1}
 label-empty-padding = ${vars.padding-1}
 label-urgent-padding = ${vars.padding-1}
-label-focused-background = ${vars.color-bg-1}
-label-occupied-foreground = ${vars.color-fg}
+label-focused-background = ${vars.color-bg-0}
+label-focused-foreground = ${vars.color-fg}
+label-occupied-foreground = ${vars.color-1}
 label-empty-foreground = ${vars.color-fg-0}
 label-urgent-foreground= ${vars.color-urgent}
 label-focused-underline = ${vars.color-1}
