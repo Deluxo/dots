@@ -40,18 +40,15 @@ bspc rule -a "Peek" state=floating
 
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
-bspc config active_border_color '#692C91'
-bspc config normal_border_color '#0F0B30'
-bspc config focused_border_color '#A349BD'
+bspc config active_border_color '#E2CA2C'
+bspc config normal_border_color '#98298E'
+bspc config focused_border_color '#C0E4D6'
 
-bspc config top_padding 4
 polybar legacy &!
 sleep 2
+bspc config top_padding 24
 compton --config ~/.config/compton/compton.conf --dbus &!
-sleep 2
 ~/.scripts/start-conkies.sh &!
-sleep 2
-mpd &!
 sleep 2
 qtox &!
 

@@ -7,9 +7,9 @@
 [vars]
 color-bg-0 = #0016142A
 color-bg-1 = #ff23203C
-color-fg = #fff
-color-fg-0 = #44ffffff
-color-1 = #E3B5F0
+color-fg = #C0E4D6
+color-fg-0 = #22ffffff
+color-1 = #99ffffff
 color-urgent = #E04E46
 color-border = #0000ff
 font0 = Overpass:size=10:weight=heavy;1
@@ -59,6 +59,7 @@ modules-center = title
 modules-right = memory battery volume cal clock
 wm-name = bar
 wm-restack = bspwm
+override-redirect = true
 
 [module/bspwm]
 type = internal/bspwm

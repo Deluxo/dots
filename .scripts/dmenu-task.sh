@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 main() {
 	task ls | head -n -2 | sed '/^\s*$/d' | sed '2d'
@@ -9,16 +9,16 @@ add() {
 }
 
 finish() {
-	task done "$(echo $@ | awk '{print $2;}')" >> /dev/null
+	id="$(echo $@ | awk '{print $1;}')"
+	task done $id >> /dev/null
 }
 
-if [ -z "$1" ]
-then
+if [[ -z "$1" ]]; then
 	main
 else
 	if [[ "$@" =~ ^\+  ]]; then
 		add "$1"
-	elif [[ "$@" =~ ^-.[0-9] ]]; then
+	else
 		finish $@
 	fi
 	main
