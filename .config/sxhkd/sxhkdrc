@@ -16,6 +16,12 @@ XF86AudioRaiseVolume
 XF86AudioLowerVolume
 	pactl set-sink-volume 1 -2%
 
+XF86MonBrightnessDown
+	xbacklight -20
+
+XF86MonBrightnessUp
+	xbacklight +20
+
 {_,alt + }XF86AudioStop
 	{playerctl stop, MPD_PORT=6601 mpc stop}
 
