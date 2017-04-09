@@ -5,7 +5,7 @@
 ;
 ;=====================================================
 [vars]
-color-bg-0 = #0016142A
+color-bg-0 = #ff16142A
 color-bg-1 = #ff23203C
 color-fg = #C0E4D6
 color-fg-0 = #22ffffff
@@ -26,10 +26,10 @@ throttle-ms = 50
 throttle-input-for = 50
 
 [bar/legacy]
-width = 98%
+width = 100%
 height = 24
-offset-y = 1%
-offset-x = 1%
+offset-y = 0%
+offset-x = 0%
 
 tray-position = right
 tray-transparent = false

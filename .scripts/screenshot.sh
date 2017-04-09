@@ -7,5 +7,5 @@ mkdir -p $path;
 if [[ $1 == 'area' ]];then
 	maim -s $path/$name
 else
-	maim $path/$name
+	scrot $path/$name
 fi

@@ -1,2 +1,2 @@
 #!/bin/sh
-feh  --bg-fill '/home/lukas/Pictures/Wallpapers/Minimalistic/wallhaven-501854.jpg' 
+feh  --bg-scale '/home/lukas/Pictures/Wallpapers/Photos/wallhaven-329982.jpg' 

@@ -176,8 +176,13 @@ done
 
 case "$1" in
 	--generate | -g)
-		generate $2 16 $output_16
-		generate $2 8 $output_8
+		file=$2
+		if [[ $2 == "feh" ]]
+		then
+			file=$(cat ~/.fehbg | tail -n 1 | cut -d \' -f 2)
+		fi
+		generate $file 16 $output_16
+		generate $file 8 $output_8
 		;;
 	--randomize | -r)
 		if [[ $2 =~ "x" ]]

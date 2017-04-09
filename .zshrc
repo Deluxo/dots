@@ -6,6 +6,7 @@ COMPLETION_WAITING_DOTS="true"
 CASE_SENSITIVE="true"
 DISABLE_LS_COLORS="true"
 export VISUAL="vim"
+export EDITOR="$VISUAL"
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 plugins=(git)
