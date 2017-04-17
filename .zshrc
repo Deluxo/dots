@@ -21,7 +21,7 @@ PATH="$NPM_PACKAGES/bin:$SCRIPTS:$PATH"
 export GOPATH=$HOME/Documents/Dev/go
 export GOBIN="$HOME/Documents/Dev/go/bin"
 export PATH="$PATH:$GOPATH/bin"
-export ANDROID_HOME=/home/lukas/Documents/Dev/android/android-sdk-linux
+export ANDROID_HOME=$HOME/android-sdk
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 
 # Aliases
