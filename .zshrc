@@ -5,8 +5,6 @@ ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
 CASE_SENSITIVE="true"
 DISABLE_LS_COLORS="true"
-export VISUAL="vim"
-export EDITOR="$VISUAL"
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 plugins=(git)
@@ -18,11 +16,6 @@ NPM_PACKAGES="${HOME}/.npm-packages"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 SCRIPTS="${HOME}/.scripts"
 PATH="$NPM_PACKAGES/bin:$SCRIPTS:$PATH"
-export GOPATH=$HOME/Documents/Dev/go
-export GOBIN="$HOME/Documents/Dev/go/bin"
-export PATH="$PATH:$GOPATH/bin"
-export ANDROID_HOME=$HOME/android-sdk
-export ANDROID_SDK_ROOT=$ANDROID_HOME
 
 # Aliases
 alias g='gotwitch --streamer '
@@ -31,7 +24,6 @@ alias gl='git log --graph --all --color --stat --oneline --pretty=format:"%C(red
 alias weather='curl wttr.in'
 alias extip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias c='~/.scripts/colorize.sh'
-export XDG_CONFIG_HOME=$HOME/.config
 
 # Completions
 eval "$(gotwitch --completion-script-zsh)"

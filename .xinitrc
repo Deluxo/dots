@@ -37,10 +37,20 @@ ssh-add ~/.ssh/github
 ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/gitlab
 
+export VISUAL="vim"
+export EDITOR="$VISUAL"
+export GOPATH=$HOME/Documents/Dev/go
+export GOBIN="$HOME/Documents/Dev/go/bin"
+export PATH="$PATH:$GOPATH/bin:$HOME/Documents/dev/android/sdk/tools"
+export ANDROID_HOME=$HOME/Documents/dev/android/sdk
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export XDG_CONFIG_HOME=$HOME/.config
 export _JAVA_AWT_WM_NONREPARENTING=1
 export SXHDK_SHELL=/bin/bash
 export MPD_HOST=/home/lukas/.config/mpd/socket
-export PATH="$HOME/.scripts:$PATH"
+
+export PATH="$HOME/.scripts:$HOME/Documents/dev/android/sdk/build-tools:$HOME/Documents/dev/android/sdk/tools:$HOME/Documents/dev/android/sdk/platform-tools/:$PATH"
+
 xsetroot -cursor_name left_ptr
 ~/.fehbg &
 exec bspwm

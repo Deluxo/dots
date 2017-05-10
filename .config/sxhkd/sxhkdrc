@@ -4,17 +4,17 @@
 	{~/.scripts/screenshot.sh, ~/.scripts/screenshot.sh area}
 
 super + ctrl + {1-9}
-	{firefox, urxvt -e vim, qtox, urxvt -e ncmpcpp, notify-send "`task ls`", ~/.scripts/./context-runner.sh, _, urxvt -e ranger, urxvt -e htop}
+	{firefox, urxvt -e vim, qtox, spotify, notify-send "`task ls`", ~/.scripts/./context-runner.sh, _, urxvt -e ranger, urxvt -e htop}
 	
 
 XF86AudioMute
-	pactl set-sink-mute 1 toggle
+	pactl set-sink-mute 0 toggle
 
 XF86AudioRaiseVolume
-	pactl set-sink-volume 1 +5%
+	pactl set-sink-volume 0 +2%
 
 XF86AudioLowerVolume
-	pactl set-sink-volume 1 -5%
+	pactl set-sink-volume 0 -2%
 
 XF86MonBrightnessDown
 	xbacklight -20
@@ -48,7 +48,7 @@ super + {_,ctrl + ,shift + }space
 	rofi -show {combi,gotwitch,tasker}
 
 alt + space
-	rofi -show window
+	rofi -show drun
 
 # make sxhkd reload its configuration files:
 super + Escape
