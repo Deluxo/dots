@@ -1,9 +1,3 @@
-;=====================================================
-;
-;   To learn more about how to configure Lemonbuddy
-;   go to https://github.com/jaagr/lemonbuddy
-;
-;=====================================================
 [vars]
 color-bg-0 = #ff16142A
 color-bg-1 = #ff23203C

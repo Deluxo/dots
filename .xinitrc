@@ -39,8 +39,8 @@ ssh-add ~/.ssh/gitlab
 
 export VISUAL="vim"
 export EDITOR="$VISUAL"
-export GOPATH=$HOME/Documents/Dev/go
-export GOBIN="$HOME/Documents/Dev/go/bin"
+export GOPATH=$HOME/Documents/dev/golang
+export GOBIN="$HOME/Documents/dev/golang/bin"
 export PATH="$PATH:$GOPATH/bin:$HOME/Documents/dev/android/sdk/tools"
 export ANDROID_HOME=$HOME/Documents/dev/android/sdk
 export ANDROID_SDK_ROOT=$ANDROID_HOME

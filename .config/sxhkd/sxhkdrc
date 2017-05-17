@@ -34,8 +34,8 @@ XF86MonBrightnessUp
 {_,alt + }XF86AudioPrev
 	{playerctl previous, MPD_PORT=6601 mpc prev}
 
-{_,shift + }Pause
-	{systemctl suspend, sleep 1 && xset dpms force standby}
+Pause
+	sleep 1 && xset dpms force standby
 
 super + q
 	bspc node -c
