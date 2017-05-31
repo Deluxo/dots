@@ -42,13 +42,16 @@ bspc config active_border_color '#437BA2'
 bspc config normal_border_color '#24556D'
 bspc config focused_border_color '#77CEBC'
 
+# interface
 polybar legacy &!
-sleep 2
 bspc config top_padding 24
 compton --config ~/.config/compton/compton.conf --dbus &!
 ~/.scripts/start-conkies.sh &!
-sleep 2
+
+# apps
 qtox &!
+steam-native &!
+
 
 touch $HOME/.dbus/Xdbus
 chmod 600 $HOME/.dbus/Xdbus

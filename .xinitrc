@@ -41,13 +41,14 @@ export VISUAL="vim"
 export EDITOR="$VISUAL"
 export GOPATH=$HOME/Documents/dev/golang
 export GOBIN="$HOME/Documents/dev/golang/bin"
-export PATH="$PATH:$GOBIN:$HOME/Documents/dev/android/sdk/tools"
 export ANDROID_HOME=$HOME/Documents/dev/android/sdk
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export XDG_CONFIG_HOME=$HOME/.config
 export _JAVA_AWT_WM_NONREPARENTING=1
 export SXHDK_SHELL=/bin/bash
 export MPD_HOST=/home/lukas/.config/mpd/socket
+export NPM_GLOBAL=/home/lukas/Documents/dev/js/npm
+export PATH="$PATH:$GOBIN:$NPM_GLOBAL/bin:$HOME/Documents/dev/android/sdk/tools"
 
 export PATH="$HOME/.scripts:$HOME/Documents/dev/android/sdk/build-tools:$HOME/Documents/dev/android/sdk/tools:$HOME/Documents/dev/android/sdk/platform-tools/:$PATH"
 

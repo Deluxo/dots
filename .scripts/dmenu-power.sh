@@ -19,7 +19,7 @@ else
 	elif [ "$@" == "restart" ]; then
 		reboot
 	elif [ "$@" == "shutdown" ]; then
-		shutdown now
+		shutdown -P now
 	elif [ "$@" == "killL wm" ]; then
 		killall bspwm
 	elif [ "$@" == "screen off" ]; then
