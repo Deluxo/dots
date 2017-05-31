@@ -1,35 +1,30 @@
 #define background_opacity 95
-#include ".config/xres/base16-xresources/xresources/base16-dracula-256.Xresources"
+#include ".config/xres/onedark.Xresources"
 #define leFont xos4 terminus
-#define backgr base00
-#define foregr base05
 #define rofibg #DD000000
 #define rofibt #00000000
-#define rofifg base16
-#define rofihl base16
+#define rofifg color10
+#define rofihl #98C379
+#define rofi1 #98C379
+#define rofi2 #E5C07B
+#define rofi3 #61AFEF
+#define rofi4 #56B6C2
 
 URxvt.keysym.C-Up:     font-size:increase
 URxvt.keysym.C-Down:   font-size:decrease
-!URxvt.keysym.C-S-Up:   font-size:incglobal
-!URxvt.keysym.C-S-Down: font-size:decglobal
 URxvt.font-size.step: 1
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: true
 URxvt.internalBorder: 10
 URxvt.externalBorder: 0
-!urxvt --help 2>&1| sed -n '/:  /s/^ */URxvt*/gp' >> ~/.Xresources
 URxvt.perl-ext-common: default,font-size
-!,urxvt-colors,config-reload
 urxvt.font: -*-terminus-medium-r-*-*-14-*-*-*-*-*-iso10646-*
-!urxvt.boldFont: -*-terminus-bold-r-*-*-14-*-*-*-*-*-iso10646-*
-!urxvt.italicFont: -*-roboto mono-medium-i-*-*-14-*-*-*-*-*-iso10646-*
-!urxvt.boldItalicFont: -*-roboto mono-bold-i-*-*-14-*-*-*-*-*-iso10646-*
 urxvt.depth: 32
 urxvt.scrollBar: false
 
 ! State:           bg,     fg,     bgalt,  hlbg,   hlfg
-rofi.color-normal: rofibt, rofifg, rofibt, rofibt, base0B
-rofi.color-urgent: rofibt, rofifg, rofibt, rofibt, base06
-rofi.color-active: rofibt, rofifg, rofibt, rofibt, base0F
-rofi.color-window: rofibg, base01, rofibt, rofibt
+rofi.color-normal: rofibt, rofifg, rofibt, rofibt, rofi2
+rofi.color-urgent: rofibt, rofifg, rofibt, rofibt, rofi3
+rofi.color-active: rofibt, rofifg, rofibt, rofibt, rofi4
+rofi.color-window: rofibg, rofi1, rofibt, rofibt
 rofi.font: leFont 14
