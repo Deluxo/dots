@@ -1,5 +1,5 @@
 #define background_opacity 95
-#include ".config/xres/onedark.Xresources"
+#include ".config/xres/base16-xresources/xresources/base16-atelier-lakeside-256.Xresources"
 #define leFont xos4 terminus
 #define rofibg #DD000000
 #define rofibt #00000000
@@ -15,7 +15,7 @@ URxvt.keysym.C-Down:   font-size:decrease
 URxvt.font-size.step: 1
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: true
-URxvt.internalBorder: 10
+URxvt.internalBorder: 20
 URxvt.externalBorder: 0
 URxvt.perl-ext-common: default,font-size
 urxvt.font: -*-terminus-medium-r-*-*-14-*-*-*-*-*-iso10646-*

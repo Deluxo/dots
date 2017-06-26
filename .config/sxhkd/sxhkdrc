@@ -1,20 +1,25 @@
  #custom
 
+ctrl + alt + Delete
+	systemctl poweroff
+
 {_,shift + }Print
 	{~/.scripts/screenshot.sh, ~/.scripts/screenshot.sh area}
 
 super + ctrl + {1-9}
-	{firefox, urxvt -e vim, qtox, spotify, notify-send "`task ls`", ~/.scripts/./context-runner.sh, _, urxvt -e ranger, urxvt -e htop}
-	
+	{apulse firefox, urxvt -e vim, qtox, apulse spotify, notify-send "`task ls`", ~/.scripts/./context-runner.sh, _, urxvt -e ranger, urxvt -e htop}
 
 XF86AudioMute
-	pactl set-sink-mute 0 toggle
+	amixer set Master toggle
+	#pactl set-sink-mute 0 toggle
 
 XF86AudioRaiseVolume
-	pactl set-sink-volume 0 +2%
+	amixer set Master 5%+
+	#pactl set-sink-volume 0 +2%
 
 XF86AudioLowerVolume
-	pactl set-sink-volume 0 -2%
+	amixer set Master 5%-
+	#pactl set-sink-volume 0 -2%
 
 XF86MonBrightnessDown
 	xbacklight -20

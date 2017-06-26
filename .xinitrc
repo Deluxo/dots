@@ -52,6 +52,8 @@ export PATH="$PATH:$GOBIN:$NPM_GLOBAL/bin:$HOME/Documents/dev/android/sdk/tools"
 
 export PATH="$HOME/.scripts:$HOME/Documents/dev/android/sdk/build-tools:$HOME/Documents/dev/android/sdk/tools:$HOME/Documents/dev/android/sdk/platform-tools/:$PATH"
 
+export SDL_AUDIODRIVER=alsa
+
 xsetroot -cursor_name left_ptr
 ~/.fehbg &
 exec bspwm
