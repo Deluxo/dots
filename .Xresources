@@ -1,5 +1,5 @@
 #define background_opacity 95
-#include ".config/xres/base16-xresources/xresources/base16-atelier-lakeside-256.Xresources"
+#include ".config/xres/base16-xresources/xresources/base16-google-dark-256.Xresources"
 #define leFont xos4 terminus
 #define rofibg #DD000000
 #define rofibt #00000000
