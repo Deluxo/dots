@@ -190,3 +190,6 @@ button9
 
 ctrl + super + alt + {1-8}
 	xclip -selection clipboard ~/.scripts/macros/{shrug,flip-table,unflip-table, shocked,mvp,lovely,h,fissure}
+
+super + alt + m
+	~/.scripts/steelseries-raw-settings.sh
