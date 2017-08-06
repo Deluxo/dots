@@ -1,19 +1,20 @@
 #define background_opacity 95
 #include ".config/xres/base16-xresources/xresources/base16-google-dark-256.Xresources"
 #define leFont xos4 terminus
-#define rofibg #DD000000
-#define rofibt #00000000
-#define rofifg color10
-#define rofihl #98C379
-#define rofi1 #98C379
-#define rofi2 #E5C07B
-#define rofi3 #61AFEF
-#define rofi4 #56B6C2
+#define rofibg base00
+#define rofibt base00
+#define rofifg base05
+#define rofihl base07
+#define rofi1 base07
+#define rofi2 base0c
+#define rofi3 base0E
+#define rofi4 base0D
 
-URxvt.keysym.C-Up:     font-size:increase
-URxvt.keysym.C-Down:   font-size:decrease
+URxvt.lineSpace: 12
+URxvt.keysym.C-Up: font-size:increase
+URxvt.keysym.C-Down: font-size:decrease
 URxvt.font-size.step: 1
-URxvt.cursorBlink: true
+URxvt.cursorBlink: false
 URxvt.cursorUnderline: true
 URxvt.internalBorder: 20
 URxvt.externalBorder: 0

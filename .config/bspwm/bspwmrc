@@ -55,3 +55,4 @@ compton --config ~/.config/compton/compton.conf --dbus &!
 
 # apps
 steam-native &!
+#discord &!

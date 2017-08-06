@@ -30,7 +30,7 @@ offset-y = 0px
 tray-position = right
 tray-transparent = false
 tray-detached = false
-tray-background = ${vars.color-bg}
+tray-background = #56595d
 tray-padding = 4
 
 border-bottom-size = 0
@@ -51,9 +51,9 @@ module-margin-right = ${vars.padding-0}
 font-0 = ${vars.font0}
 font-1 = ${vars.font1}
 
-modules-left = bspwm
+modules-left = menu bspwm
 modules-center = title
-modules-right = memory battery volume cal clock
+modules-right = memory volume cal clock
 wm-name = bar
 wm-restack = bspwm
 override-redirect = true
@@ -114,8 +114,8 @@ ramp-volume-2 = 
 
 [module/menu]
 type = custom/text
-content = 
-click-left = rofi -config ~/.config/rofi/polybar -show run
+content = "     "
+click-left = rofi -config ~/.config/rofi/config -show run
 
 [module/cal]
 type = custom/text

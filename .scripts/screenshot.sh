@@ -9,3 +9,4 @@ if [[ $1 == 'area' ]];then
 else
 	scrot $path/$name
 fi
+echo $path/$name | xclip -selection clipboard

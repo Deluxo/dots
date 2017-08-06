@@ -4,21 +4,9 @@ ctl.equal {
 }
 
 pcm.microphone {
-
-	 #DIRECT
-	#card 0
-	#device 0
-	#subdevice 0
-
-	# SHITTY MIXER
-	type dsnoop;
-	ipc_key 10000;
-	slave {
-		format S16_LE;
-		rate 48000;
-		pcm "hw:0,0,0";
-		channels 1;
-	}
+	card 0
+	device 0
+	subdevice 0
 }
 
 pcm.equalizer {
