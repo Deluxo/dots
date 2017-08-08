@@ -41,41 +41,10 @@ m() {
 transfer() { 
 	for (( i=1; i<=$#; i++ )); do
 		eval arg=\$$i
-		# get temporary filename, output is written to this file so show progress can be showed
-		tmpfile="$( mktemp -t transferXXX )"
-		# upload stdin or file
 		file="$(readlink -f $arg)"
-
-		if tty -s; 
-		then 
-			basefile="$( basename "$file" | sed -e 's/[^a-zA-Z0-9._-]/-/g' )"
-
-			if [ ! -e $file ];
-			then
-				echo "File $file doesn't exists."
-				return 1
-			fi
-			if [ -d $file ];
-			then
-				# zip directory and transfer
-				zipfile="$( mktemp -t transferXXX.zip )"
-				cd "$(dirname "$file")" && zip -r -q - "$(basename "$file")" >> "$zipfile"
-				curl --progress-bar --upload-file "$zipfile" "https://transfer.sh/$basefile.zip" >> "$tmpfile"
-				rm -f $zipfile
-			else
-				# transfer file
-				curl -s --upload-file "$file" "https://transfer.sh/$basefile" >> "$tmpfile"
-			fi
-		else 
-			# transfer pipe
-			curl -s --upload-file "-" "https://transfer.sh/$file" >> "$tmpfile"
-		fi
-		# cat output link
-		cat "$tmpfile"
+		basefile="$( basename "$file" | sed -e 's/[^a-zA-Z0-9._-]/-/g' )"
+		curl -s --upload-file "$file" "https://transfer.sh/$basefile"
 		echo
-
-		# cleanup
-		rm -f "$tmpfile"
 	done
 }
 
