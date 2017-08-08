@@ -13,7 +13,7 @@ streamers()
 
 game()
 {
-	gotwitch game -l 1000 -o $1 | sed 's/^/games: /gi'
+	gotwitch game -i 1000 -o $1 | sed 's/^/games: /gi'
 	echo "games: offset $(($1 + 1))"
 }
 
@@ -31,7 +31,7 @@ elif [[ "$@" =~ "games: offset " ]]; then
 	game $offset
 elif [[ "$@" =~ "games: " ]]; then
 	game=$(echo $@ | sed 's/games: //gi')
-	gotwitch -q "$game"
+	gotwitch -q "$game" -si 1000 --padding 20
 else
 	channel=$(echo $1 | awk '{print $1;}')
 	watch "$channel"
