@@ -2,6 +2,7 @@
 
 context=$(xclip -o);
 msg="couldn't find anything to play"
+term=urxvt
 
 if [[ $context =~ "twitch.tv" ]]; then
 	msg="Twitch.tv"
@@ -11,10 +12,10 @@ elif [[ $context =~ "youtube" ]]; then
 	mpv $context &!
 elif [[ $context =~ "magnet:" ]]; then
 	msg="Magnet"
-	peerflix "$context" -f "Downloads/" -k &!
+	$term -e zsh -c "peerflix "$file" -f "Downloads/" -k -l"
 elif [[ $context =~ ".torrent" ]]; then
 	msg="selected torrent file"
-	peerflix "$context" -f "Downloads/" -k &!
+	$term -e zsh -c "peerflix "$file" -f "Downloads/" -k -l"
 elif [[ $context =~ "http" ]]; then
 	msg="Some http stream"
 	mpv $context &!
@@ -25,7 +26,7 @@ elif ls ~/Downloads/*.torrent 1> /dev/null 2>&1; then
 	freshness=$(($now-$fileModDate))
 	if [[ $freshness -lt 3000 ]]; then
 		msg="Latest torrent file"
-		peerflix "$file" -f "Downloads/" -k &!
+		$term -e zsh -c "peerflix "$file" -f "Downloads/" -k -l"
 	fi
 fi
 

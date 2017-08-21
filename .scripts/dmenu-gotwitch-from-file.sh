@@ -30,7 +30,7 @@ elif [[ "$@" =~ "games: offset " ]]; then
 	offset=$(echo $1 | awk '{print $3;}')
 	game $offset
 elif [[ "$@" =~ "games: " ]]; then
-	game=$(echo $@ | sed 's/games: //gi')
+	game=$(echo $@ | sed 's/games://gi')
 	gotwitch -q "$game" -si 1000 --padding 20
 else
 	channel=$(echo $1 | awk '{print $1;}')
