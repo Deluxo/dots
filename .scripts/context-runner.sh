@@ -12,10 +12,10 @@ elif [[ $context =~ "youtube" ]]; then
 	mpv $context &!
 elif [[ $context =~ "magnet:" ]]; then
 	msg="Magnet"
-	$term -e zsh -c "peerflix "$file" -f "Downloads/" -k -l"
+	$term -e zsh -c "peerflix \"$context\" -f \"Downloads/\" -k -l"
 elif [[ $context =~ ".torrent" ]]; then
 	msg="selected torrent file"
-	$term -e zsh -c "peerflix "$file" -f "Downloads/" -k -l"
+	$term -e zsh -c "peerflix \"$context\" -f \"Downloads/\" -k -l"
 elif [[ $context =~ "http" ]]; then
 	msg="Some http stream"
 	mpv $context &!

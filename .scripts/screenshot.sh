@@ -1,12 +1,19 @@
 #! /bin/bash
 path="$HOME/Pictures/Screenshots"
 name="scr-$(date +%T).png"
+fp="$path/$name"
 
 mkdir -p $path;
 
 if [[ $1 == 'area' ]];then
-	maim -s $path/$name
+	maim -s $fp
 else
-	scrot $path/$name
+	scrot $fp
 fi
-echo $path/$name | xclip -selection clipboard
+echo $fp | xclip -selection clipboard
+
+if [[ $1 == "online" ]]; then
+	file="$(readlink -f $fp)"
+	basefile="$( basename "$file" | sed -e 's/[^a-zA-Z0-9._-]/-/g' )"
+	curl -s --upload-file "$file" "https://transfer.sh/$basefile" | xclip -selection clipboard
+fi
