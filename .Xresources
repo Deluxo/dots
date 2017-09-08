@@ -1,12 +1,13 @@
 #define background_opacity 95
-#include ".config/xres/base16-xresources/xresources/base16-google-dark-256.Xresources"
+!#include ".config/xres/base16-xresources/xresources/base16-google-dark-256.Xresources"
+#include ".config/xres/base16-xresources/xresources/base16-chalk-256.Xresources"
 #define leFont xos4 terminus
-#define rofibg base00
-#define rofibt base00
+#define rofibg #99000000
+#define rofibt #00000000
 #define rofifg base05
 #define rofihl base07
-#define rofi1 base07
-#define rofi2 base0c
+#define rofi1 #99000000
+#define rofi2 base0A
 #define rofi3 base0E
 #define rofi4 base0D
 
