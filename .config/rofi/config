@@ -12,3 +12,4 @@ rofi.modi: files:~/.scripts/dmenu-files.sh,gotwitch:~/.scripts/dmenu-gotwitch-fr
 rofi.lazy-grab: true
 rofi.disable-history: false
 rofi.width: 800
+rofi.scroll-method: 1

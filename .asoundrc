@@ -1,17 +1,27 @@
-
 ctl.equal {
 	type equal;
 }
 
 pcm.microphone {
-	card 0
-	device 0
-	subdevice 0
+	card 0;
+	device 0;
+	subdevice 0;
 }
 
 pcm.equalizer {
 	type equal;
-	slave.pcm "plug:dmix";
+	slave.pcm "plug:softvol";
+}
+
+pcm.softvol {
+	type softvol;
+	slave.pcm "dmix";
+	control {
+		name "Pre-Amp";
+		card 0;
+	}
+	min_dB -10.0;
+	max_dB  30.0;
 }
 
 pcm.!default {
