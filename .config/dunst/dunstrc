@@ -55,13 +55,14 @@
 
 	geometry = "1000-20-20"
     shrink = yes
-    padding = 18
-    horizontal_padding = 18
+    padding = 12
+    horizontal_padding = 12
 
-    transparency = 10
+    transparency = 15
     idle_threshold = 120
     monitor = 0
     icon_position = left
+	max_icon_size = 120
 
     follow = none
     sticky_history = yes
@@ -75,7 +76,7 @@
 
 [frame]
     width = 1
-    color = "#444444"
+    color = "#111111"
 
 [shortcuts]
     close = ctrl+space
@@ -84,14 +85,14 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    background = "#444444"
+    background = "#000000"
     foreground = "#FFFFFF"
     timeout = 2
 
 [urgency_normal]
-    background = "#111111"
+    background = "#000000"
     foreground = "#EEEEEE"
-    timeout = 4
+    timeout = 3
 
 [urgency_critical]
     background = "#C43E3E"

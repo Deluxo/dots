@@ -1,3 +1,7 @@
+defaults.ctl.card 1
+defaults.pcm.card 1
+defaults.pcm.device 0
+defaults.pcm.subdevice -1
 
 ctl.equal {
 	type equal;
@@ -12,6 +16,15 @@ pcm.microphone {
 pcm.equalizer {
 	type equal;
 	slave.pcm "plug:dmix";
+}
+
+pcm.dmixer {
+	type dmix;
+	ipc_key 2048;
+	slave {
+		pcm "hw:1,0";
+		buffer_size 16384;
+	}
 }
 
 pcm.!default {

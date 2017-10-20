@@ -35,12 +35,13 @@ bspc rule -a mpv state=floating sticky=on
 bspc rule -a Galculator state=floating sticky=on
 bspc rule -a "Android Emulator" state=floating
 bspc rule -a "Peek" state=floating
+bspc rule -a Thunderbird desktop=^9
 
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
-bspc config active_border_color '#437BA2'
-bspc config normal_border_color '#24556D'
-bspc config focused_border_color '#77CEBC'
+bspc config active_border_color '#364559'
+bspc config normal_border_color '#2F3A50'
+bspc config focused_border_color '#525868'
 
 touch $HOME/.dbus/Xdbus
 chmod 600 $HOME/.dbus/Xdbus
@@ -51,8 +52,13 @@ echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 polybar legacy &!
 bspc config top_padding 24
 compton --config ~/.config/compton/compton.conf --dbus &!
-~/.scripts/start-conkies.sh &!
+sleep 10;~/.scripts/start-conkies.sh &!
 
 # apps
-steam-native &!
-#discord &!
+qtox &!
+sleep 5; thunderbird &!
+sleep 5; apulse firefox &!
+sleep 5; slack &!
+sleep 5; apulse spotify &!
+sleep 5; force-move.sh Slack 2
+sleep 5; force-move.sh Spotify 3

@@ -52,8 +52,8 @@ super + Return
 super + {_,ctrl + ,shift + }space
 	rofi -show {combi,gotwitch,tasker}
 
-alt + space
-	rofi -show drun
+ctrl + alt + {1-9}
+	rofi -show {combi,tasker,docker, files, gotwitch, run, power}
 
 # make sxhkd reload its configuration files:
 super + Escape

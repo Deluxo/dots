@@ -1,13 +1,14 @@
-rofi.location: 0
+rofi.location: 2
 rofi.separator-style: none
 rofi.fullscreen: false
 rofi.padding: 12
+rofi.yoffset: 24
 rofi.hide-scrollbar: true
 rofi.line-margin: 0
-rofi.bw: 1
+rofi.bw: 0
 rofi.sidebar-mode: true
 rofi.combi-modi: window,run,power:~/.scripts/dmenu-power.sh
-rofi.modi: files:~/.scripts/dmenu-files.sh,gotwitch:~/.scripts/dmenu-gotwitch-from-file.sh,tasker:~/.scripts/dmenu-task.sh,run,power:~/.scripts/dmenu-power.sh,pass:~/.scripts/dmenu-pass.sh
+rofi.modi: files:~/.scripts/dmenu-files.sh,gotwitch:~/.scripts/dmenu-gotwitch-from-file.sh,tasker:~/.scripts/dmenu-task.sh,run,power:~/.scripts/dmenu-power.sh,docker:~/.scripts/dmenu-docker.sh
 rofi.lazy-grab: true
 rofi.disable-history: false
 rofi.width: 800

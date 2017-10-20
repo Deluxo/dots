@@ -15,7 +15,8 @@ source $ZSH/oh-my-zsh.sh
 NPM_PACKAGES="${HOME}/.npm-packages"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 SCRIPTS="${HOME}/.scripts"
-PATH="$NPM_PACKAGES/bin:$SCRIPTS:$PATH"
+RUBY="$(ruby -e 'print Gem.user_dir')/bin"
+PATH="$NPM_PACKAGES/bin:$SCRIPTS:$RUBY:$PATH"
 
 # Aliases
 alias g='gotwitch --streamer '

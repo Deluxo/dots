@@ -3,3 +3,11 @@
 	name = Lukas Levickas
 [alias]
 	aw = log --graph --all --color --stat --oneline --pretty=format:'%C(red)%h%C(yellow)% d %C(green)% s%C(blue)% aN, %aE%C(magenta)% ci%+b'
+	permission-reset = !git diff --no-ext-diff -p | grep -E '^(diff|old mode|new mode)' | sed -e 's/^old/NEW/;s/^new/old/;s/^NEW/new/' | git apply
+	permission-reset = !git diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
+	permission-reset = !git diff --no-ext-diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
+
+[http]
+	maxRequestBuffer = 100M
+[credential]
+	helper = cache --timeout=3600

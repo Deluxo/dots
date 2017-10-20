@@ -1,6 +1,6 @@
 [vars]
 
-color-bg = #99000000
+color-bg = #dd000000
 color-focused = #ffffff
 color-occupied-muted = #aaffffff
 color-empty = #33ffffff
@@ -30,7 +30,7 @@ offset-y = 0px
 tray-position = right
 tray-transparent = false
 tray-detached = false
-tray-background = #0f1112
+tray-background = #090709
 tray-padding = 4
 
 border-bottom-size = 0
