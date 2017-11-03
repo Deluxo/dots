@@ -8,9 +8,10 @@ ctl.equal {
 }
 
 pcm.microphone {
-	card 0
-	device 0
-	subdevice 0
+	type hw;
+	card 2;
+	device 0;
+	subdevice 0;
 }
 
 pcm.equalizer {

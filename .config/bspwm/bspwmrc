@@ -54,11 +54,12 @@ bspc config top_padding 24
 compton --config ~/.config/compton/compton.conf --dbus &!
 sleep 10;~/.scripts/start-conkies.sh &!
 
+sleepfor=2;
 # apps
 qtox &!
-sleep 5; thunderbird &!
-sleep 5; apulse firefox &!
-sleep 5; slack &!
-sleep 5; apulse spotify &!
-sleep 5; force-move.sh Slack 2
-sleep 5; force-move.sh Spotify 3
+sleep $sleepfor; thunderbird &!
+sleep $sleepfor; apulse firefox &!
+sleep $sleepfor; slack &!
+sleep $sleepfor; apulse spotify &!
+sleep $sleepfor; force-move.sh Slack 2
+sleep $sleepfor; force-move.sh Spotify 3
