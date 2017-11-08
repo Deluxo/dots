@@ -2,7 +2,7 @@
 
 context=$(xclip -o);
 msg="couldn't find anything to play"
-term=urxvt
+term='urxvt'
 
 if [[ $context =~ "twitch.tv" ]]; then
 	msg="Twitch.tv"
@@ -26,7 +26,7 @@ elif ls ~/Downloads/*.torrent 1> /dev/null 2>&1; then
 	freshness=$(($now-$fileModDate))
 	if [[ $freshness -lt 3000 ]]; then
 		msg="Latest torrent file"
-		$term -e zsh -c "peerflix "$file" -f "Downloads/" -k -l"
+		$term -e zsh -c "peerflix \"$file\" -f Downloads/ -k -l"
 	fi
 fi
 

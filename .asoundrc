@@ -10,7 +10,7 @@ pcm.microphone {
 
 pcm.equalizer {
 	type equal;
-	slave.pcm "plug:softvol";
+	slave.pcm "plug:dmix";
 }
 
 pcm.softvol {

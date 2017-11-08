@@ -5,7 +5,7 @@ rofi.padding: 5
 rofi.hide-scrollbar: true
 rofi.line-margin: 0
 rofi.yoffset: 24
-rofi.bw: 12
+rofi.bw: 0
 rofi.sidebar-mode: true
 rofi.combi-modi: window,run,power:~/.scripts/dmenu-power.sh
 rofi.modi: files:~/.scripts/dmenu-files.sh,gotwitch:~/.scripts/dmenu-gotwitch-from-file.sh,tasker:~/.scripts/dmenu-task.sh,run,power:~/.scripts/dmenu-power.sh,pass:~/.scripts/dmenu-pass.sh
@@ -13,3 +13,5 @@ rofi.lazy-grab: true
 rofi.disable-history: false
 rofi.width: 800
 rofi.scroll-method: 1
+rofi.show-icons: true
+rofi.dpi: 1.5
