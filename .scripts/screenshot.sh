@@ -5,14 +5,14 @@ fp="$path/$name"
 
 mkdir -p $path;
 
-if [[ $1 == 'area' ]];then
+if [[ "$@" =~ "area" ]];then
 	maim -s $fp
 else
 	scrot $fp
 fi
 echo $fp | xclip -selection clipboard
 
-if [[ $1 == "online" ]]; then
+if [[ "$@" =~ "online" ]]; then
 	file="$(readlink -f $fp)"
 	basefile="$( basename "$file" | sed -e 's/[^a-zA-Z0-9._-]/-/g' )"
 	curl -s --upload-file "$file" "https://transfer.sh/$basefile" | xclip -selection clipboard

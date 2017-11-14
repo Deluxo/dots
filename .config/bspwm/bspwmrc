@@ -35,7 +35,7 @@ bspc rule -a mpv state=floating sticky=on
 bspc rule -a Galculator state=floating sticky=on
 bspc rule -a "Android Emulator" state=floating
 bspc rule -a "Peek" state=floating
-bspc rule -a Thunderbird desktop=^9
+bspc rule -a steam state=floating follow=off focus=off
 
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
@@ -52,7 +52,7 @@ echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 polybar legacy &!
 bspc config top_padding 24
 compton --config ~/.config/compton/compton.conf --dbus &!
-sleep 10;~/.scripts/start-conkies.sh &!
+sleep 10; ~/.scripts/start-conkies.sh &!
 
 sleepfor=2;
 # apps
