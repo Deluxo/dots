@@ -17,7 +17,7 @@ URxvt.keysym.C-Down: font-size:decrease
 URxvt.font-size.step: 1
 URxvt.cursorBlink: false
 URxvt.cursorUnderline: true
-URxvt.internalBorder: 10
+URxvt.internalBorder: 5
 URxvt.externalBorder: 0
 URxvt.perl-ext-common: default,font-size
 urxvt.font: -*-terminus-medium-r-*-*-14-*-*-*-*-*-iso10646-*
