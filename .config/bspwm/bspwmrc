@@ -2,7 +2,7 @@
 
 sxhkd -m -1 &
 
-bspc config border_width        0
+bspc config border_width        1
 bspc config window_gap          15
 
 bspc config split_ratio          0.5
@@ -39,9 +39,8 @@ bspc rule -a steam state=floating follow=off focus=off
 
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
-bspc config active_border_color '#437BA2'
-bspc config normal_border_color '#24556D'
-bspc config focused_border_color '#77CEBC'
+bspc config normal_border_color '#000000'
+bspc config focused_border_color '#44444'
 
 touch $HOME/.dbus/Xdbus
 chmod 600 $HOME/.dbus/Xdbus
@@ -53,6 +52,7 @@ polybar legacy &!
 bspc config top_padding 24
 compton --config ~/.config/compton/compton.conf --dbus &!
 sleep 10; ~/.scripts/start-conkies.sh &!
+sleep 10; qtox &!
 
 # apps
 steam-native &!

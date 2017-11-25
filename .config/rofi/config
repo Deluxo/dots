@@ -7,8 +7,8 @@ rofi.line-margin: 0
 rofi.yoffset: 24
 rofi.bw: 0
 rofi.sidebar-mode: true
-rofi.combi-modi: window,run,power:~/.scripts/dmenu-power.sh
-rofi.modi: files:~/.scripts/dmenu-files.sh,gotwitch:~/.scripts/dmenu-gotwitch-from-file.sh,tasker:~/.scripts/dmenu-task.sh,run,power:~/.scripts/dmenu-power.sh,pass:~/.scripts/dmenu-pass.sh
+rofi.combi-modi: window,run,power:~/.scripts/dmenu-power.sh, drun
+rofi.modi: files:~/.scripts/dmenu-files.sh,gotwitch:~/.scripts/dmenu-gotwitch-from-file.sh,tasker:~/.scripts/dmenu-task.sh,run,power:~/.scripts/dmenu-power.sh,pass:~/.scripts/dmenu-pass.sh,drun
 rofi.lazy-grab: true
 rofi.disable-history: false
 rofi.width: 800
