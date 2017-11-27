@@ -1,9 +1,15 @@
+defaults.ctl.card 1
+defaults.pcm.card 1
+defaults.pcm.device 0
+defaults.pcm.subdevice -1
+
 ctl.equal {
 	type equal;
 }
 
 pcm.microphone {
-	card 0;
+	type hw;
+	card 2;
 	device 0;
 	subdevice 0;
 }
@@ -13,15 +19,13 @@ pcm.equalizer {
 	slave.pcm "plug:dmix";
 }
 
-pcm.softvol {
-	type softvol;
-	slave.pcm "dmix";
-	control {
-		name "Pre-Amp";
-		card 0;
+pcm.dmixer {
+	type dmix;
+	ipc_key 2048;
+	slave {
+		pcm "hw:1,0";
+		buffer_size 16384;
 	}
-	min_dB -10.0;
-	max_dB  30.0;
 }
 
 pcm.!default {

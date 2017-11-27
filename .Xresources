@@ -1,26 +1,26 @@
-#define background_opacity 85
-!#include ".config/xres/base16-xresources/xresources/base16-google-dark-256.Xresources"
-#include ".config/xres/base16-xresources/xresources/base16-chalk-256.Xresources"
+#define background_opacity 80
+!#include ".config/xres/base16-xresources/xresources/base16-atelier-lakeside-256.Xresources"
+#include ".config/xres/base16-xresources/xresources/base16-bright-256.Xresources"
 #define leFont xos4 terminus
-#define rofibg #99000000
+#define rofibg #dd000000
 #define rofibt #00000000
 #define rofifg base05
 #define rofihl base07
-#define rofi1 #99000000
-#define rofi2 base0A
+#define rofi1 base07
+#define rofi2 base0D
 #define rofi3 base0E
 #define rofi4 base0c
 
-URxvt.lineSpace: 5
+!URxvt.lineSpace: 6
 URxvt.keysym.C-Up: font-size:increase
 URxvt.keysym.C-Down: font-size:decrease
 URxvt.font-size.step: 1
-URxvt.cursorBlink: false
+URxvt.cursorBlink: true
 URxvt.cursorUnderline: true
-URxvt.internalBorder: 10
+URxvt.internalBorder: 5
 URxvt.externalBorder: 0
 URxvt.perl-ext-common: default,font-size
-urxvt.font: -*-terminus-medium-r-*-*-18-*-*-*-*-*-iso10646-*
+urxvt.font: -*-terminus-medium-r-*-*-14-*-*-*-*-*-iso10646-*
 urxvt.depth: 32
 urxvt.scrollBar: false
 
@@ -29,4 +29,4 @@ rofi.color-normal: rofibt, rofifg, rofibt, rofibt, rofi2
 rofi.color-urgent: rofibt, rofifg, rofibt, rofibt, rofi3
 rofi.color-active: rofibt, rofifg, rofibt, rofibt, #000000
 rofi.color-window: rofibg, rofi1, rofibt, rofibt
-rofi.font: leFont 16
+rofi.font: leFont 14

@@ -20,7 +20,7 @@ PATH="$NPM_PACKAGES/bin:$SCRIPTS:$RUBY:$PATH"
 
 # Aliases
 alias g='gotwitch --streamer '
-#alias p='sudo pacman -Syu'
+alias p='sudo pacman -Syu'
 alias gl='git log --graph --all --color --stat --oneline --pretty=format:"%C(red)%h%C(yellow)% d %C(green)% s%C(blue)% aN, %aE%C(magenta)% ci%+b"'
 alias weather='curl wttr.in'
 alias extip='dig +short myip.opendns.com @resolver1.opendns.com'

@@ -30,6 +30,7 @@ bspc rule -a FTL desktop=^6
 bspc rule -a csgo_linux64 desktop=^6
 bspc rule -a hl2_linux desktop=^6
 bspc rule -a ranger desktop=^8
+bspc rule -a Thunderbird desktop=^9
 bspc rule -a Gimp desktop=^10
 bspc rule -a mpv state=floating sticky=on
 bspc rule -a Galculator state=floating sticky=on
@@ -60,6 +61,11 @@ qtox &!
 sleep $sleepfor; thunderbird &!
 sleep $sleepfor; apulse firefox &!
 sleep $sleepfor; slack &!
+sleep $sleepfor; skypeforlinux &!
 sleep $sleepfor; apulse spotify &!
-sleep $sleepfor; force-move.sh Slack 2
-sleep $sleepfor; force-move.sh Spotify 3
+sleep $sleepfor; force-move.sh Slack 2 &!
+sleep $sleepfor; force-move.sh skypeforlinux 2 &!
+sleep $sleepfor; force-move.sh Spotify 3 &!
+
+xmodmap -e "keycode 66 = Escape NoSymbol Escape"
+xmodmap -e "clear Lock"
