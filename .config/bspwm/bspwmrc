@@ -19,7 +19,6 @@ bspc monitor -d I II III IV V VI VII VIII IX X
 
 bspc rule -a Firefox desktop=^1
 bspc rule -a vim desktop=^2
-bspc rule -a Skype desktop=^3
 bspc rule -a qTox desktop=^3
 bspc rule -a ncmpcpp desktop=^4
 bspc rule -a spotify desktop=^4
@@ -61,10 +60,8 @@ qtox &!
 sleep $sleepfor; thunderbird &!
 sleep $sleepfor; apulse firefox &!
 sleep $sleepfor; slack &!
-sleep $sleepfor; skypeforlinux &!
 sleep $sleepfor; apulse spotify &!
 sleep $sleepfor; force-move.sh Slack 2 &!
-sleep $sleepfor; force-move.sh skypeforlinux 2 &!
 sleep $sleepfor; force-move.sh Spotify 3 &!
 
 xmodmap -e "keycode 66 = Escape NoSymbol Escape"
