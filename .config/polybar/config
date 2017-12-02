@@ -30,9 +30,7 @@ offset-y = 0px
 tray-position = right
 tray-transparent = false
 tray-detached = false
-tray-background = #0f1112
-tray-padding = 4
-
+tray-background = #5f5e5f
 border-bottom-size = 0
 border-bottom-color = ${vars.color-border}
 
