@@ -64,5 +64,7 @@ sleep $sleepfor; apulse spotify &!
 sleep $sleepfor; force-move.sh Slack 2 &!
 sleep $sleepfor; force-move.sh Spotify 3 &!
 
-xmodmap -e "keycode 66 = Escape NoSymbol Escape"
-xmodmap -e "clear Lock"
+sleep $sleepfor; xmodmap -e 'clear lock'
+sleep $sleepfor; xmodmap -e 'keycode 0x42 = Escape'
+sleep $sleepfor; xmodmap ~/.Xmodmap
+

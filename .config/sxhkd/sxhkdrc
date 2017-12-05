@@ -7,7 +7,7 @@ ctrl + alt + Delete
 	{~/.scripts/screenshot.sh, ~/.scripts/screenshot.sh area, ~/.scripts/screenshot.sh online,  ~/.scripts/screenshot.sh online area}
 
 super + ctrl + {1-9}
-	{apulse firefox, urxvt -e vim, qtox, apulse spotify, notify-send "`task ls`", ~/.scripts/./context-runner.sh, _, urxvt -e ranger, urxvt -e htop}
+	{apulse firefox, alacritty -e vim, qtox, apulse spotify, notify-send "`task ls`", ~/.scripts/./context-runner.sh, _, alacritty -e ranger, alacritty -e htop}
 
 XF86AudioMute
 	amixer set Master toggle
@@ -46,7 +46,7 @@ super + q
 	bspc node -c
 
 super + Return
-	urxvt
+	alacritty
 
 # program launcher
 super + {_,ctrl + ,shift + }space
@@ -193,3 +193,7 @@ ctrl + super + alt + {1-8}
 
 super + alt + m
 	~/.scripts/steelseries-raw-settings.sh
+
+super + ctrl + c
+	rofi -show calc -modi "calc:qalc +u8 -nocurrencies"
+
