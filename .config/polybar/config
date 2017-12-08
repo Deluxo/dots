@@ -51,7 +51,7 @@ font-1 = ${vars.font1}
 
 modules-left = menu bspwm
 modules-center = title
-modules-right = memory volume cal clock
+modules-right = music memory volume cal clock
 wm-name = bar
 wm-restack = bspwm
 override-redirect = true
@@ -168,5 +168,14 @@ bar-used-foreground-3 = #ff5555
 bar-used-fill = |
 bar-used-empty = |
 bar-used-empty-foreground = #444444
+
+[module/music]
+type = custom/script
+interval = 2
+label = %output:0:45:...%
+exec = ~/.config/polybar/scripts/mpris.sh
+click-left = playerctl play-pause
+scroll-up = playerctl previous
+scroll-down = playerctl next
 
 ; vim:ft=dosini
