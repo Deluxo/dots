@@ -10,70 +10,64 @@ l_blur="$folder/l_blur.png"
 l_dimblur="$folder/l_dimblur.png"
 wallpaper=$(cat .fehbg | awk '{print $3}' | sed "s/'//g" | tail -n 1)
 
+prelock() {
+	pkill -u "$USER" -USR1 dunst
+	playerctl pause
+}
+
+lock() {
+	#$1 image path
+	letterEnteredColor=02a7fdff
+	letterRemovedColor=d23c3dff
+	passwordCorrect=00000000
+	passwordIncorrect=d23c3dff
+	background=00000000
+	foreground=ffffffff
+	i3lock \
+		-n -i "$1" \
+		--timepos="x-90:h-ch+30" \
+		--datepos="tx+24:ty+25" \
+		--clock --datestr "Type password to unlock..." \
+		--insidecolor=$background --ringcolor=$foreground --line-uses-inside \
+		--keyhlcolor=$letterEnteredColor --bshlcolor=$letterRemovedColor --separatorcolor=$background \
+		--insidevercolor=$passwordCorrect --insidewrongcolor=$passwordIncorrect \
+		--ringvercolor=$foreground --ringwrongcolor=$foreground --indpos="x+280:h-70" \
+		--radius=20 --ring-width=4 --veriftext="" --wrongtext="" \
+		--textcolor="$foreground" --timecolor="$foreground" --datecolor="$foreground"
+}
+
+postlock() {
+	pkill -u "$USER" -USR2 dunst
+	playerctl play
+}
+
 # Options
 case "$1" in
+	"")
+		xautolock -locknow
+		;;
 	-l | --lock)
 		case "$2" in
 			"")
-				pkill -u "$USER" -USR1 dunst
+				prelock
 				playerctl pause
-				i3lock \
-					-n -i "$l_resized" \
-					--timepos="x-90:h-ch+30" \
-					--datepos="tx+24:ty+25" \
-					--clock --datestr "type password to unlock..." \
-					--insidecolor=00000000 --ringcolor=ffffffff --line-uses-inside \
-					--keyhlcolor=d23c3dff --bshlcolor=d23c3dff --separatorcolor=00000000 \
-					--insidevercolor=fecf4dff --insidewrongcolor=d23c3dff \
-					--ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+280:h-70" \
-					--radius=20 --ring-width=3 --veriftext="" --wrongtext="" \
-					--textcolor="ffffffff" --timecolor="ffffffff" --datecolor="ffffffff"
-				pkill -u "$USER" -USR2 dunst
+				lock "$l_resized"
+				postlock
 				;;
 			dim)
-				pkill -u "$USER" -USR1 dunst
-				i3lock \
-					-n -i "$l_dim" \
-					--timepos="x-90:h-ch+30" \
-					--datepos="tx+24:ty+25" \
-					--clock --datestr "Type password to unlock..." \
-					--insidecolor=00000000 --ringcolor=ffffffff --line-uses-inside \
-					--keyhlcolor=d23c3dff --bshlcolor=d23c3dff --separatorcolor=00000000 \
-					--insidevercolor=fecf4dff --insidewrongcolor=d23c3dff \
-					--ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+280:h-70" \
-					--radius=20 --ring-width=3 --veriftext="" --wrongtext="" \
-					--textcolor="ffffffff" --timecolor="ffffffff" --datecolor="ffffffff"
-				pkill -u "$USER" -USR2 dunst
+				prelock
+				lock "$l_dim"
+				postlock
 				;;
 			blur)
-				pkill -u "$USER" -USR1 dunst
-				i3lock \
-					-n -i "$l_blur" \
-					--timepos="x-90:h-ch+30" \
-					--datepos="tx+24:ty+25" \
-					--clock --datestr "Type password to unlock..." \
-					--insidecolor=00000000 --ringcolor=ffffffff --line-uses-inside \
-					--keyhlcolor=d23c3dff --bshlcolor=d23c3dff --separatorcolor=00000000 \
-					--insidevercolor=fecf4dff --insidewrongcolor=d23c3dff \
-					--ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+280:h-70" \
-					--radius=20 --ring-width=3 --veriftext="" --wrongtext="" \
-					--textcolor="ffffffff" --timecolor="ffffffff" --datecolor="ffffffff"
-				pkill -u "$USER" -USR2 dunst
+				prelock
+				lock "$l_blur"
+				postlock
 				;;
 			dimblur)
-				pkill -u "$USER" -USR1 dunst
-				i3lock \
-					-n -i "$l_dimblur" \
-					--timepos="x-90:h-ch+30" \
-					--datepos="tx+24:ty+25" \
-					--clock --datestr "Type password to unlock..." \
-					--insidecolor=00000000 --ringcolor=ffffffff --line-uses-inside \
-					--keyhlcolor=d23c3dff --bshlcolor=d23c3dff --separatorcolor=00000000 \
-					--insidevercolor=fecf4dff --insidewrongcolor=d23c3dff \
-					--ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+280:h-70" \
-					--radius=20 --ring-width=3 --veriftext="" --wrongtext="" \
-					--textcolor="ffffffff" --timecolor="ffffffff" --datecolor="ffffffff"
-				pkill -u "$USER" -USR2 dunst
+				prelock
+				lock "$l_dimblur"
+				postlock
 				;;
 		esac
 		;;
