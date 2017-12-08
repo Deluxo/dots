@@ -1,4 +1,6 @@
 #! /bin/bash
+
+defaultmode="" # " " "dim" "blur" "dimblur"
 lockfile="/tmp/lock.sh.lock"
 folder="$HOME/.cache/i3lock"
 resized="$folder/resized.png" # resized image for your resolution
@@ -97,7 +99,7 @@ case "$1" in
 		touch $lockfile
 		xset +dpms
 		xset s on
-		$0 --on
+		xautolock -locker "$0 -l $defaultmode" -time 1 &
 		;;
 	--off)
 		rm $lockfile
