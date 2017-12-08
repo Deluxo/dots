@@ -51,7 +51,7 @@ font-1 = ${vars.font1}
 
 modules-left = menu bspwm
 modules-center = title
-modules-right = music memory volume cal clock
+modules-right = music memory volume cal clock locker
 wm-name = bar
 wm-restack = bspwm
 override-redirect = true
@@ -171,11 +171,16 @@ bar-used-empty-foreground = #444444
 
 [module/music]
 type = custom/script
-interval = 2
 label = %output:0:45:...%
 exec = ~/.config/polybar/scripts/mpris.sh
 click-left = playerctl play-pause
 scroll-up = playerctl previous
 scroll-down = playerctl next
+
+[module/locker]
+type = custom/script
+label = %output:0:45:...%
+exec = ~/.config/polybar/scripts/i3lock.sh
+click-left = ~/.scripts/lock.sh --toggle
 
 ; vim:ft=dosini

@@ -48,7 +48,7 @@ env | grep DBUS_SESSION_BUS_ADDRESS > $HOME/.dbus/Xdbus
 echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 
 # interface
-xautolock -locker '~/.scripts/lock.sh -l blur' -time 1 &!
+~/.scripts/lock.sh --on
 polybar legacy &!
 bspc config top_padding 24
 compton --config ~/.config/compton/compton.conf --dbus &!

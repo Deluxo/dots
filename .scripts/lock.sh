@@ -1,4 +1,5 @@
 #! /bin/bash
+lockfile="/tmp/lock.sh.lock"
 folder="$HOME/.cache/i3lock"
 resized="$folder/resized.png" # resized image for your resolution
 dim="$folder/dim.png" # image with subtle overlay of black
@@ -90,6 +91,26 @@ case "$1" in
 		convert "$dim" -draw "fill black fill-opacity 0.4 $rectangles" "$l_dim"
 		convert "$blur" -draw "fill black fill-opacity 0.4 $rectangles" "$l_blur"
 		convert "$dimblur" -draw "fill black fill-opacity 0.4 $rectangles" "$l_dimblur"
+		;;
+
+	--on)
+		touch $lockfile
+		xset +dpms
+		xset s on
+		$0 --on
+		;;
+	--off)
+		rm $lockfile
+		xset -dpms
+		xset s off
+		killall xautolock
+		;;
+	--toggle)
+		if [ -f $lockfile ]; then
+			$0 --off
+		else
+			$0 --on
+		fi
 		;;
 esac
 
