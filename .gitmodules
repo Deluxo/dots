@@ -7,3 +7,6 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh
+[submodule ".scripts/betterlockscreen"]
+	path = .scripts/betterlockscreen
+	url = https://github.com/pavanjadhaw/betterlockscreen
