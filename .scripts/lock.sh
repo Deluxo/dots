@@ -11,7 +11,7 @@ l_resized="$folder/l_resized.png"
 l_dim="$folder/l_dim.png"
 l_blur="$folder/l_blur.png"
 l_dimblur="$folder/l_dimblur.png"
-wallpaper=$(cat .fehbg | awk '{print $3}' | sed "s/'//g" | tail -n 1)
+wallpaper="$(cat .fehbg | awk '{print $3}' | sed "s/'//g" | tail -n 1)"
 
 prelock() {
 	pkill -u "$USER" -USR1 dunst
