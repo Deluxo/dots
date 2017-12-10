@@ -171,7 +171,7 @@ bar-used-empty-foreground = #444444
 
 [module/music]
 type = custom/script
-label = %output:0:45:...%
+label = %output%
 exec = ~/.config/polybar/scripts/mpris.sh
 click-left = playerctl play-pause
 scroll-up = playerctl previous
