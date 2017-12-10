@@ -102,10 +102,17 @@ case "$1" in
 		xautolock -locker "$0 -l $defaultmode" -time 1 &
 		;;
 	--off)
-		rm $lockfile
-		xset -dpms
-		xset s off
-		killall xautolock
+		if [[ $2 == '--allow-blanking' ]]; then
+			rm $lockfile
+			xset +dpms
+			xset s on
+			killall xautolock
+		else
+			rm $lockfile
+			xset -dpms
+			xset s off
+			killall xautolock
+		fi
 		;;
 	--toggle)
 		if [ -f $lockfile ]; then
