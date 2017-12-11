@@ -96,26 +96,32 @@ case "$1" in
 		;;
 
 	--on)
-		touch $lockfile
+		echo 'locked' > $lockfile
 		xset +dpms
 		xset s on
 		xautolock -locker "$0 -l $defaultmode" -time 1 &
 		;;
 	--off)
+		rm $lockfile
+		killall xautolock
 		if [[ $2 == '--allow-blanking' ]]; then
-			rm $lockfile
+			echo 'blanking' > $lockfile
 			xset +dpms
 			xset s on
-			killall xautolock
 		else
-			rm $lockfile
 			xset -dpms
 			xset s off
-			killall xautolock
 		fi
 		;;
 	--toggle)
-		if [ -f $lockfile ]; then
+		#if [ -f $lockfile ]; then
+			#$0 --off
+		#else
+			#$0 --on
+		#fi
+		if [[ -f $lockfile ]] && [[ $(<$lockfile) == 'locked' ]]; then
+			$0 --off --allow-blanking
+		elif [[ -f $lockfile ]] && [[ $(<$lockfile) == 'blanking' ]]; then
 			$0 --off
 		else
 			$0 --on

@@ -1,9 +1,15 @@
 #! /bin/bash
 
-icon=""
+iconLock=""
+iconScreen=""
+lockfile="/tmp/lock.sh.lock"
 
-if [ -f /tmp/lock.sh.lock ]; then
-    echo "%{F#FFFFFF}$icon"
+if [ -f $lockfile ]; then
+	if [[ $(<$lockfile) == 'locked' ]]; then
+		echo "%{F#FFFFFF}$iconLock"
+	elif [[ $(<$lockfile) == 'blanking' ]]; then
+		echo "%{F#FFFFFF}$iconScreen"
+	fi
 else
-    echo "%{F#65737E}$icon"
+    echo "%{F#65737E}$iconLock"
 fi
