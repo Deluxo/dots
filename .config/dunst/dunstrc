@@ -75,8 +75,8 @@
     browser = /usr/bin/firefox -new-tab
 
 [frame]
-    width = 1
-    color = "#444444"
+    width = 0
+    color = "#222222"
 
 [shortcuts]
     close = ctrl+space

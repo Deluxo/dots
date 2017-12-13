@@ -1,6 +1,7 @@
 [vars]
 
-color-bg = #990f1419
+color-bg-0 = #AA0f1419
+color-bg-1 = #440f1419
 color-focused = #ffffff
 color-occupied-muted = #aaffffff
 color-empty = #33ffffff
@@ -30,14 +31,17 @@ offset-y = 0px
 tray-position = right
 tray-transparent = false
 tray-detached = false
-tray-background = #3c4a54
+tray-background = #1d262e
 border-bottom-size = 0
 border-bottom-color = ${vars.color-border}
 
 padding-left = ${vars.padding-2}
 padding-right = ${vars.padding-1}
 
-background = ${vars.color-bg}
+background-0 = ${vars.color-bg-0}
+background-1 = ${vars.color-bg-1}
+;background-0 = #AA000000
+;background-1 = #44000000
 foreground = ${vars.color-focused}
 
 spacing = 1
@@ -66,7 +70,8 @@ label-focused-padding = ${vars.padding-0}
 label-occupied-padding = ${vars.padding-0}
 label-empty-padding = ${vars.padding-0}
 label-urgent-padding = ${vars.padding-0}
-label-focused-background = ${vars.color-bg}
+label-focused-background-0 = ${vars.color-bg-0}
+label-focused-background-1 = ${vars.color-bg-1}
 label-focused-foreground = ${vars.color-focused}
 label-occupied-foreground = ${vars.color-occupied-muted}
 label-empty-foreground = ${vars.color-empty}

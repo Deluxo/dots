@@ -8,9 +8,9 @@ if [[ $? -eq 0 ]]; then
 fi
 
 if [[ $player_status = "Playing" ]]; then
-    echo "%{F#FFFFFF}$icon $metadata"
+    echo "%{F#FFFFFFFF}$icon   $metadata"
 elif [[ $player_status = "Paused" ]]; then
-    echo "%{F#65737E}$icon $metadata"
+    echo "%{F#AAFFFFFF}$icon   $metadata"
 else
-    echo "%{F#65737E}$icon"
+    echo "%{F#AAFFFFFF}$icon"
 fi
