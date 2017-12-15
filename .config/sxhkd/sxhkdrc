@@ -4,7 +4,7 @@ ctrl + alt + Delete
 	systemctl poweroff
 
 {_,shift +, alt +, alt + shift + }Print
-	{~/.scripts/screenshot.sh, ~/.scripts/screenshot.sh area, ~/.scripts/screenshot.sh online,  ~/.scripts/screenshot.sh online area}
+	{~/.scripts/screenshot.sh, ~/.scripts/screenshot.sh area, ~/.scripts/screenshot.sh online}
 
 super + ctrl + {1-9}
 	{apulse firefox, alacritty -e vim, qtox, apulse spotify, notify-send "`task ls`", ~/.scripts/./context-runner.sh, _, alacritty -e ranger, alacritty -e htop}

@@ -24,6 +24,7 @@ alias gl='git log --graph --all --color --stat --oneline --pretty=format:"%C(red
 alias weather='curl wttr.in'
 alias extip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias c='~/.scripts/colorize.sh'
+alias k='killall'
 
 # Completions
 eval "$(gotwitch --completion-script-zsh)"

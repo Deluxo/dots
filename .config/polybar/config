@@ -1,7 +1,7 @@
 [vars]
 
 color-bg-0 = #AA0f1419
-color-bg-1 = #440f1419
+color-bg-1 = #880f1419
 color-focused = #ffffff
 color-occupied-muted = #aaffffff
 color-empty = #33ffffff
