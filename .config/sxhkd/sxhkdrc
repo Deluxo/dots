@@ -50,7 +50,7 @@ super + Return
 
 # program launcher
 super + {_,ctrl + ,shift + }space
-	rofi -show {combi,gotwitch,tasker}
+	rofi -show {drun, , }
 
 alt + space
 	rofi -show drun
