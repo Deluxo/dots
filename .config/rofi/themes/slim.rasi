@@ -8,11 +8,13 @@
 #window {
 	padding: 50;
 	background-color: @bg;
+	color: @none;
 }
 #mainbox {
     border:  0;
     padding: 0;
 	background-color: @none;
+	color: @none;
 }
 #listview {
 	background-color: @none;
@@ -20,15 +22,20 @@
 	dynamic: true;
 }
 #inputbar {
-    spacing:    50;
-    color: @li;
+	spacing: 40;
+	color: @none;
 	background-color: @none;
-    padding: 0 0 10px;
+	padding: 0;
+	margin: 0;
 }
 #prompt {
-	spacing: 100;
-    text-color: @li;
+	spacing: 0px;
+	text-color: @none;
 	background-color: @none;
+	font: "FontAwesome 1";
+	padding: 0;
+	margin: 0;
+	display: false;
 
 }
 #sidebar {
@@ -38,6 +45,7 @@
 }
 
 #button {
+	margin: 40px 0;
 	font: "FontAwesome 25";
     background-color: @none;
     text-color:       @li;
@@ -67,8 +75,4 @@
 	background-color: @none;
 	color: @li-on;
 	font: "Overpass Heavy 20";
-}
-#ci {
-	background-color: @none;
-	color: @li;
 }
