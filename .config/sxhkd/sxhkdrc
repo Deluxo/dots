@@ -50,7 +50,7 @@ super + Return
 
 # program launcher
 super + {_,ctrl + ,shift + }space
-	rofi -show {drun, , }
+	rofi -show {run, , }
 
 alt + space
 	rofi -show drun
