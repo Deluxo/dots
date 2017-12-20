@@ -2,7 +2,7 @@
 
 context=$(xclip -o);
 msg="couldn't find anything to play"
-term='urxvt'
+term='alacritty'
 
 if [[ $context =~ "twitch.tv" ]]; then
 	msg="Twitch.tv"

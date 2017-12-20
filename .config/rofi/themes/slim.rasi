@@ -1,0 +1,74 @@
+* {
+	li: rgba(255, 255, 255, 50%);
+	li-on: rgba(255, 255, 255, 100%);
+	none: rgba(0, 0, 0, 0%);
+	bg: rgba(15, 20, 25, 60%);
+	font: "Overpass Normal 20";
+}
+#window {
+	padding: 50;
+	background-color: @bg;
+}
+#mainbox {
+    border:  0;
+    padding: 0;
+	background-color: @none;
+}
+#listview {
+	background-color: @none;
+	padding: 10px 0;
+	dynamic: true;
+}
+#inputbar {
+    spacing:    50;
+    color: @li;
+	background-color: @none;
+    padding: 0 0 10px;
+}
+#prompt {
+	spacing: 100;
+    text-color: @li;
+	background-color: @none;
+
+}
+#sidebar {
+	background-color: @none;
+    border:       2px dash 0px 0px ;
+    border-color: @separatorcolor;
+}
+
+#button {
+	font: "FontAwesome 25";
+    background-color: @none;
+    text-color:       @li;
+}
+#button.selected {
+    background-color: @none;
+    text-color:       @li-on;
+}
+
+#element {
+    border:  0;
+    padding: 10px 0;
+	background-color: @none;
+	color: @li;
+	font: "Overpass Mono Bold 18";
+}
+#element.selected.normal {
+    text-color:       @li-on;
+}
+#element.selected.urgent {
+    text-color:       @li-on;
+}
+#element.selected.active {
+    text-color:       @li-on;
+}
+#entry {
+	background-color: @none;
+	color: @li-on;
+	font: "Overpass Heavy 20";
+}
+#ci {
+	background-color: @none;
+	color: @li;
+}
