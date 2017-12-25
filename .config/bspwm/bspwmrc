@@ -15,6 +15,7 @@ bspc config click_to_focus true
 bspc config pointer_action1 move
 bspc config pointer_action2 resize_corner
 bspc config top_padding 24
+bspc config initial_polarity second_child
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 

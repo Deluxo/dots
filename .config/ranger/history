@@ -1,0 +1,50 @@
+rename flags
+search as
+open_with 0
+open_with feh
+cd .git
+rename ListScreen.js
+mkdir realm
+touch realm.js
+rename wallhaven-537682.jpg
+rename ExerciseScreen.js
+rename WorkoutsScreen.js
+rename WorkoutScreen.js
+open_with zip
+cd .config/xorg.d/
+cd .local/share/Steam/
+shell 
+shell du
+search heroes
+search steam
+search NVI
+cd .steam
+search steamaps
+search steamapps
+search 
+mkdir disabled
+open_with ./
+vim
+rename fzf.vim.disabled
+rename netrw.vim.disabled
+search vimrc
+rename completion.vim
+rename fzf.vim
+rename netrw.vim
+rename person.ts
+cd .vim
+search Uv
+open_with 1
+open_with 
+cd /tmp
+cd q
+
+show_hidden
+help
+search i3
+cd .cache
+cd 
+open_with 14
+set show_hidden!
+search bitw
+delete
