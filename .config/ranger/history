@@ -44,7 +44,7 @@ help
 search i3
 cd .cache
 cd 
-open_with 14
 set show_hidden!
 search bitw
 delete
+open_with 14

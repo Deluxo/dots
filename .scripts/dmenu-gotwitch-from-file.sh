@@ -1,10 +1,10 @@
 #! /bin/sh
 
 sep=""
-gamePrefix=" "
+gamePrefix=""
 gameOffsetPrefix="games: offset "
 gamesList="Games"
-streamerPrefix=" "
+streamerPrefix=""
 
 streamers()
 {
