@@ -53,7 +53,7 @@ echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 $HOME/.scripts/lock.sh --on &!
 polybar legacy &!
 compton --config ~/.config/compton/compton.conf --dbus &!
-sleep 10; ~/.scripts/start-conkies.sh &!
+#sleep 10; ~/.scripts/start-conkies.sh &!
 sleep 10; qtox &!
 
 # apps
