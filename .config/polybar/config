@@ -8,10 +8,6 @@ color-empty = #33ffffff
 color-urgent = #E04E46
 color-border = #0000ff
 
-font0 = xos4terminus:size=17:weight=normal;1
-font1 = FontAwesome:size=13:weight=light;3
-font2 = URW Gothic:size=5:weight=normal;1
-
 underline-size = 0
 padding-0 = 2
 padding-1 = 1
@@ -48,8 +44,11 @@ overline-size = 0
 module-margin-left = ${vars.padding-1}
 module-margin-right = ${vars.padding-1}
 
-font-0 = ${vars.font0}
-font-1 = ${vars.font1}
+font-0 = xos4terminus:size=17:weight=normal;1
+font-1 = FontAwesome5Free:size=13:weight=light;3
+font-2 = FontAwesome5Free:style=Solid:size=13:weight=light;3
+font-3 = FontAwesome5Brands:style=Solid:size=13:weight=light;3
+;font-4 = FontAwesome:style=Solid:size=13:weight=light;3
 
 modules-left = menu bspwm
 modules-center = title
@@ -78,13 +77,13 @@ label-focused-underline = ${vars.color-occupied-muted}
 label-urgent-underline= ${vars.color-urgent}
 ws-icon-0 = I;
 ws-icon-1 = II;
-ws-icon-2 = III;
+ws-icon-2 = III;
 ws-icon-3 = IV;
 ws-icon-4 = V;
 ws-icon-5 = VI;
 ws-icon-6 = VII;
 ws-icon-7 = VIII;
-ws-icon-8 = IX;
+ws-icon-8 = IX;
 ws-icon-9 = X;
 
 [module/mpd]
