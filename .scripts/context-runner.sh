@@ -24,9 +24,19 @@ elif ls ~/Downloads/*.torrent 1> /dev/null 2>&1; then
 	fileModDate=$(stat -c %Y "$file")
 	now=$(date +%s)
 	freshness=$(($now-$fileModDate))
+	destination="Downloads" # Relative to $HOME
+	lsblkItem=$(lsblk  -l | sed '/^.*sda.*$/d' | tail -n +2 | grep -w sd\[a-z]\[1-9] | awk '{print $1}')
+	if [[ -n $lsblkItem ]]; then
+		altDestination="/mnt/lukas/videos"
+		if [[ ! -d $altDestination ]]; then
+			$term -e zsh -c "sudo mount /dev/$(lsblk -l | tail -n 1 | awk '{print $1}') /mnt; mkdir -p $altDestination"
+		fi
+		destination=$altDestination
+	fi
 	if [[ $freshness -lt 3000 ]]; then
 		msg="Latest torrent file"
-		$term -e zsh -c "peerflix \"$file\" -f Downloads/ -k -l"
+		$term -e zsh -c "peerflix \"$file\" -f $destination/ -k -l"
+
 	fi
 fi
 
