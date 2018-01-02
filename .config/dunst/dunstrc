@@ -53,7 +53,7 @@
     word_wrap = yes
     ignore_newline = no
 
-	geometry = "1000-20-20"
+	geometry = "1000-10-10"
     shrink = yes
     padding = 18
     horizontal_padding = 18
