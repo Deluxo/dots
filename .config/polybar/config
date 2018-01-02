@@ -45,9 +45,9 @@ module-margin-left = ${vars.padding-1}
 module-margin-right = ${vars.padding-1}
 
 font-0 = xos4terminus:size=17:weight=normal;1
-font-1 = FontAwesome5Free:size=13:weight=light;3
-font-2 = FontAwesome5Free:style=Solid:size=13:weight=light;3
-font-3 = FontAwesome5Brands:style=Solid:size=13:weight=light;3
+;font-1 = FontAwesome5Free:size=13:weight=light;3
+font-1 = FontAwesome5Free:style=Solid:size=13:weight=light;3
+font-2 = FontAwesome5Brands:style=Solid:size=13:weight=light;3
 ;font-4 = FontAwesome:style=Solid:size=13:weight=light;3
 
 modules-left = menu bspwm
