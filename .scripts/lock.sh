@@ -1,6 +1,6 @@
 #! /bin/bash
 
-defaultmode="" # " " "dim" "blur" "dimblur"
+defaultmode="dimblur" # " " "dim" "blur" "dimblur"
 lockfile="/tmp/lock.sh.lock"
 folder="$HOME/.cache/i3lock"
 resized="$folder/resized.png" # resized image for your resolution

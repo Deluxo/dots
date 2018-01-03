@@ -35,7 +35,7 @@ elif ls ~/Downloads/*.torrent 1> /dev/null 2>&1; then
 	fi
 	if [[ $freshness -lt 3000 ]]; then
 		msg="Latest torrent file"
-		$term -e zsh -c "peerflix \"$file\" -f $destination/ -k -l"
+		$term -e zsh -c "echo Downloading to $(lsblk -l | tail -n 1 | awk '{print $1 " " $4}'): $destination; peerflix \"$file\" -f $destination/ -k -l"
 
 	fi
 fi
