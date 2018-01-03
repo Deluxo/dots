@@ -1,7 +1,7 @@
 #! /bin/sh
 
-sep=""
-gamePrefix=" "
+sep=""
+gamePrefix=" "
 gameOffsetPrefix="games: offset "
 gamesList="Games"
 streamerPrefix=" "
@@ -10,9 +10,9 @@ streamers()
 {
 	echo "$gamesList"
 	echo $sep
-	cat /tmp/gotwitch-subscriptions | sed "s/^/$streamerPrefix/gi"
+	cat /tmp/gotwitch-subscriptions | sed "s/^/$streamerPrefix/gi" | sed "s/ / $gamePrefix/2"
 	echo $sep
-	cat /tmp/gotwitch-popular | sed "s/^/$streamerPrefix/gi"
+	cat /tmp/gotwitch-popular | sed "s/^/$streamerPrefix/gi" | sed "s/ / $gamePrefix/2"
 }
 
 game()

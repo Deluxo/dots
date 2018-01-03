@@ -1,5 +1,5 @@
 rofi.sidebar-mode: true
-rofi.modi:run,drun,:~/.scripts/dmenu-files.sh,:~/.scripts/dmenu-gotwitch-from-file.sh,:~/.scripts/dmenu-task.sh,:~/.scripts/dmenu-pass.sh,:~/.scripts/dmenu-power.sh
+rofi.modi::~/.scripts/dmenu-power.sh,:~/.scripts/dmenu-task.sh,:~/.scripts/dmenu-files.sh,:~/.scripts/dmenu-pass.sh,:~/.scripts/dmenu-gotwitch-from-file.sh,run,drun
 rofi.scroll-method: 1
 rofi.show-icons: false
 rofi.dpi: 1.0
