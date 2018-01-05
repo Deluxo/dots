@@ -1,6 +1,6 @@
 #! /bin/sh
 
-sep=""
+sep="|"
 gamePrefix=" "
 gameOffsetPrefix="games: offset "
 gamesList="Games"

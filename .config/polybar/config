@@ -52,7 +52,7 @@ font-2 = FontAwesome5Brands:style=Solid:size=13:weight=light;3
 
 modules-left = menu bspwm
 modules-center = title
-modules-right = music memory volume cal clock locker
+modules-right = music volume cal clock locker
 wm-name = bar
 wm-restack = bspwm
 override-redirect = true
@@ -114,8 +114,8 @@ ramp-volume-2 = 
 
 [module/menu]
 type = custom/text
-content = ""
-click-left = rofi -config ~/.config/rofi/config -show run
+content = ""
+click-left = rofi -config ~/.config/rofi/config -show drun
 
 [module/cal]
 type = custom/text

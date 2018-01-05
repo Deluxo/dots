@@ -1,7 +1,7 @@
 rofi.sidebar-mode: true
 rofi.modi::~/.scripts/dmenu-power.sh,:~/.scripts/dmenu-task.sh,:~/.scripts/dmenu-files.sh,:~/.scripts/dmenu-pass.sh,:~/.scripts/dmenu-gotwitch-from-file.sh,run,drun
 rofi.scroll-method: 1
-rofi.show-icons: false
+rofi.show-icons: true
 rofi.dpi: 1.0
 rofi.terminal: alacritty
 rofi.theme: ~/.config/rofi/themes/dmenu.rasi
