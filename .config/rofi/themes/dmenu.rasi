@@ -34,7 +34,7 @@
 #entry {
 	expand: false;
 	width: 20em;
-	padding: 6px 0;
+	padding: 6px 0px 0px 24px;
 }
 
 #element {
