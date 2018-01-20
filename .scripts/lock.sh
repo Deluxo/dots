@@ -114,11 +114,6 @@ case "$1" in
 		fi
 		;;
 	--toggle)
-		#if [ -f $lockfile ]; then
-			#$0 --off
-		#else
-			#$0 --on
-		#fi
 		if [[ -f $lockfile ]] && [[ $(<$lockfile) == 'locked' ]]; then
 			$0 --off --allow-blanking
 		elif [[ -f $lockfile ]] && [[ $(<$lockfile) == 'blanking' ]]; then
