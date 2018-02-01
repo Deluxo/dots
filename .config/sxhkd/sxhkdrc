@@ -55,6 +55,9 @@ super + {_,ctrl + ,shift + }space
 alt + space
 	rofi -show drun
 
+super + w
+	rofi -show window
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -64,8 +67,8 @@ super + alt + Escape
 	bspc quit
 
 # close and kill
-super + {_,shift + }w
-	bspc node -{c,k}
+#super + {_,shift + }w
+#	bspc node -{c,k}
 
 super + m
 	~/.scripts/./steelseries-raw-settings.sh
@@ -110,8 +113,8 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}
 
 # focus the last node/desktop
-super + {grave,Tab}
-	bspc {node,desktop} -f last
+#super + {grave,Tab}
+#	bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
 super + {o,i}

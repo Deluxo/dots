@@ -29,7 +29,7 @@ elif ls ~/Downloads/*.torrent 1> /dev/null 2>&1; then
 	if [[ -n $lsblkItem ]]; then
 		altDestination="/mnt/lukas/videos"
 		if [[ ! -d $altDestination ]]; then
-			$term -e zsh -c "sudo mount /dev/$(lsblk -l | tail -n 1 | awk '{print $1}') /mnt; mkdir -p $altDestination"
+			$term -e zsh -c "echo mount additional disk for destination disk;sudo mount /dev/$(lsblk -l | tail -n 1 | awk '{print $1}') /mnt; mkdir -p $altDestination"
 		fi
 		destination=$altDestination
 	fi
