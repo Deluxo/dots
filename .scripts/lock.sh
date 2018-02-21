@@ -26,17 +26,30 @@ lock() {
 	passwordIncorrect=d23c3dff
 	background=00000000
 	foreground=ffffffff
+	timeFontSize=100
+	dateFontSize=50
 	i3lock \
 		-n -i "$1" \
-		--timepos="x-90:h-ch+30" \
-		--datepos="tx+24:ty+25" \
-		--clock --datestr "Type password to unlock..." \
-		--insidecolor=$background --ringcolor=$foreground --line-uses-inside \
-		--keyhlcolor=$letterEnteredColor --bshlcolor=$letterRemovedColor --separatorcolor=$background \
-		--insidevercolor=$passwordCorrect --insidewrongcolor=$passwordIncorrect \
-		--ringvercolor=$foreground --ringwrongcolor=$foreground --indpos="x+280:h-70" \
-		--radius=20 --ring-width=4 --veriftext="" --wrongtext="" \
-		--textcolor="$foreground" --timecolor="$foreground" --datecolor="$foreground"
+		--clock \
+		--datestr "%A %m" --datepos="x+100:y+1250" \
+		--timestr="%H:%M" --timepos="x+100:y+1190" \
+		--time-align=1 --date-align=1 --layout-align=2 \
+		--insidecolor=$background\
+		--separatorcolor=$background \
+		--line-uses-inside \
+		--keyhlcolor=$letterEnteredColor \
+		--bshlcolor=$letterRemovedColor \
+		--insidevercolor=$passwordCorrect \
+		--insidewrongcolor=$passwordIncorrect \
+		--timecolor="$foreground" \
+		--datecolor="$foreground" \
+		--textcolor="$foreground"\
+		--ringcolor=$foreground \
+		--ringvercolor=$foreground \
+		--ringwrongcolor=$foreground \
+		--radius=100 --ring-width=10 \
+		--veriftext="" --wrongtext="" \
+		--timesize="$timeFontSize" --datesize="$dateFontSize"
 }
 
 postlock() {
@@ -54,22 +67,22 @@ case "$1" in
 			"")
 				prelock
 				playerctl pause
-				lock "$l_resized"
+				lock "$resized"
 				postlock
 				;;
 			dim)
 				prelock
-				lock "$l_dim"
+				lock "$dim"
 				postlock
 				;;
 			blur)
 				prelock
-				lock "$l_blur"
+				lock "$blur"
 				postlock
 				;;
 			dimblur)
 				prelock
-				lock "$l_dimblur"
+				lock "$dimblur"
 				postlock
 				;;
 		esac

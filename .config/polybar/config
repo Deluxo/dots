@@ -52,7 +52,7 @@ font-2 = FontAwesome5Brands:style=Solid:size=13:weight=light;3
 
 modules-left = menu bspwm
 modules-center = title
-modules-right = music volume cal clock locker
+modules-right = music weather volume cal clock locker
 wm-name = bar
 wm-restack = bspwm
 override-redirect = true
@@ -121,6 +121,11 @@ click-left = rofi -config ~/.config/rofi/config -show drun
 type = custom/text
 content = 
 click-left = gsimplecal
+
+[module/weather]
+type = custom/text
+content = ""
+click-left = ~/.config/polybar/scripts/weather.sh
 
 [module/battery]
 type = internal/battery
