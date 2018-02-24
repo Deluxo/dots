@@ -1,5 +1,5 @@
 * {
-	background-color: Black;
+	background-color: #00000000;
 	color: White;
 	font: "xos4 terminus 13";
 }

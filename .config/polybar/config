@@ -1,7 +1,7 @@
 [vars]
 
-color-bg-0 = #ff0f1419
-color-bg-1 = #ff0f1419
+color-bg-0 = #550f1419
+color-bg-1 = #550f1419
 color-focused = #ffffff
 color-occupied-muted = #aaffffff
 color-empty = #33ffffff
@@ -22,10 +22,11 @@ throttle-input-for = 50
 height = 33
 offset-y = 0px
 
-tray-position = right
+;tray-position = right
 tray-transparent = false
 tray-detached = false
 tray-background = ${vars.color-bg-0}
+;
 border-bottom-size = 0
 border-bottom-color = ${vars.color-border}
 
