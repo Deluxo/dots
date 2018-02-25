@@ -47,6 +47,7 @@
 }
 
 #button {
+	font: "Font Awesome 5 Free 11, Font awesome 5 Brands 11";
 	width: 40px;
 	text-color: White;
 }
