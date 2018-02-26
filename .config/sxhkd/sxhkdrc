@@ -96,6 +96,9 @@ super + ctrl + {x,y,z}
 # focus/swap
 #
 
+super + u
+	bspc node -f last.urgent
+
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
