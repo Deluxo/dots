@@ -22,7 +22,7 @@ throttle-input-for = 50
 height = 33
 offset-y = 0px
 
-;tray-position = right
+tray-position = right
 tray-transparent = false
 tray-detached = false
 tray-background = ${vars.color-bg-0}
