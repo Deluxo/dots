@@ -51,7 +51,7 @@ echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 
 # interface
 $HOME/.scripts/lock.sh --off --allow-blanking &!
-polybar legacy &!
+polybar -r legacy &!
 compton --config ~/.config/compton/compton.conf --dbus &!
 #sleep 10; ~/.scripts/start-conkies.sh &!
 sleep 10; qtox &!
