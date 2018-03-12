@@ -50,12 +50,10 @@ env | grep DBUS_SESSION_BUS_ADDRESS > $HOME/.dbus/Xdbus
 echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 
 # interface
+/home/lukas/.scripts/xwinwrap.sh ~/Pictures/Wallpapers/cyberpunk-nrw/8bit-street.gif &!
 $HOME/.scripts/lock.sh --off --allow-blanking &!
 polybar -r legacy &!
 compton --config ~/.config/compton/compton.conf --dbus &!
-#sleep 10; ~/.scripts/start-conkies.sh &!
-sleep 10; qtox &!
-
-# apps
 steam-native &!
-#discord &!
+qtox &!
+#sleep 10; ~/.scripts/start-conkies.sh &!
