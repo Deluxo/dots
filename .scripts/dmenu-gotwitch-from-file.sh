@@ -10,9 +10,7 @@ input=$(echo $@ | awk '{print $1}')
 streamers()
 {
 	echo "$gamesList"
-	echo $sep
 	cat /tmp/gotwitch-subscriptions | sed "s/^/$streamerPrefix/gi" | sed "s/ / $gamePrefix/2"
-	echo $sep
 	cat /tmp/gotwitch-popular | sed "s/^/$streamerPrefix/gi" | sed "s/ / $gamePrefix/2"
 }
 
