@@ -2,8 +2,6 @@
 
 export DISPLAY=:0.0
 
-notify=(day9 wagamamatv dexbonus sodapopin)
-
 popsFile=/tmp/gotwitch-popular
 subsFile=/tmp/gotwitch-subscriptions
 notifiedFile=/tmp/gotwitch-notified
@@ -14,6 +12,7 @@ gotwitch -lg --padding 0 > $popsFile
 
 subs=$(cat $subsFile)
 notified=$(cat $notifiedFile)
+notify=($(echo $subs | sed "s/ .*^//g"))
 
 for n in $notify; do
 	inSubsFile=$(echo $subs | grep -i $n)
