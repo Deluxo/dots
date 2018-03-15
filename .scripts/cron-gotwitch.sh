@@ -12,20 +12,20 @@ gotwitch -lg --padding 0 > $popsFile
 
 subs=$(cat $subsFile)
 notified=$(cat $notifiedFile)
-notify=($(echo $subs | sed "s/ .*^//g"))
+notify=($(echo "$subs" | awk '{print $1}'))
 
 for n in $notify; do
 	inSubsFile=$(echo $subs | grep -i $n)
-	if [[ ! -n $inSubsFile ]]; then
-		notified=$(echo $notified | grep -vi $n)
+	oldStream=$(echo "$notified" | grep "$n" | grep -v "$inSubsFile")
+	if [[ ( ! -n "$inSubsFile" ) || ( -n "$oldStream" ) ]]; then
+		notified=$(echo $notified | grep -vi $oldStream)
 	else
-		inNotifiedFile=$(echo $notified | grep "$inSubsFile")
-		if [[ ! -n $inNotifiedFile ]]; then
-			entry=$(echo $inSubsFile | sed "s/ / is playing /1")
+		inNotifiedFile=$(echo "$notified" | grep "$inSubsFile")
+		if [[ ! -n "$inNotifiedFile" ]]; then
+			entry=$(echo "$inSubsFile" | sed "s/ / is playing /1")
 			notify-send -t 10000 "Gotwitch" "$entry"
 			notified=$(echo "$notified\n$inSubsFile")
 		fi
 	fi
 done
-
 echo $notified > /tmp/gotwitch-notified

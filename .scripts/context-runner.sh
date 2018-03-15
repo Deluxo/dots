@@ -33,7 +33,7 @@ elif [[ $context =~ "magnet:" ]]; then
 	$term -e zsh -c "peerflix \"$context\" -f \"Downloads/\" -k -l"
 elif [[ $context =~ ".torrent" ]]; then
 	msg="selected torrent file"
-	torrent $context
+	torrent $context &!
 elif [[ $context =~ "http" ]]; then
 	msg="Some http stream"
 	mpv $context &!
@@ -43,7 +43,7 @@ elif ls ~/Downloads/*.torrent 1> /dev/null 2>&1; then
 	now=$(date +%s)
 	freshness=$(($now-$fileModDate))
 	if [[ $freshness -lt 3000 ]]; then
-		torrent $file
+		torrent $file &!
 	fi
 fi
 
