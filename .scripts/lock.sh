@@ -112,7 +112,7 @@ case "$1" in
 		echo 'locked' > $lockfile
 		xset +dpms
 		xset s on
-		xautolock -locker "$0 -l $defaultmode" -time 1 &
+		xautolock -locker "$0 -l $defaultmode" -time 1 &!
 		;;
 	--off)
 		rm $lockfile
