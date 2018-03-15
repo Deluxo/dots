@@ -6,12 +6,16 @@ gameOffsetPrefix="games: offset "
 gamesList="Games"
 streamerPrefix=" "
 input=$(echo $@ | awk '{print $1}')
+tmpDir=/tmp/gotwitch
+popsFile=$tmpDir/gotwitch-popular
+subsFile=$tmpDir/gotwitch-subscriptions
+notifiedFile=$tmpDir/gotwitch-notified
 
 streamers()
 {
 	echo "$gamesList"
-	cat /tmp/gotwitch-subscriptions | sed "s/^/$streamerPrefix/gi" | sed "s/ / $gamePrefix/2"
-	cat /tmp/gotwitch-popular | sed "s/^/$streamerPrefix/gi" | sed "s/ / $gamePrefix/2"
+	cat $subsFile | sed "s/^/$streamerPrefix/gi" | sed "s/ / $gamePrefix/2" | sed "s/ (http.*)$//"
+	cat $popsFile | sed "s/^/$streamerPrefix/gi" | sed "s/ / $gamePrefix/2" | sed "s/ (http.*)$//"
 }
 
 game()
