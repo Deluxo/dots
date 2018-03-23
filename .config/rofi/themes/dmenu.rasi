@@ -1,7 +1,7 @@
 * {
 	background-color: #00000000;
 	color: White;
-	font: "xos4 terminus 13";
+	font: "xos4 terminus 12";
 }
 
 #window {
@@ -19,7 +19,7 @@
 
 #listview {
 	layout: horizontal;
-	padding: 6px 0;
+	padding: 0px 0;
 	spacing: 5px;
 	lines: 100;
 }
@@ -39,7 +39,7 @@
 
 #element {
 	margin: 0px 30px;
-	padding: 0px 2px;
+	padding: 6px 2px;
 }
 
 #element selected {
