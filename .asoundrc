@@ -8,6 +8,15 @@ pcm.microphone {
 	subdevice 0;
 }
 
+pcm.dsnooped {
+    type dsnoop
+    ipc_key 234884
+    slave {
+        pcm "hw:0,0"
+        channels 1
+    }
+}
+
 pcm.equalizer {
 	type equal;
 	slave.pcm "plug:dmix";
@@ -32,6 +41,6 @@ pcm.!default {
 	}
 	capture.pcm {
 		type plug;
-		slave.pcm "microphone";
+		slave.pcm "dsnooped";
 	}
 }
