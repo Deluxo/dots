@@ -49,6 +49,7 @@ export SXHDK_SHELL=/bin/bash
 export MPD_HOST=/home/lukas/.config/mpd/socket
 export NPM_GLOBAL=/home/lukas/Documents/dev/js/npm
 export PATH="$PATH:$GOBIN:$NPM_GLOBAL/bin:$HOME/Documents/dev/android/sdk/tools"
+export APULSE_CAPTURE_DEVICE=plughw:0,0
 
 export PATH="$HOME/.scripts:$HOME/Documents/dev/android/sdk/build-tools:$HOME/Documents/dev/android/sdk/tools:$HOME/Documents/dev/android/sdk/platform-tools/:$PATH"
 

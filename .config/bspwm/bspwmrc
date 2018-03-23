@@ -50,7 +50,7 @@ env | grep DBUS_SESSION_BUS_ADDRESS > $HOME/.dbus/Xdbus
 echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 
 # interface
-$HOME/.scripts/xwinwrap.sh ~/Pictures/Wallpapers/animated/security-window.gif &> /dev/null &!
+#$HOME/.scripts/xwinwrap.sh ~/Pictures/Wallpapers/animated/security-window.gif &> /dev/null &!
 $HOME/.scripts/lock.sh --off --allow-blanking &!
 polybar -r legacy &!
 compton --config ~/.config/compton/compton.conf --dbus &!
