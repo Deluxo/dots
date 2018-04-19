@@ -34,7 +34,7 @@ for n in $notify; do
 		if [[ ! -f $localIcon ]]; then
 			curl -s "$icon" > $localIcon
 		fi
-		notify-send -t 15000 -i "$localIcon" "${(C)n}" "$entry"
+		notify-send -t 5000 -i "$localIcon" "${(C)n}" "$entry"
 		notified=$(echo "$notified\n$inSubsFile")
 	fi
 done

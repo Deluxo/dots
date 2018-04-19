@@ -11,9 +11,9 @@ torrent() {
 	if [[ -n $lsblkItem ]]; then
 		altDestination="/mnt/lukas/videos"
 		if [[ ! -d $altDestination ]]; then
-			$term -e zsh -c "echo mount additional disk for destination disk;sudo mount /dev/$(lsblk -l | tail -n 1 | awk '{print $1}') /mnt; mkdir -p $altDestination"
+			$term -e zsh -c "echo mount external disk for destination;sudo mount /dev/$(lsblk -l | tail -n 1 | awk '{print $1}') /mnt; mkdir -p $altDestination"
+			destination=$altDestination
 		fi
-		destination=$altDestination
 	fi
 	if [[ $freshness -lt 3000 ]]; then
 		msg="Latest torrent file"

@@ -48,6 +48,9 @@ super + q
 super + Return
 	alacritty
 
+alt + grave
+	tdrop -ma -y -703 -h 700 -w 3438 alacritty
+
 # program launcher
 super + {_,ctrl + ,shift + }space
 	rofi -show {run, , }
