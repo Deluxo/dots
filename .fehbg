@@ -1,2 +1,2 @@
 #!/bin/sh
-'feh' '--bg-fill' '/home/lukas/Pictures/Wallpapers/Concept/wallhaven-340040.jpg' 
+feh --bg-fill '/home/lukas/Pictures/Wallpapers/Minimalistic/wallhaven-662653.jpg'

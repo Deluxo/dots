@@ -12,11 +12,12 @@ torrent() {
 		altDestination="/mnt/lukas/videos"
 		if [[ ! -d $altDestination ]]; then
 			$term -e zsh -c "echo mount external disk for destination;sudo mount /dev/$(lsblk -l | tail -n 1 | awk '{print $1}') /mnt; mkdir -p $altDestination"
-			destination=$altDestination
 		fi
+		destination=$altDestination
 	fi
 	if [[ $freshness -lt 3000 ]]; then
 		msg="Latest torrent file"
+		echo "destination = $destination"
 		$term -e zsh -c "echo Downloading to $(lsblk -l | tail -n 1 | awk '{print $1 " " $4}'): $destination; peerflix \"$file\" -f $destination/ -k -l"
 
 	fi

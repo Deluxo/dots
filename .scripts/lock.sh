@@ -15,7 +15,14 @@ wallpaper="$2" || "$(cat .fehbg | awk '{print $3}' | sed "s/'//g" | tail -n 1)"
 
 prelock() {
 	pkill -u "$USER" -USR1 dunst
-	playerctl pause
+	if [[ $(playerctl status) == 'Playing' ]]; then
+		echo 1 > "$lockfile.isplaying"
+		playerctl pause
+	else
+		if [[ -f "$lockfile.isplaying" ]]; then
+			rm "$lockfile.isplaying"
+		fi
+	fi
 }
 
 lock() {
@@ -43,7 +50,6 @@ lock() {
 		--insidewrongcolor=$passwordIncorrect \
 		--timecolor="$foreground" \
 		--datecolor="$foreground" \
-		--textcolor="$foreground"\
 		--ringcolor=$foreground \
 		--ringvercolor=$foreground \
 		--ringwrongcolor=$foreground \
@@ -54,7 +60,10 @@ lock() {
 
 postlock() {
 	pkill -u "$USER" -USR2 dunst
-	playerctl play
+	if [[ -f "$lockfile.isplaying" ]]; then
+		playerctl play
+		rm "$lockfile.isplaying"
+	fi
 }
 
 # Options
