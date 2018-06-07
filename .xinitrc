@@ -53,6 +53,8 @@ export APULSE_CAPTURE_DEVICE=default
 export PATH="$HOME/.scripts:$HOME/Documents/dev/android/sdk/build-tools:$HOME/Documents/dev/android/sdk/tools:$HOME/Documents/dev/android/sdk/platform-tools/:$PATH"
 export SDL_AUDIODRIVER=alsa
 export allow_rgb10_configs=false
+export APULSE_CAPTURE_DEVICE=plug:dsnoop
+
 
 xsetroot -cursor_name left_ptr
 ~/.fehbg &

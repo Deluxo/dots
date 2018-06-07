@@ -2,9 +2,9 @@
 
 color-bg-0 = #550f1419
 color-bg-1 = #550f1419
-color-focused = #ffffff
-color-occupied-muted = #aaffffff
-color-empty = #33ffffff
+color-focused = #FFFFFF
+color-occupied-muted = #AAFFFFFF
+color-empty = #33FFFFFF
 color-urgent = #E04E46
 color-border = #0000ff
 

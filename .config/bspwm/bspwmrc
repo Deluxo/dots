@@ -42,7 +42,7 @@ bspc rule -a steam state=floating follow=off focus=off
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
 bspc config normal_border_color '#000000'
-bspc config focused_border_color '#4b99c1'
+bspc config focused_border_color '#FFFFFF'
 
 touch $HOME/.dbus/Xdbus
 chmod 600 $HOME/.dbus/Xdbus

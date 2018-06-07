@@ -4,4 +4,4 @@ rofi.scroll-method: 1
 rofi.show-icons: true
 rofi.dpi: 1.0
 rofi.terminal: alacritty
-rofi.theme: ~/.config/rofi/themes/dmenu.rasi
+rofi.theme: ~/.config/rofi/themes/slim.rasi
