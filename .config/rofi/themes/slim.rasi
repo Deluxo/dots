@@ -2,7 +2,7 @@
 	li: rgba(255, 255, 255, 50%);
 	li-on: rgba(255, 255, 255, 100%);
 	none: rgba(0, 0, 0, 0%);
-	bg: rgba(15, 20, 25, 60%);
+	bg: rgba(15, 20, 25, 40%);
 	font: "Overpass Normal 20";
 }
 #window {

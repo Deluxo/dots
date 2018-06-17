@@ -42,7 +42,7 @@ bspc rule -a steam state=floating follow=off focus=off
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 
 bspc config normal_border_color '#000000'
-bspc config focused_border_color '#FFFFFF'
+bspc config focused_border_color '#8870db'
 
 touch $HOME/.dbus/Xdbus
 chmod 600 $HOME/.dbus/Xdbus
@@ -52,8 +52,10 @@ echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 # interface
 #$HOME/.scripts/xwinwrap.sh ~/Pictures/Wallpapers/animated/security-window.gif &> /dev/null &!
 $HOME/.scripts/lock.sh --off --allow-blanking &!
+$HOME/.scripts/steelseries-raw-settings.sh
 polybar -r legacy &!
 compton --config ~/.config/compton/compton.conf --dbus &!
 steam-native &!
+easystroke enable &!
 qtox &!
 #sleep 10; ~/.scripts/start-conkies.sh &!
