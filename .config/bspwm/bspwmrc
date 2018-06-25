@@ -4,8 +4,8 @@ sxhkd -m -1 &
 
 bspc config border_width        1
 bspc config window_gap          15
-bspc config normal_border_color '#000000'
-bspc config focused_border_color '#8870db'
+bspc config normal_border_color '#'
+bspc config focused_border_color '#'
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
@@ -54,3 +54,4 @@ compton --config ~/.config/compton/compton.conf --dbus &!
 steam-native &!
 easystroke enable &!
 qtox &!
+xwinwrap.sh /home/lukas/Pictures/Wallpapers/animated/ezgif.com-crop.gif &!
