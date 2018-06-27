@@ -54,4 +54,3 @@ compton --config ~/.config/compton/compton.conf --dbus &!
 steam-native &!
 easystroke enable &!
 qtox &!
-xwinwrap.sh /home/lukas/Pictures/Wallpapers/animated/ezgif.com-crop.gif &!
