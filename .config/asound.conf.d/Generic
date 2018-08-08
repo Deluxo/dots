@@ -1,0 +1,51 @@
+defaults.ctl.card 0;
+
+# Analog
+defaults.pcm.card 0;
+defaults.pcm.device 0;
+
+# DP
+#defaults.pcm.card 1;
+#defaults.pcm.device 10;
+
+# HDMI
+#defaults.pcm.card 1;
+#defaults.pcm.device 11;
+
+ctl.equal {
+	type equal;
+}
+
+pcm.microphone {
+	card 0;
+	device 0;
+	subdevice 0;
+}
+
+pcm.dsnooped {
+	type dsnoop;
+	ipc_key 234884;
+	slave {
+		pcm "hw:0,0";
+		channels 1;
+	}
+}
+
+pcm.equalizer {
+	type equal;
+	slave.pcm "plug:dmix";
+}
+
+pcm.!default {
+	type asym;
+	playback.pcm {
+		type plug;
+		slave.pcm "equalizer";
+	}
+	capture.pcm {
+		type plug;
+		slave.pcm "dsnooped";
+	}
+}
+
+

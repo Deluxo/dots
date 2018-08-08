@@ -102,7 +102,7 @@ date = %b %e %a, %H:%M
 format-padding = 0
 
 [module/volume]
-type = internal/volume
+type = internal/alsa
 format-volume-padding = 0
 format-muted-padding = 0
 format-volume = <ramp-volume> <label-volume>
