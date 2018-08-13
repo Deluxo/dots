@@ -41,6 +41,7 @@ bspc rule -a "Peek" state=floating
 bspc rule -a steam state=floating follow=off focus=off
 bspc rule -a Plank layer=normal manage=on border=off focus=off locked=on
 bspc rule -a Firefox rectangle=1230x1375+1104
+bspc rule -a feh state=floating
 
 touch $HOME/.dbus/Xdbus
 chmod 600 $HOME/.dbus/Xdbus
