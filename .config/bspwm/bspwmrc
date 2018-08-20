@@ -23,6 +23,7 @@ bspc monitor -d I II III IV V VI VII VIII IX X
 bspc rule -a Firefox desktop=^1
 bspc rule -a vim desktop=^2
 bspc rule -a Skype desktop=^3
+bspc rule -a Slack desktop=^3
 bspc rule -a qTox desktop=^3
 bspc rule -a ncmpcpp desktop=^4
 bspc rule -a spotify desktop=^4
@@ -33,6 +34,8 @@ bspc rule -a FTL desktop=^6
 bspc rule -a csgo_linux64 desktop=^6
 bspc rule -a hl2_linux desktop=^6
 bspc rule -a ranger desktop=^8
+bspc rule -a Mail desktop=^9
+bspc rule -a Thunderbird desktop=^9
 bspc rule -a Gimp desktop=^10
 bspc rule -a mpv state=floating sticky=on
 bspc rule -a Galculator state=floating sticky=on
