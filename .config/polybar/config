@@ -3,7 +3,7 @@ color-bg-0 = #00000000
 color-bg-1 = #00000000
 color-focused = #FFFFFF
 color-occupied-muted = #66FFFFFF
-color-empty = #33FFFFFF
+color-empty = #22FFFFFF
 color-urgent = #E04E46
 color-border = #22ffffff
 
