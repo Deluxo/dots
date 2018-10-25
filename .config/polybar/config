@@ -1,57 +1,85 @@
-[vars]
-
-color-bg-0 = #550f1419
-color-bg-1 = #550f1419
+[var]
+color-bg-0 = #00000000
+color-bg-1 = #00000000
 color-focused = #FFFFFF
-color-occupied-muted = #AAFFFFFF
+color-occupied-muted = #66FFFFFF
 color-empty = #33FFFFFF
 color-urgent = #E04E46
-color-border = #0000ff
+color-border = #22ffffff
 
-underline-size = 0
+underline-size = 1
 padding-0 = 2
 padding-1 = 1
-;p-1 - p-0 = p-2
 
-[settings]
-throttle-limit = 5
-throttle-ms = 50
-throttle-input-for = 50
+[bar/workspaces]
+width = 306
+offset-y = 16
+offset-x = 60
 
-[bar/legacy]
-height = 33
-offset-y = 0px
+border-bottom-size = 1
+border-bottom-color = ${var.color-border}
 
-;tray-position = right
-tray-transparent = false
-tray-detached = false
-tray-background = ${vars.color-bg-0}
-;
-border-bottom-size = 0
-border-bottom-color = ${vars.color-border}
+border-top-size = 1
+border-top-color = ${var.color-border}
 
-padding-left = ${vars.padding-0}
-padding-right = ${vars.padding-0}
+border-left-size = 1
+border-left-color = ${var.color-border}
 
-background-0 = ${vars.color-bg-0}
-background-1 = ${vars.color-bg-1}
-;background-0 = #AA000000
-;background-1 = #44000000
-foreground = ${vars.color-focused}
+border-right-size = 1
+border-right-color = ${var.color-border}
 
-spacing = 1
-underline-size = ${vars.underline-size}
-overline-size = 0
-module-margin-left = ${vars.padding-1}
-module-margin-right = ${vars.padding-1}
+padding-left = 1
 
-font-0 = xos4terminus:size=17:weight=normal;1
-font-1 = FontAwesome5Free:style=Solid:size=13:weight=light;3
-font-2 = FontAwesome5Brands:style=Solid:size=13:weight=light;3
-font-3 = Noto Sans CJK JP:size=13:weight=normal;1
+background-0 = ${var.color-bg-0}
+background-1 = ${var.color-bg-1}
+foreground = ${var.color-focused}
+
+underline-size = ${var.underline-size}
+module-margin-left = ${var.padding-1}
+
+font-0 = xos4terminus:size=11:weight=normal;1
+font-1 = FontAwesome5Free:style=Solid:size=11:weight=light;3
+font-2 = FontAwesome5Brands:style=Solid:size=11:weight=light;3
+font-3 = Noto Sans CJK JP:size=11:weight=normal;1
 
 modules-left = menu bspwm
-modules-center = title
+wm-name = bar
+wm-restack = bspwm
+override-redirect = true
+
+[bar/tray]
+width = 280
+offset-y = 16
+offset-x = 3100
+
+border-bottom-size = 1
+border-bottom-color = ${var.color-border}
+
+border-top-size = 1
+border-top-color = ${var.color-border}
+
+border-left-size = 1
+border-left-color = ${var.color-border}
+
+border-right-size = 1
+border-right-color = ${var.color-border}
+
+padding-right = 1
+
+background-0 = ${var.color-bg-0}
+background-1 = ${var.color-bg-1}
+foreground = ${var.color-focused}
+
+underline-size = ${var.underline-size}
+module-margin-right = ${var.padding-1}
+
+module-margin-left = ${var.padding-1}
+
+font-0 = xos4terminus:size=11:weight=normal;1
+font-1 = FontAwesome5Free:style=Solid:size=11:weight=light;3
+font-2 = FontAwesome5Brands:style=Solid:size=11:weight=light;3
+font-3 = Noto Sans CJK JP:size=11:weight=normal;1
+
 modules-right = music weather volume cal clock locker
 wm-name = bar
 wm-restack = bspwm
@@ -63,18 +91,18 @@ label-focused = %icon%
 label-occupied = %icon%
 label-empty = %icon%
 label-urgent = %icon%
-label-focused-padding = ${vars.padding-1}
-label-occupied-padding = ${vars.padding-1}
-label-empty-padding = ${vars.padding-1}
-label-urgent-padding = ${vars.padding-1}
-label-focused-background-0 = ${vars.color-bg-0}
-label-focused-background-1 = ${vars.color-bg-1}
-label-focused-foreground = ${vars.color-focused}
-label-occupied-foreground = ${vars.color-occupied-muted}
-label-empty-foreground = ${vars.color-empty}
-label-urgent-foreground= ${vars.color-urgent}
-label-focused-underline = ${vars.color-occupied-muted}
-label-urgent-underline= ${vars.color-urgent}
+label-focused-padding = ${var.padding-1}
+label-occupied-padding = ${var.padding-1}
+label-empty-padding = ${var.padding-1}
+label-urgent-padding = ${var.padding-1}
+label-focused-background-0 = ${var.color-bg-0}
+label-focused-background-1 = ${var.color-bg-1}
+label-focused-foreground = ${var.color-focused}
+label-occupied-foreground = ${var.color-occupied-muted}
+label-empty-foreground = ${var.color-empty}
+label-urgent-foreground= ${var.color-urgent}
+label-focused-underline = ${var.color-occupied-muted}
+label-urgent-underline= ${var.color-urgent}
 ws-icon-0 = I;
 ws-icon-1 = II;
 ws-icon-2 = III;
@@ -85,6 +113,11 @@ ws-icon-6 = VII;
 ws-icon-7 = VIII;
 ws-icon-8 = IX;
 ws-icon-9 = X;
+
+[module/menu]
+type = custom/text
+content = ""
+click-left = rofi -config ~/.config/rofi/config -show drun
 
 [module/mpd]
 type = internal/mpd
@@ -107,15 +140,10 @@ format-volume-padding = 0
 format-muted-padding = 0
 format-volume = <ramp-volume> <label-volume>
 label-muted =  muted
-label-muted-foreground = ${vars.color-occupied-muted}
+label-muted-foreground = ${var.color-occupied-muted}
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
-
-[module/menu]
-type = custom/text
-content = ""
-click-left = rofi -config ~/.config/rofi/config -show drun
 
 [module/cal]
 type = custom/text

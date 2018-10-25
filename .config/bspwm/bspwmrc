@@ -3,7 +3,7 @@
 sxhkd -m -1 &
 
 bspc config border_width        1
-bspc config window_gap          15
+bspc config window_gap          60
 bspc config normal_border_color '#'
 bspc config focused_border_color '#'
 bspc config split_ratio          0.5
@@ -15,7 +15,7 @@ bspc config focus_follows_pointer true
 bspc config click_to_focus true
 bspc config pointer_action1 move
 bspc config pointer_action2 resize_corner
-bspc config top_padding 33
+bspc config top_padding 0
 bspc config initial_polarity second_child
 
 bspc monitor -d I II III IV V VI VII VIII IX X
@@ -53,7 +53,8 @@ echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 
 $HOME/.scripts/lock.sh --off --allow-blanking &!
 $HOME/.scripts/steelseries-raw-settings.sh
-polybar -r legacy &!
+polybar -r workspaces &!
+polybar -r tray &!
 compton --config ~/.config/compton/compton.conf --dbus &!
 steam-native &!
 easystroke enable &!
