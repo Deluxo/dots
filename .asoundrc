@@ -1,3 +1,17 @@
+defaults.ctl.card 0;
+
+# Analog
+defaults.pcm.card 0;
+defaults.pcm.device 0;
+
+# DP
+#defaults.pcm.card 1;
+#defaults.pcm.device 10;
+
+# HDMI
+#defaults.pcm.card 1;
+#defaults.pcm.device 11;
+
 ctl.equal {
 	type equal;
 }
@@ -9,28 +23,17 @@ pcm.microphone {
 }
 
 pcm.dsnooped {
-    type dsnoop
-    ipc_key 234884
-    slave {
-        pcm "hw:0,0"
-        channels 1
-    }
+	type dsnoop;
+	ipc_key 234884;
+	slave {
+		pcm "hw:0,0";
+		channels 1;
+	}
 }
 
 pcm.equalizer {
 	type equal;
 	slave.pcm "plug:dmix";
-}
-
-pcm.softvol {
-	type softvol;
-	slave.pcm "dmix";
-	control {
-		name "Pre-Amp";
-		card 0;
-	}
-	min_dB -10.0;
-	max_dB  30.0;
 }
 
 pcm.!default {
@@ -44,3 +47,5 @@ pcm.!default {
 		slave.pcm "dsnooped";
 	}
 }
+
+

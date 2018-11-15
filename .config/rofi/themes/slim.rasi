@@ -3,12 +3,17 @@
 	li-on: rgba(255, 255, 255, 100%);
 	none: rgba(0, 0, 0, 0%);
 	bg: rgba(15, 20, 25, 40%);
-	font: "Overpass Normal 20";
+	font: "Overpass Normal 11";
 }
 #window {
-	padding: 50;
+	border: 1px;
+	border-color: rgba(255, 255, 255, 10%);
+	padding: 10;
 	background-color: @bg;
 	color: @none;
+	location: north;
+	y-offset: 16px;
+	width: 30%;
 }
 #mainbox {
     border:  0;
@@ -18,7 +23,7 @@
 }
 #listview {
 	background-color: @none;
-	padding: 10px 0;
+	padding: 0;
 	dynamic: true;
 }
 #inputbar {
@@ -45,8 +50,8 @@
 }
 
 #button {
-	margin: 40px 0;
-	font: "FontAwesome 25";
+	margin: 0 0;
+	font: "FontAwesome 11";
     background-color: @none;
     text-color:       @li;
 }
@@ -60,7 +65,7 @@
     padding: 10px 0;
 	background-color: @none;
 	color: @li;
-	font: "Overpass Mono Bold 18";
+	font: "Overpass Mono Bold 11";
 }
 #element.selected.normal {
     text-color:       @li-on;
@@ -74,5 +79,5 @@
 #entry {
 	background-color: @none;
 	color: @li-on;
-	font: "Overpass Heavy 20";
+	font: "Overpass Heavy 11";
 }
