@@ -5,7 +5,8 @@ player_status=$(playerctl status 2> /dev/null)
 
 if [[ $? -eq 0 ]]; then
 	#metadata="$(playerctl metadata artist) - $(playerctl metadata title)"
-	metadata=""
+	#metadata=""
+    echo "%{F#AAFFFFFF}$icon"
 fi
 
 if [[ $player_status = "Playing" ]]; then

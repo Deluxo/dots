@@ -39,36 +39,35 @@
 # ----------------------------------------------------------------------
 
 [global]
-    font = xos4 Terminus 13
+    font = Noto Mono 13
 
     allow_markup = yes
 
-    format = "<b>%s</b>\n\n%b"
+    format = "\n<b>    %s    </b>\n\n<i>    %b    \n</i>"
     sort = yes
     indicate_hidden = yes
-    alignment = left
+    alignment = center
 
     bounce_freq = 0
     show_age_threshold = 60
-    word_wrap = yes
+    word_wrap = true
     ignore_newline = no
 
-	geometry = "1000-10+43"
-    shrink = yes
-    padding = 18
-    horizontal_padding = 18
+	geometry = "900-20-20"
+    shrink = false
+    padding = 0
+    horizontal_padding = 0
 
     transparency = 0
     idle_threshold = 120
     monitor = 0
     icon_position = left
-	max_icon_size = 100
+	max_icon_size = 120
 
     follow = none
     sticky_history = yes
     history_length = 20
     show_indicators = yes
-    line_height = 0
     separator_height = 1
     separator_color = frame
     startup_notification = false
@@ -76,7 +75,7 @@
 
 [frame]
     width = 1
-    color = "#1d4255"
+    color = "#ffffff"
 
 [shortcuts]
     close = ctrl+space
@@ -85,12 +84,12 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    background = "#000000"
+    background = "#2e3d4f"
     foreground = "#FFFFFF"
     timeout = 3
 
 [urgency_normal]
-    background = "#000000"
+    background = "#2e3d4f"
     foreground = "#FFFFFF"
     timeout = 4
 

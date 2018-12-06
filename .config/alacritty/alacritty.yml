@@ -83,14 +83,10 @@ font:
 # Should display the render timer
 render_timer: false
 
-# Use custom cursor colors. If true, display the cursor in the cursor.foreground
-# and cursor.background colors, otherwise invert the colors of the cursor.
-custom_cursor_colors: false
-
 # Colors (Snazzy)
 colors:
   primary:
-    background: '0x0f1419'
+    background: '0x202734'
     foreground: '0xeff0eb'
   normal:
     black:   '0x282a36'
@@ -150,7 +146,7 @@ visual_bell:
   duration: 0
 
 # Background opacity
-background_opacity: 0.60
+background_opacity: 0.80
 
 # Mouse bindings
 #
@@ -173,11 +169,10 @@ mouse_bindings:
 mouse:
   double_click: { threshold: 300 }
   triple_click: { threshold: 300 }
+  hide_when_typing: true
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
-
-hide_cursor_when_typing: true
 
 # Style of the cursor
 #
@@ -185,7 +180,8 @@ hide_cursor_when_typing: true
 # - Block
 # - Underline
 # - Beam
-cursor_style: Beam
+cursor:
+    style: Beam
 
 # Live config reload (changes require restart)
 live_config_reload: true

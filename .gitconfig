@@ -5,3 +5,5 @@
 	aw = log --graph --all --color --stat --oneline --pretty=format:'%C(red)%h%C(yellow)% d %C(green)% s%C(blue)% aN, %aE%C(magenta)% ci%+b'
 [credential]
 	helper = cache --timeout=3600
+[core]
+	filemode = false

@@ -12,7 +12,7 @@ padding-0 = 2
 padding-1 = 1
 
 [bar/workspaces]
-width = 306
+width = 350
 offset-y = 16
 offset-x = 60
 
@@ -37,7 +37,7 @@ foreground = ${var.color-focused}
 underline-size = ${var.underline-size}
 module-margin-left = ${var.padding-1}
 
-font-0 = xos4terminus:size=11:weight=normal;1
+font-0 = xos4terminus:size=13:weight=normal;1
 font-1 = FontAwesome5Free:style=Solid:size=11:weight=light;3
 font-2 = FontAwesome5Brands:style=Solid:size=11:weight=light;3
 font-3 = Noto Sans CJK JP:size=11:weight=normal;1
@@ -48,9 +48,9 @@ wm-restack = bspwm
 override-redirect = true
 
 [bar/tray]
-width = 280
+width = 293
 offset-y = 16
-offset-x = 3100
+offset-x = 3087
 
 border-bottom-size = 1
 border-bottom-color = ${var.color-border}
@@ -75,12 +75,12 @@ module-margin-right = ${var.padding-1}
 
 module-margin-left = ${var.padding-1}
 
-font-0 = xos4terminus:size=11:weight=normal;1
+font-0 = xos4terminus:size=13:weight=normal;2
 font-1 = FontAwesome5Free:style=Solid:size=11:weight=light;3
 font-2 = FontAwesome5Brands:style=Solid:size=11:weight=light;3
 font-3 = Noto Sans CJK JP:size=11:weight=normal;1
 
-modules-right = music weather volume cal clock locker
+modules-right = weather volume cal clock
 wm-name = bar
 wm-restack = bspwm
 override-redirect = true
