@@ -1,12 +1,12 @@
 defaults.ctl.card 0;
 
 # Analog
-#defaults.pcm.card 0;
-#defaults.pcm.device 0;
+defaults.pcm.card 0;
+defaults.pcm.device 0;
 
 # DP
-defaults.pcm.card 1;
-defaults.pcm.device 10;
+#defaults.pcm.card 1;
+#defaults.pcm.device 10;
 
 # HDMI
 #defaults.pcm.card 1;

@@ -50,8 +50,8 @@ alt + grave
 	tdrop -ma -y -703 -h 700 -w 3438 alacritty
 
 # program launcher
-super + {_,ctrl + ,shift + }space
-	rofi -show {run, , }
+super + {_,ctrl + ,shift + ,alt + }space
+	rofi -show {run, , , emoji}
 
 alt + space
 	rofi -show drun
