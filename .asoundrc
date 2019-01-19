@@ -7,42 +7,20 @@
 pcm.atihdmi {
 	type dmix;
 	ipc_key 6144;
-	slave {
-		pcm "hw:1,11";
-		channels 2;
-	}
-	bindings {
-		0 0;
-		1 1;
-	}
+	slave.pcm "hw:1,11";
 }
 
 pcm.displayport {
 	type dmix;
 	ipc_key 2048;
-	ipc_perm 0666;
-	slave {
-		pcm "hw:1,10";
-		channels 2;
-	}
-	bindings {
-		0 0;
-		1 1;
-	}
+	slave.pcm "hw:1,10";
 }
 
 pcm.generic {
 	type dmix;
 	ipc_key 4096;
 	ipc_perm 0666;
-	slave {
-		pcm "hw:0,0";
-		channels 2;
-	}
-	bindings {
-		0 0;
-		1 1;
-	}
+	slave.pcm "hw:0,0";
 }
 
 #  ___                   _
