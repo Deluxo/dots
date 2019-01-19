@@ -47,5 +47,3 @@ pcm.!default {
 		slave.pcm "dsnooped";
 	}
 }
-
-
