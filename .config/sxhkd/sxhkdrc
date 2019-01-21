@@ -4,8 +4,12 @@ ctrl + alt + Delete
 {_,shift +, alt +, alt + shift + }Print
 	{~/.scripts/screenshot.sh, ~/.scripts/screenshot.sh area, ~/.scripts/screenshot.sh online}
 
+Pause
+	{~/.scripts/dmenu-power.sh 'screen off'}
+
+
 super + ctrl + {1-9}
-	{apulse firefox, alacritty -e vim, qtox, nice -n 19 apulse spotify, notify-send "`task ls`", ~/.scripts/./context-runner.sh, _, alacritty -e ranger, alacritty -e htop}
+	{qutebrowser, alacritty -e vim, qtox, nice -n 19 apulse spotify, notify-send "`task ls`", ~/.scripts/./context-runner.sh, _, alacritty -e ranger, alacritty -e htop}
 
 XF86AudioMute
 	amixer set Master toggle

@@ -1,11 +1,11 @@
 [var]
-color-bg-0 = #52000000
-color-bg-1 = #52000000
+color-bg-0 = #00000000
+color-bg-1 = #00000000
 color-focused = #FFFFFF
 color-occupied-muted = #66FFFFFF
 color-empty = #22FFFFFF
 color-urgent = #E04E46
-color-border = #22ffffff
+color-border = #00ffffff
 
 underline-size = 1
 padding-0 = 2
@@ -14,7 +14,7 @@ padding-1 = 1
 [bar/workspaces]
 width = 350
 offset-y = 16
-offset-x = 60
+offset-x = 55
 
 border-bottom-size = 1
 border-bottom-color = ${var.color-border}
@@ -50,7 +50,7 @@ override-redirect = true
 [bar/tray]
 width = 293
 offset-y = 16
-offset-x = 3087
+offset-x = 3096
 
 border-bottom-size = 1
 border-bottom-color = ${var.color-border}
