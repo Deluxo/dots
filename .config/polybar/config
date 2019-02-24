@@ -7,7 +7,15 @@ color-empty = #22FFFFFF
 color-urgent = #E04E46
 color-border = #00ffffff
 
-underline-size = 1
+color-alt-bg-0 = #00000000
+color-alt-bg-1 = #00000000
+color-alt-focused = #000000
+color-alt-occupied-muted = #66000000
+color-alt-empty = #22000000
+color-alt-urgent = #E04E46
+color-alt-border = #00ffffff
+
+underline-size = 0
 padding-0 = 2
 padding-1 = 1
 
@@ -17,22 +25,22 @@ offset-y = 16
 offset-x = 55
 
 border-bottom-size = 1
-border-bottom-color = ${var.color-border}
+border-bottom-color = ${var.color-alt-border}
 
 border-top-size = 1
-border-top-color = ${var.color-border}
+border-top-color = ${var.color-alt-border}
 
 border-left-size = 1
-border-left-color = ${var.color-border}
+border-left-color = ${var.color-alt-border}
 
 border-right-size = 1
-border-right-color = ${var.color-border}
+border-right-color = ${var.color-alt-border}
 
 padding-left = 1
 
-background-0 = ${var.color-bg-0}
-background-1 = ${var.color-bg-1}
-foreground = ${var.color-focused}
+background-0 = ${var.color-alt-bg-0}
+background-1 = ${var.color-alt-bg-1}
+foreground = ${var.color-alt-focused}
 
 underline-size = ${var.underline-size}
 module-margin-left = ${var.padding-1}
@@ -50,7 +58,7 @@ override-redirect = true
 [bar/tray]
 width = 293
 offset-y = 16
-offset-x = 3096
+offset-x = 3088
 
 border-bottom-size = 1
 border-bottom-color = ${var.color-border}
@@ -95,14 +103,14 @@ label-focused-padding = ${var.padding-1}
 label-occupied-padding = ${var.padding-1}
 label-empty-padding = ${var.padding-1}
 label-urgent-padding = ${var.padding-1}
-label-focused-background-0 = ${var.color-bg-0}
-label-focused-background-1 = ${var.color-bg-1}
-label-focused-foreground = ${var.color-focused}
-label-occupied-foreground = ${var.color-occupied-muted}
-label-empty-foreground = ${var.color-empty}
-label-urgent-foreground= ${var.color-urgent}
-label-focused-underline = ${var.color-occupied-muted}
-label-urgent-underline= ${var.color-urgent}
+label-focused-background-0 = ${var.color-alt-bg-0}
+label-focused-background-1 = ${var.color-alt-bg-1}
+label-focused-foreground = ${var.color-alt-focused}
+label-occupied-foreground = ${var.color-alt-occupied-muted}
+label-empty-foreground = ${var.color-alt-empty}
+label-urgent-foreground= ${var.color-alt-urgent}
+label-focused-underline = ${var.color-alt-occupied-muted}
+label-urgent-underline= ${var.color-alt-urgent}
 ws-icon-0 = I;
 ws-icon-1 = II;
 ws-icon-2 = III;

@@ -11,9 +11,8 @@
 	padding: 10;
 	background-color: @bg;
 	color: @none;
-	location: north;
-	y-offset: 16px;
-	width: 30%;
+	location: center;
+	width: 20%;
 }
 #mainbox {
     border:  0;

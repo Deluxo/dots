@@ -30,6 +30,7 @@ alias k='killall'
 # Completions
 eval "$(gotwitch --completion-script-zsh)"
 complete -W "$(~/.scripts/adevice.sh -l)" 'adevice.sh'
+source $HOME/.devsh
 
 curl --version 2>&1 > /dev/null
 if [ $? -ne 0 ]; then
