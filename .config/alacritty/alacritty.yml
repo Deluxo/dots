@@ -54,31 +54,33 @@ font:
   # The normal (roman) font face to use.
   normal:
     #family: monospace # should be "Menlo" or something on macOS.
-    family: "xos4 Terminus" # should be "Menlo" or something on macOS.
+    family: "hack" # should be "Menlo" or something on macOS.
     style: mono
     # Style can be specified to pick a specific face.
 
   # The bold font face
   bold:
     #family: monospace # should be "Menlo" or something on macOS.
-    family: "xos4 Terminus" # should be "Menlo" or something on macOS.
+    family: "hack" # should be "Menlo" or something on macOS.
     style: Bold
     # Style can be specified to pick a specific face.
 
   # The italic font face
   italic:
     #family: monospace # should be "Menlo" or something on macOS.
-    family: "xos4 Terminus" # should be "Menlo" or something on macOS.
+    family: "hack" # should be "Menlo" or something on macOS.
     style: Italic
     # Style can be specified to pick a specific face.
 
   # Point size of the font
-  size: 11.0
+  size: 9.0
+  offset:
+      x: 0
+      y: 2
+  glyph_offset:
+      x: 0
+      y: 1
 
-  # OS X only: use thin stroke font rendering. Thin strokes are suitable
-  # for retina displays, but for non-retina you probably want this set to
-  # false.
-  use_thin_strokes: false
 
 # Should display the render timer
 render_timer: false
