@@ -7,28 +7,28 @@ color-empty = #22FFFFFF
 color-urgent = #E04E46
 color-border = #00ffffff
 
-color-alt-bg-0 = #88000000
-color-alt-bg-1 = #88000000
+color-alt-bg-0 = #aa000000
+color-alt-bg-1 = #00000000
 color-alt-focused = #FFFFFF
 color-alt-occupied-muted = #66FFFFFF
 color-alt-empty = #22FFFFFF
 color-alt-urgent = #E04E46
-color-alt-border = #33ffffff
+color-alt-border = #00ffffff
 
 underline-size = 0
 padding-0 = 2
 padding-1 = 1
 
 [bar/workspaces]
-width = 96.5%
-offset-y = 16
-offset-x = 60
-height = 31
+width = 100%
+offset-y = 0
+offset-x = 0
+height = 60
 
 border-bottom-size = 1
 border-bottom-color = ${var.color-alt-border}
 
-border-top-size = 1
+border-top-size = 0
 border-top-color = ${var.color-alt-border}
 
 border-left-size = 1
@@ -37,8 +37,8 @@ border-left-color = ${var.color-alt-border}
 border-right-size = 1
 border-right-color = ${var.color-alt-border}
 
-padding-left = 2
-padding-right = 2
+padding-left = 7
+padding-right = 7
 
 background-0 = ${var.color-alt-bg-0}
 background-1 = ${var.color-alt-bg-1}
