@@ -1,17 +1,17 @@
 [var]
 color-bg-0 = #00000000
 color-bg-1 = #00000000
-color-focused = #FFFFFF
-color-occupied-muted = #66FFFFFF
-color-empty = #22FFFFFF
+color-focused = #e81b46
+color-occupied-muted = #665ec6c9
+color-empty = #225ec6c9
 color-urgent = #E04E46
 color-border = #00ffffff
 
-color-alt-bg-0 = #99000000
+color-alt-bg-0 = #aa000000
 color-alt-bg-1 = #00000000
-color-alt-focused = #FFFFFF
-color-alt-occupied-muted = #66FFFFFF
-color-alt-empty = #22FFFFFF
+color-alt-focused = #5ec6c9
+color-alt-occupied-muted = #665ec6c9
+color-alt-empty = #225ec6c9
 color-alt-urgent = #E04E46
 color-alt-border = #00ffffff
 
