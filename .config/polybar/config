@@ -94,7 +94,7 @@ interval = 2
 
 [module/title]
 type = internal/xwindow
-label-maxlen = 1000
+label-maxlen = 70%
 
 [module/clock]
 type = internal/date

@@ -1,4 +1,4 @@
-*.foreground: 	#5EC6C9
+*.foreground: 	#9DF9FC
 *.occupied: 	#665EC6C9
 *.empty: 		#335EC6C9
 *.urgent: 		#E04E46
