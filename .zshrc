@@ -37,6 +37,7 @@ complete -W "$(~/.scripts/adevice.sh -l)" 'adevice.sh'
 source $HOME/.devsh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
+source $HOME/.config/tiny-care-terminal.sh
 
 curl --version 2>&1 > /dev/null
 if [ $? -ne 0 ]; then

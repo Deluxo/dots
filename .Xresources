@@ -1,5 +1,5 @@
 *.foreground: 	#9DF9FC
-*.occupied: 	#665EC6C9
+*.occupied: 	#BB5EC6C9
 *.empty: 		#335EC6C9
 *.urgent: 		#E04E46
 *.border: 		#5EC6C9

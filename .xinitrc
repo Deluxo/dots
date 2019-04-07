@@ -36,6 +36,7 @@ eval $(ssh-agent)
 ssh-add ~/.ssh/github
 ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/gitlab
+ssh-add ~/.ssh/kilo
 
 export VISUAL="vim"
 export EDITOR="$VISUAL"
