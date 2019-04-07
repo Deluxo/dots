@@ -16,6 +16,10 @@ source $ZSH/oh-my-zsh.sh
 NPM_PACKAGES="${HOME}/.npm-packages"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 SCRIPTS="${HOME}/.scripts"
+#ANDROID_TOOLS=$ANDROID_SDK_ROOT/tools/bin
+#ANDROID_PLATFORM_TOOLS=$ANDROID_SDK_ROOT/platform-tools
+#ANDROID_EMULATOR=$ANDROID_SDK_ROOT/emulator
+#ANDROID_APK_TOOLS=$ANDROID_SDK_ROOT/build-tools/28.0.3
 PATH="$NPM_PACKAGES/bin:$SCRIPTS:$PATH"
 
 # Aliases
@@ -31,6 +35,8 @@ alias k='killall'
 eval "$(gotwitch --completion-script-zsh)"
 complete -W "$(~/.scripts/adevice.sh -l)" 'adevice.sh'
 source $HOME/.devsh
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
 
 curl --version 2>&1 > /dev/null
 if [ $? -ne 0 ]; then

@@ -1,18 +1,10 @@
 [var]
-color-bg-0 = #00000000
-color-bg-1 = #00000000
-color-focused = #e81b46
-color-occupied-muted = #665ec6c9
-color-empty = #225ec6c9
-color-urgent = #E04E46
-color-border = #00ffffff
-
-color-alt-bg-0 = #aa000000
+color-alt-bg-0 = #99000000
 color-alt-bg-1 = #00000000
-color-alt-focused = #5ec6c9
-color-alt-occupied-muted = #665ec6c9
-color-alt-empty = #225ec6c9
-color-alt-urgent = #E04E46
+color-alt-focused = ${xrdb:foreground}
+color-alt-occupied-muted = ${xrdb:occupied}
+color-alt-empty = ${xrdb:empty}
+color-alt-urgent = ${xrdb:urgent}
 color-alt-border = #00ffffff
 
 underline-size = 0
@@ -115,7 +107,7 @@ format-volume-padding = 0
 format-muted-padding = 0
 format-volume = <ramp-volume> <label-volume>
 label-muted =  muted
-label-muted-foreground = ${var.color-occupied-muted}
+label-muted-foreground = ${var.color-alt-occupied-muted}
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
