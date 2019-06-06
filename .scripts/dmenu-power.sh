@@ -2,13 +2,14 @@
 
 if [ -z "$@" ]
 then
-	echo screen off;
-	echo sleep now;
-	echo sleep after 1h;
-	echo sleep after 30m;
-	echo restart;
-	echo shutdown;
-	echo kill wm;
+	echo "screen off";
+	echo "sleep now";
+	echo "sleep after 1h";
+	echo "sleep after 30m";
+	echo "restart";
+	echo "shutdown";
+	echo "kill wm";
+	echo "update & shutdown";
 else
 	if [ "$@" == "sleep now" ]; then
 		systemctl suspend
@@ -20,6 +21,8 @@ else
 		reboot
 	elif [ "$@" == "shutdown" ]; then
 		shutdown -P now
+	elif [ "$@" == "update & shutdown" ]; then
+		sleep 1 && alacritty -e "yes | p && shutdown -P now"
 	elif [ "$@" == "killL wm" ]; then
 		killall bspwm
 	elif [ "$@" == "screen off" ]; then

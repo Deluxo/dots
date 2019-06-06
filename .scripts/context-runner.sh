@@ -1,6 +1,6 @@
 #! /bin/zsh
 
-context=$(xclip -o);
+context=$(xclip -o -selection clipboard);
 msg="couldn't find anything to play"
 term='alacritty'
 
@@ -23,21 +23,21 @@ torrent() {
 	fi
 }
 
-if [[ $context =~ "twitch.tv" ]]; then
+if [[ "$context" =~ "twitch.tv" ]]; then
 	msg="Twitch.tv"
-	livestreamer $context best --player mpv&!
-elif [[ $context =~ "youtube" ]]; then
+	livestreamer "$context" best --player mpv&!
+elif [[ "$context" =~ "youtube" ]]; then
 	msg="Youtube"
-	mpv $context &!
-elif [[ $context =~ "magnet:" ]]; then
+	mpv "$context" &!
+elif [[ "$context" =~ "magnet:" ]]; then
 	msg="Magnet"
-	$term -e zsh -c "peerflix \"$context\" -f \"Downloads/\" -k -l"
-elif [[ $context =~ ".torrent" ]]; then
+	$term -e zsh -c "peerflix \""$context"\" -f \"Downloads/\" -k -l"
+elif [[ "$context" =~ ".torrent" ]]; then
 	msg="selected torrent file"
-	torrent $context &!
-elif [[ $context =~ "http" ]]; then
+	torrent "$context" &!
+elif [[ "$context" =~ "http" ]]; then
 	msg="Some http stream"
-	mpv $context &!
+	mpv "$context" &!
 elif ls ~/Downloads/*.torrent 1> /dev/null 2>&1; then
 	file=$(ls -1t ~/Downloads/*.torrent | head -n 1)
 	fileModDate=$(stat -c %Y "$file")
@@ -48,4 +48,4 @@ elif ls ~/Downloads/*.torrent 1> /dev/null 2>&1; then
 	fi
 fi
 
-notify-send "Context Runner" "$msg"
+notify-send "$context Runner" "$msg"

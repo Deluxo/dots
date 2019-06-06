@@ -30,6 +30,7 @@ alias weather='curl wttr.in'
 alias extip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias c='~/.scripts/colorize.sh'
 alias k='killall'
+alias upshut='yes | sudo pacman -Syu && shutdown -P now'
 
 # Completions
 eval "$(gotwitch --completion-script-zsh)"
