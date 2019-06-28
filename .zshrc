@@ -15,12 +15,13 @@ source $ZSH/oh-my-zsh.sh
 # Paths
 NPM_PACKAGES="${HOME}/.npm-packages"
 NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+SYMFONY="$HOME/.symfony/bin:$PATH"
 SCRIPTS="${HOME}/.scripts"
 #ANDROID_TOOLS=$ANDROID_SDK_ROOT/tools/bin
 #ANDROID_PLATFORM_TOOLS=$ANDROID_SDK_ROOT/platform-tools
 #ANDROID_EMULATOR=$ANDROID_SDK_ROOT/emulator
 #ANDROID_APK_TOOLS=$ANDROID_SDK_ROOT/build-tools/28.0.3
-PATH="$NPM_PACKAGES/bin:$SCRIPTS:$PATH"
+PATH="$NPM_PACKAGES/bin:$SCRIPTS:$SYMFONY:$PATH"
 
 # Aliases
 alias g='gotwitch --streamer '

@@ -59,3 +59,4 @@ $HOME/.scripts/steelseries-raw-settings.sh
 polybar -r workspaces &!
 compton --config ~/.config/compton/compton.conf --dbus &!
 easystroke enable &!
+qtox &!
