@@ -56,7 +56,7 @@ echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 
 #$HOME/.scripts/lock.sh --off --allow-blanking &!
 $HOME/.scripts/steelseries-raw-settings.sh
-polybar -r workspaces &!
 compton --config ~/.config/compton/compton.conf --dbus &!
 easystroke enable &!
-qtox &!
+sleep 5 && polybar -r workspaces &!
+sleep 20 && qtox &!
