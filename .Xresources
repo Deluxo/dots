@@ -1,6 +1,13 @@
-*.foreground: 	#9DF9FC
-*.occupied: 	#BB5EC6C9
-*.empty: 		#335EC6C9
-*.urgent: 		#E04E46
-*.border: 		#5EC6C9
-*.focused: 		#E81B46
+*.foreground: 		#FFFFFF
+*.occupied: 		#BBFFFFFF
+*.empty: 			#33FFFFFF
+*.urgent: 			#E04E46
+*.border: 			#999999
+*.focused: 			#FFFFFF
+*.borderWidth:		2
+*.polybarHeight:	40
+*.polybarFont0:		Hack:size=11:weight=Light;3
+*.polybarFont1:		FontAwesome5Free:style=Solid:size=13:weight=light;3
+*.polybarFont2:		FontAwesome5Brands:style=Solid:size=13:weight=light;3
+*.polybarFont3:		Noto Sans CJK JP:size=11:weight=normal;3
+*.gap:				40
