@@ -5,9 +5,10 @@
 *.border: 			#999999
 *.focused: 			#FFFFFF
 *.borderWidth:		2
-*.polybarHeight:	40
+*.polybarHeight:	50
+*.polybarWidthPad:	6
 *.polybarFont0:		Hack:size=11:weight=Light;3
 *.polybarFont1:		FontAwesome5Free:style=Solid:size=13:weight=light;3
 *.polybarFont2:		FontAwesome5Brands:style=Solid:size=13:weight=light;3
 *.polybarFont3:		Noto Sans CJK JP:size=11:weight=normal;3
-*.gap:				40
+*.gap:				50

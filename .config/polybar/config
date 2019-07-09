@@ -29,8 +29,8 @@ border-left-color = ${var.color-alt-border}
 border-right-size = 0
 border-right-color = ${var.color-alt-border}
 
-padding-left = 7
-padding-right = 7
+padding-left = ${xrdb:polybarWidthPad}
+padding-right  = ${xrdb:polybarWidthPad}
 
 background-0 = ${var.color-alt-bg-0}
 background-1 = ${var.color-alt-bg-1}
