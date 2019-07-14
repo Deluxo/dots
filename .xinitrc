@@ -44,11 +44,11 @@ ssh-add ~/.ssh/id_rsa
 ssh-add ~/.ssh/gitlab
 ssh-add ~/.ssh/llevickasdev
 
-export APULSE_CAPTURE_DEVICE=default
-export APULSE_CAPTURE_DEVICE=plug:dsnoop
+#export SDL_AUDIODRIVER=alsa
+#export APULSE_CAPTURE_DEVICE=default
+#export APULSE_CAPTURE_DEVICE=plug:dsnoop
 export EDITOR="$VISUAL"
 export PATH="$PATH:$HOME/.scripts"
-export SDL_AUDIODRIVER=alsa
 export SXHDK_SHELL=/bin/bash
 export VISUAL="vim"
 export XDG_CONFIG_HOME=$HOME/.config

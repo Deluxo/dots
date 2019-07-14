@@ -55,7 +55,7 @@ env | grep DBUS_SESSION_BUS_ADDRESS > $HOME/.dbus/Xdbus
 echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 
 #$HOME/.scripts/lock.sh --off --allow-blanking &!
-$HOME/.scripts/steelseries-raw-settings.sh
+#$HOME/.scripts/steelseries-raw-settings.sh
 compton --config ~/.config/compton/compton.conf --dbus &!
 easystroke enable &!
 sleep 5 && polybar -r workspaces &!
