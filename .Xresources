@@ -4,7 +4,7 @@
 *.urgent: 			#E04E46
 *.border: 			#999999
 *.focused: 			#FFFFFF
-*.borderWidth:		2
+*.borderWidth:		1
 *.polybarHeight:	50
 *.polybarWidthPad:	6
 *.polybarFont0:		Hack:size=11:weight=Light;3

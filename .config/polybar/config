@@ -1,5 +1,5 @@
 [var]
-color-alt-bg-0 = #BB000000
+color-alt-bg-0 = #FF000000
 color-alt-bg-1 = #00000000
 color-alt-focused = ${xrdb:foreground}
 color-alt-occupied-muted = ${xrdb:occupied}

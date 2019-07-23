@@ -47,10 +47,10 @@ ssh-add ~/.ssh/llevickasdev
 #export SDL_AUDIODRIVER=alsa
 #export APULSE_CAPTURE_DEVICE=default
 #export APULSE_CAPTURE_DEVICE=plug:dsnoop
-export EDITOR="$VISUAL"
+export EDITOR="vim"
 export PATH="$PATH:$HOME/.scripts"
 export SXHDK_SHELL=/bin/bash
-export VISUAL="vim"
+export VISUAL="$EDITOR"
 export XDG_CONFIG_HOME=$HOME/.config
 export _JAVA_AWT_WM_NONREPARENTING=1
 export allow_rgb10_configs=false

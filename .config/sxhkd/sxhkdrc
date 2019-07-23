@@ -13,15 +13,13 @@ super + ctrl + {1-9}
 
 XF86AudioMute
 	amixer set Master toggle
-	#pactl set-sink-mute 0 toggle
+	#pactl set-sink-mute ladspa_output.mbeq_1197.mbeq toggle
 
 XF86AudioRaiseVolume
-	amixer set Master 5%+
-	#pactl set-sink-volume 0 +2%
+	pactl set-sink-volume ladspa_output.mbeq_1197.mbeq +2%
 
 XF86AudioLowerVolume
-	amixer set Master 5%-
-	#pactl set-sink-volume 0 -2%
+	pactl set-sink-volume ladspa_output.mbeq_1197.mbeq -2%
 
 XF86MonBrightnessDown
 	xbacklight -20
