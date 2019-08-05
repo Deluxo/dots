@@ -58,6 +58,6 @@ echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 #$HOME/.scripts/steelseries-raw-settings.sh
 compton --config ~/.config/compton/compton.conf --dbus &!
 easystroke enable &!
-sleep 5 && polybar -r workspaces &!
-sleep 20 && qtox &!
-sleep 20 && redshift &!
+polybar -r workspaces &!
+qtox &!
+redshift &!
