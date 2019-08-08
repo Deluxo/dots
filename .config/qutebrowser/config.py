@@ -374,9 +374,19 @@ c.colors.tabs.selected.even.fg = '#eceff4'
 # Type: QtColor
 c.colors.tabs.selected.even.bg = '#3b4252'
 
+c.tabs.padding = {"top": 3, "right": 5, "bottom": 3, "left": 5}
+c.tabs.indicator.padding = {"top": 2, "right": 2, "bottom": 2, "left": 2}
+
 # Font used for the hints.
 # Type: Font
-c.fonts.hints = 'bold 13pt monospace'
+c.fonts.hints = 'normal 13pt inter'
+c.fonts.tabs = 'normal 11pt inter'
+c.fonts.statusbar = 'normal 11pt inter'
+c.fonts.prompts = 'normal 11pt inter'
+c.fonts.completion.category = 'normal 11pt inter'
+c.fonts.completion.entry = 'normal 11pt inter'
+c.fonts.downloads = 'normal 11pt inter'
+c.fonts.keyhint = 'normal 13pt inter'
 
 # Bindings for normal mode
 config.bind('M', 'hint links spawn mpv {hint-url}')
