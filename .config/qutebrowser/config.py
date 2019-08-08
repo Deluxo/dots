@@ -77,6 +77,14 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 #   - vi-VN: Vietnamese (Viet Nam)
 c.spellcheck.languages = ['en-US', 'lt-LT']
 
+# Padding (in pixels) around text for tabs.
+# Type: Padding
+c.tabs.padding = {'top': 3, 'right': 5, 'bottom': 3, 'left': 5}
+
+# Padding (in pixels) for tab indicators.
+# Type: Padding
+c.tabs.indicator.padding = {'top': 2, 'right': 2, 'bottom': 2, 'left': 2}
+
 # Text color of the completion widget. May be a single color to use for
 # all columns or a list of three colors, one for each column.
 # Type: List of QtColor, or QtColor
@@ -114,7 +122,7 @@ c.colors.completion.item.selected.fg = '#eceff4'
 # Type: QssColor
 c.colors.completion.item.selected.bg = '#8fbcbb'
 
-# Top border color of the completion widget category headers.
+# Top border color of the selected completion item.
 # Type: QssColor
 c.colors.completion.item.selected.border.top = '#8fbcbb'
 
@@ -160,7 +168,7 @@ c.colors.hints.fg = '#eceff4'
 c.colors.hints.bg = '#6f9c9b'
 
 # Font color for the matched part of hints.
-# Type: QssColor
+# Type: QtColor
 c.colors.hints.match.fg = '#eee8d5'
 
 # Text color for the keyhint widget.
@@ -318,7 +326,7 @@ c.colors.statusbar.url.success.https.fg = '#eceff4'
 c.colors.statusbar.url.warn.fg = '#ebcb8b'
 
 # Background color of the tab bar.
-# Type: QtColor
+# Type: QssColor
 c.colors.tabs.bar.bg = '#555555'
 
 # Color gradient start for the tab indicator.
@@ -374,24 +382,62 @@ c.colors.tabs.selected.even.fg = '#eceff4'
 # Type: QtColor
 c.colors.tabs.selected.even.bg = '#3b4252'
 
-c.tabs.padding = {"top": 3, "right": 5, "bottom": 3, "left": 5}
-c.tabs.indicator.padding = {"top": 2, "right": 2, "bottom": 2, "left": 2}
+# Font used in the completion widget.
+# Type: Font
+c.fonts.completion.entry = 'normal 11pt inter'
+
+# Font used in the completion categories.
+# Type: Font
+c.fonts.completion.category = 'normal 11pt inter'
+
+# Font used for the downloadbar.
+# Type: Font
+c.fonts.downloads = 'normal 11pt inter'
 
 # Font used for the hints.
 # Type: Font
 c.fonts.hints = 'normal 13pt inter'
-c.fonts.tabs = 'normal 11pt inter'
-c.fonts.statusbar = 'normal 11pt inter'
-c.fonts.prompts = 'normal 11pt inter'
-c.fonts.completion.category = 'normal 11pt inter'
-c.fonts.completion.entry = 'normal 11pt inter'
-c.fonts.downloads = 'normal 11pt inter'
+
+# Font used in the keyhint widget.
+# Type: Font
 c.fonts.keyhint = 'normal 13pt inter'
+
+# Font used for prompts.
+# Type: Font
+c.fonts.prompts = 'normal 11pt inter'
+
+# Font used in the statusbar.
+# Type: Font
+c.fonts.statusbar = 'normal 11pt inter'
+
+# Font used in the tab bar.
+# Type: QtFont
+c.fonts.tabs = 'normal 11pt inter'
+
+# Font family for standard fonts.
+# Type: FontFamily
+c.fonts.web.family.standard = 'inter'
+
+# Font family for fixed fonts.
+# Type: FontFamily
+c.fonts.web.family.fixed = 'inter'
+
+# Font family for serif fonts.
+# Type: FontFamily
+c.fonts.web.family.serif = 'inter'
+
+# Font family for sans-serif fonts.
+# Type: FontFamily
+c.fonts.web.family.sans_serif = 'inter'
+
+# Font family for cursive fonts.
+# Type: FontFamily
+c.fonts.web.family.cursive = 'inter'
 
 # Bindings for normal mode
 config.bind('M', 'hint links spawn mpv {hint-url}')
 config.bind('m', 'spawn mpv {url}')
-config.bind('<z><l>', 'spawn --userscript qute-pass')
-config.bind('<z><u><l>', 'spawn --userscript qute-pass --username-only')
-config.bind('<z><p><l>', 'spawn --userscript qute-pass --password-only')
-config.bind('<z><o><l>', 'spawn --userscript qute-pass --otp-only')
+config.bind('zl', 'spawn --userscript qute-pass')
+config.bind('zol', 'spawn --userscript qute-pass --otp-only')
+config.bind('zpl', 'spawn --userscript qute-pass --password-only')
+config.bind('zul', 'spawn --userscript qute-pass --username-only')
