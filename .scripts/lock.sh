@@ -45,6 +45,12 @@ lock() {
 		--timecolor=ffffffff \
 		--datecolor=ffffffff \
 \
+		--verif-font=inter \
+		--wrong-font=inter \
+		--layout-font=inter \
+		--time-font=inter \
+		--date-font=inter \
+\
 		--radius 100 \
 		--ring-width 5 \
 		--line-uses-ring \
