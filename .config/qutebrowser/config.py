@@ -6,6 +6,13 @@
 # Uncomment this to still load settings configured via autoconfig.yml
 # config.load_autoconfig()
 
+# Turn on Qt HighDPI scaling. This is equivalent to setting
+# QT_AUTO_SCREEN_SCALE_FACTOR=1 in the environment. It's off by default
+# as it can cause issues with some bitmap fonts. As an alternative to
+# this, it's possible to set font sizes and the `zoom.default` setting.
+# Type: Bool
+c.qt.highdpi = True
+
 # Time interval (in milliseconds) between auto-saves of
 # config/cookies/etc.
 # Type: Int
@@ -381,6 +388,11 @@ c.colors.tabs.selected.even.fg = '#eceff4'
 # Background color of selected even tabs.
 # Type: QtColor
 c.colors.tabs.selected.even.bg = '#3b4252'
+
+# Default monospace fonts. Whenever "monospace" is used in a font
+# setting, it's replaced with the fonts listed here.
+# Type: Font
+c.fonts.monospace = 'Hack, "xos4 Terminus", Terminus, Monospace, "DejaVu Sans Mono", Monaco, "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace, Fixed, Consolas, Terminal'
 
 # Font used in the completion widget.
 # Type: Font
