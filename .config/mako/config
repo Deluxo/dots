@@ -1,0 +1,6 @@
+font=Inter 13
+background-color=#00000088
+text-color=#FFFFFF
+border-color=#FFFFFF1A
+default-timeout=3000
+anchor=top-center

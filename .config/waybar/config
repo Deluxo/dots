@@ -1,0 +1,15 @@
+{
+	"layer": "top",
+	"position": "top",
+	"modules-left": ["sway/workspaces", "sway/mode"],
+	"modules-center": ["sway/window"],
+	"modules-right": ["pulseaudio", "network", "backlight", "clock", "tray"],
+	"clock": {
+		"format" : "{:%b %d %a %H:%M}",
+		"tooltip-format": "{:%Y-%m-%d | %H:%M}",
+		"format-alt": "{:%Y-%m-%d}"
+	},
+	"pulseaudio": {
+        "on-click": "alacritty -e pulsemixer"
+	}
+}

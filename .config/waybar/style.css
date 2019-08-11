@@ -1,0 +1,33 @@
+* {
+	border: none;
+	border-radius: 0;
+	font-family: "Inter", "Hack", "xos4 terminus";
+	font-size: 15px;
+	min-height: 30px;
+}
+
+window#waybar {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+	color: white;
+}
+
+#workspaces {
+	padding-left: 40px;
+}
+
+#clock, #tray {
+	padding-right: 40px;
+}
+
+#workspaces button {
+	background: transparent;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#workspaces button.focused {
+	color: #ffffff;
+}
+
+#pulseaudio, #network, #backlight, #clock, #tray {
+	margin: 0px 10px;
+}

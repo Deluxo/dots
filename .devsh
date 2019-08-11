@@ -1,0 +1,23 @@
+#!/bin/sh
+
+export DEV_HOME="$HOME/Documents/dev"
+export DEV_TOOLS="$DEV_HOME/tools"
+
+export ANDROID_HOME=$DEV_TOOLS/android/sdk
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/build-tools
+
+export COMPOSER_HOME="$DEV_TOOLS/composer"
+export GOPATH="$DEV_TOOLS/golang"
+export NPM_GLOBAL="$DEV_TOOLS/npm"
+export SYMFONY_HOME="$DEV_TOOLS/symfony"
+export YARN_HOME="$HOME/.yarn"
+
+export KEEPASS_KEY="$HOME/Documents/se.key"
+export KEEPASS_DB="$HOME/Documents/se.kdbx"
+
+export PATH="$PATH:$GOBIN:$NPM_GLOBAL/bin:$SYMFONY_HOME/bin:$YARN_HOME/bin"

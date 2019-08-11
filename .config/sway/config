@@ -1,0 +1,192 @@
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term alacritty
+set $menu dmenu_path | rofi -show run | xargs swaymsg exec --
+
+set $wallpaper /home/lukas/Pictures/Wallpapers/Minimalistic/wallhaven-493969.jpg
+
+output * bg $wallpaper fill
+
+exec swayidle -w \
+	timeout 300 "swaylock --image $wallpaper" \
+	timeout 600 'swaymsg "output * dpms off"' \
+	resume 'swaymsg "output * dpms on"' \
+	before-sleep "swaylock --image $wallpaper"
+
+input * repeat_rate 0
+input * xkb_layout "us,lt"
+input * xkb_variant "dvorak,"
+input * xkb_options "grp:rwin_switch"
+
+floating_modifier $mod normal
+
+# KEYS
+bindsym $mod+ctrl+1 exec --no-startup-id qutebrowser
+bindsym $mod+ctrl+2 exec --no-startup-id $term -e vim
+bindsym $mod+ctrl+3 exec --no-startup-id qtox
+bindsym $mod+ctrl+4 exec --no-startup-id spotify
+bindsym $mod+ctrl+5 exec --no-startup-id steam-native
+bindsym $mod+ctrl+8 exec --no-startup-id $term -e ranger
+bindsym $mod+ctrl+9 exec --no-startup-id $term -e htop
+bindsym $mod+Backspace exec --no-startup-id swaylock --image $wallpaper
+
+bindsym --whole-window button8 kill
+bindsym --whole-window button9 exec --no-startup-id ~/.scripts/./context-runner.sh
+
+bindsym $mod+Return exec --no-startup-id $term
+bindsym $mod+q kill
+bindsym $mod+d exec --no-startup-id $menu
+bindsym $mod+Shift+c reload
+
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10% 
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10%
+bindsym XF86AudioMute exec pactl set-sink-volume @DEFAULT_SINK@ toggle
+
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+set $ws1 ""
+set $ws2 ""
+set $ws3 ""
+set $ws4 ""
+set $ws5 ""
+set $ws6 ""
+set $ws7 ""
+set $ws8 ""
+set $ws9 ""
+set $ws10 ""
+
+bindsym $mod+0x5b workspace prev
+bindsym $mod+0x5d workspace next
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+bindsym $mod+Tab workspace next
+bindsym Mod1+Tab workspace next
+
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+f fullscreen
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+mode "resize" {
+	bindsym $left resize shrink width 200px
+	bindsym $down resize grow height 200px
+	bindsym $up resize shrink height 200px
+	bindsym $right resize grow width 200px
+	bindsym Left resize shrink width 200px
+	bindsym Down resize grow height 200px
+	bindsym Up resize shrink height 200px
+	bindsym Right resize grow width 200px
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+bar {
+	strip_workspace_numbers yes
+	swaybar_command waybar
+}
+
+gaps inner 40
+default_border pixel 2
+
+set $unfocused_border #CC666644
+set $focused_border #CC6666CC
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #ffffff #ffffff #ffffff $focused_border   $focused_border
+client.focused_inactive #ffffff #ffffff #ffffff $focused_border   $focused_border
+client.unfocused        #ffffff #ffffff #ffffff $unfocused_border $unfocused_border
+client.urgent           #ffffff #ffffff #ffffff $focused_border   $focused_border
+client.placeholder      #ffffff #ffffff #ffffff $focused_border   $focused_border
+client.background       #ffffff
+
+assign [class="qutebrowser"] workspace $ws1
+assign [class="Firefox"] workspace $ws1
+assign [class="vim"] workspace $ws2
+assign [class="Skype"] workspace $ws3
+assign [class="Slack"] workspace $ws3
+assign [class="qTox"] workspace $ws3
+assign [class="ncmpcpp"] workspace $ws4
+assign [class="spotify"] workspace $ws4
+assign [class="Steam"] workspace $ws5
+assign [class="discord"] workspace $ws5
+assign [class="dota2"] workspace $ws6
+assign [class="FTL"] workspace $ws6
+assign [class="csgo_linux64"] workspace $ws6
+assign [class="hl2_linux"] workspace $ws6
+assign [class="ranger"] workspace $ws8
+assign [class="Mail"] workspace $ws9
+assign [class="Thunderbird"] workspace $ws9
+assign [class="Gimp"] workspace $ws10
+
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [class="Steam"] floating enable
+for_window [class='*:libreofficedev'] floating disabled
+for_window [class='*:soffice'] floating disabled
+
+for_window [class="mpv"] floating enable
+for_window [class="mpv"] move position 2740 1000
+for_window [class="mpv"] sticky enable
+
+for_window [class="Galculator"] floating enable
+for_window [class="Galculator"] sticky enable
+for_window [class="Android Emulator"] floating enable
+for_window [class="steam"] floating enable
+
+exec --no-startup_id qtox
+exec --no-startup-id redshift
+exec_always --no-startup-id mako
