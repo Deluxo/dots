@@ -42,6 +42,14 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 #   - ask
 config.set('content.notifications', True, 'https://www.reddit.com')
 
+# Proxy to use. In addition to the listed values, you can use a
+# `socks://...` or `http://...` URL.
+# Type: Proxy
+# Valid values:
+#   - system: Use the system wide proxy.
+#   - none: Don't use any proxy
+c.content.proxy = 'socks://localhost:9050/'
+
 # Languages to use for spell checking. You can check for available
 # languages and install dictionaries using scripts/dictcli.py. Run the
 # script with -h/--help for instructions.
@@ -456,6 +464,8 @@ c.fonts.web.family.cursive = 'inter'
 
 # Bindings for normal mode
 config.bind('M', 'hint links spawn mpv {hint-url}')
+config.bind('cps', 'set content.proxy system')
+config.bind('cpt', 'set content.proxy socks://localhost:9050/')
 config.bind('m', 'spawn mpv {url}')
 config.bind('zl', 'spawn --userscript qute-pass')
 config.bind('zol', 'spawn --userscript qute-pass --otp-only')

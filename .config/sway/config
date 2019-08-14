@@ -68,16 +68,16 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-set $ws1 ""
-set $ws2 ""
-set $ws3 ""
-set $ws4 ""
-set $ws5 ""
-set $ws6 ""
-set $ws7 ""
-set $ws8 ""
-set $ws9 ""
-set $ws10 ""
+set $ws1 "1: "
+set $ws2 "2: "
+set $ws3 "3: "
+set $ws4 "4: "
+set $ws5 "5: "
+set $ws6 "6: "
+set $ws7 "7: "
+set $ws8 "8: "
+set $ws9 "9: "
+set $ws10 "10: "
 
 bindsym $mod+0x5b workspace prev
 bindsym $mod+0x5d workspace next
@@ -139,19 +139,22 @@ bar {
 	swaybar_command waybar
 }
 
+focus_wrapping no
 gaps inner 40
-default_border pixel 2
+titlebar_border_thickness 0
+titlebar_padding 0 0
+default_border pixel 3
 
-set $unfocused_border #CC666644
+set $unfocused_border #CC666622
 set $focused_border #CC6666CC
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #ffffff #ffffff #ffffff $focused_border   $focused_border
-client.focused_inactive #ffffff #ffffff #ffffff $focused_border   $focused_border
-client.unfocused        #ffffff #ffffff #ffffff $unfocused_border $unfocused_border
-client.urgent           #ffffff #ffffff #ffffff $focused_border   $focused_border
-client.placeholder      #ffffff #ffffff #ffffff $focused_border   $focused_border
-client.background       #ffffff
+client.focused          #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $focused_border
+client.focused_inactive #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $unfocused_border
+client.unfocused        #FFFFFF00 #FFFFFF #FFFFFF $unfocused_border $unfocused_border
+client.urgent           #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $focused_border
+client.placeholder      #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $focused_border
+client.background       #FFFFFF00
 
 assign [class="qutebrowser"] workspace $ws1
 assign [class="Firefox"] workspace $ws1

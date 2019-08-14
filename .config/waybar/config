@@ -4,12 +4,15 @@
 	"modules-left": ["sway/workspaces", "sway/mode"],
 	"modules-center": ["sway/window"],
 	"modules-right": ["pulseaudio", "network", "backlight", "clock", "tray"],
+	"sway/workspaces": {
+		"format": "{name}"
+	},
 	"clock": {
 		"format" : "{:%b %d %a %H:%M}",
-		"tooltip-format": "{:%Y-%m-%d | %H:%M}",
 		"format-alt": "{:%Y-%m-%d}"
 	},
 	"pulseaudio": {
-        "on-click": "alacritty -e pulsemixer"
+        "on-click": "alacritty -e pulsemixer",
+		"tooltip": false
 	}
 }
