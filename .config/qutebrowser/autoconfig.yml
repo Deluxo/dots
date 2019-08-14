@@ -3,16 +3,5 @@
 
 config_version: 2
 settings:
-  bindings.commands:
-    global:
-      normal:
-        M: hint links spawn mpv {hint-url}
-        cps: set content.proxy system
-        cpt: set content.proxy socks://localhost:9050/
-        m: spawn mpv {url}
-        zl: spawn --userscript qute-pass
-        zol: spawn --userscript qute-pass --otp-only
-        zpl: spawn --userscript qute-pass --password-only
-        zul: spawn --userscript qute-pass --username-only
   content.proxy:
     global: system

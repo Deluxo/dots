@@ -7,7 +7,7 @@ set $term alacritty
 set $menu dmenu_path | rofi -show run | xargs swaymsg exec --
 set $appsmenu dmenu_path | rofi -show drun | xargs swaymsg exec --
 
-set $wallpaper /home/lukas/Pictures/Wallpapers/Minimalistic/wallhaven-493969.jpg
+set $wallpaper /home/lukas/Pictures/Wallpapers/Minimalistic/wallhaven-638973.jpg
 
 output * bg $wallpaper fill
 
@@ -145,17 +145,20 @@ focus_wrapping no
 gaps inner 40
 titlebar_border_thickness 0
 titlebar_padding 0 0
-default_border pixel 3
+default_border pixel 2
 
-set $unfocused_border #CC666622
-set $focused_border #CC6666CC
+#set $unfocused_border #CC666622
+#set $focused_border #CC6666CC
+
+set $unfocused_border #FFFFFF11
+set $focused_border #FFFFFF88
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $focused_border
-client.focused_inactive #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $unfocused_border
+client.focused_inactive #FFFFFF00 #FFFFFF #FFFFFF $unfocused_border   $unfocused_border
 client.unfocused        #FFFFFF00 #FFFFFF #FFFFFF $unfocused_border $unfocused_border
 client.urgent           #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $focused_border
-client.placeholder      #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $focused_border
+client.placeholder      #00000000 #00000000 #00000000 #00000000 #00000000
 client.background       #FFFFFF00
 
 assign [class="qutebrowser"] workspace $ws1
