@@ -48,7 +48,7 @@ config.set('content.notifications', True, 'https://www.reddit.com')
 # Valid values:
 #   - system: Use the system wide proxy.
 #   - none: Don't use any proxy
-c.content.proxy = 'socks://localhost:9050/'
+c.content.proxy = 'system'
 
 # Languages to use for spell checking. You can check for available
 # languages and install dictionaries using scripts/dictcli.py. Run the
