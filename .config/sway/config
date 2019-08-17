@@ -146,13 +146,13 @@ focus_wrapping no
 gaps inner 40
 titlebar_border_thickness 0
 titlebar_padding 0 0
-default_border pixel 2
+default_border pixel 4
 
 #set $unfocused_border #CC666622
 #set $focused_border #CC6666CC
 
 set $unfocused_border #FFFFFF11
-set $focused_border #FFFFFF88
+set $focused_border #FFFFFFCC
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $focused_border
