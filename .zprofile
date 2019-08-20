@@ -24,6 +24,9 @@ export VISUAL="$EDITOR"
 export XDG_CONFIG_HOME=$HOME/.config
 export _JAVA_AWT_WM_NONREPARENTING=1
 export allow_rgb10_configs=false
+export QT_QPA_PLATFORM=wayland-egl
+#export SDL_VIDEODRIVER=wayland
+export CLUTTER_BACKEND=wayland
 
 source ~/.devsh
 

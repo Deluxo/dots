@@ -7,7 +7,7 @@ set $term alacritty
 set $menu dmenu_path | rofi -show run | xargs swaymsg exec --
 set $appsmenu dmenu_path | rofi -show drun | xargs swaymsg exec --
 
-set $wallpaper /home/lukas/Pictures/Wallpapers/Minimalistic/wallhaven-638973.jpg
+set $wallpaper /home/lukas/Pictures/Wallpapers/Minimalistic/wallhaven-839r9y.jpg
 
 output * bg $wallpaper fill
 
@@ -151,13 +151,13 @@ default_border pixel 4
 #set $unfocused_border #CC666622
 #set $focused_border #CC6666CC
 
-set $unfocused_border #FFFFFF11
-set $focused_border #FFFFFFCC
+set $unfocused_border #66B0A333
+set $focused_border #CF4866FF
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $focused_border
-client.focused_inactive #FFFFFF00 #FFFFFF #FFFFFF $unfocused_border   $unfocused_border
-client.unfocused        #FFFFFF00 #FFFFFF #FFFFFF $unfocused_border $unfocused_border
+client.focused_inactive #FFFFFF00 #FFFFFF00 #FFFFFF00 $unfocused_border   $unfocused_border
+client.unfocused        #FFFFFF00 #FFFFFF00 #FFFFFF00 $unfocused_border $unfocused_border
 client.urgent           #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $focused_border
 client.placeholder      #00000000 #00000000 #00000000 #00000000 #00000000
 client.background       #FFFFFF00
@@ -198,4 +198,5 @@ for_window [class="steam"] floating enable
 
 exec --no-startup_id qtox
 exec --no-startup-id redshift
-exec_always --no-startup-id mako
+exec --no-startup-id /home/lukas/.config/sway/scripts/inactive-windows-transparency.py
+exec --no-startup-id mako

@@ -30,7 +30,7 @@ debug:
   render_timer: false
 colors:
   primary:
-    background: '0x121212'
+    background: '0x000515'
     foreground: '0xeff0eb'
   normal:
     black:   '0x282a36'
