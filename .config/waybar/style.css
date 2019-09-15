@@ -1,13 +1,13 @@
 * {
 	border: none;
 	border-radius: 0;
-	font-family: "Inter", "Hack", "xos4 terminus";
+	font-family: "Hack", "xos4 terminus", "Inter";
 	font-size: 15px;
 	min-height: 30px;
 }
 
 window#waybar {
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+	background: linear-gradient(180deg, rgba(41, 44, 51, 0.9), rgba(41, 44, 51, 0.7));
 	color: white;
 }
 

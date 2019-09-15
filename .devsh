@@ -15,9 +15,9 @@ export COMPOSER_HOME="$DEV_TOOLS/composer"
 export GOPATH="$DEV_TOOLS/golang"
 export NPM_GLOBAL="$DEV_TOOLS/npm"
 export SYMFONY_HOME="$DEV_TOOLS/symfony"
-export YARN_HOME="$HOME/.yarn"
+export YARN_HOME="$(yarn global bin)"
 
 export KEEPASS_KEY="$HOME/Documents/se.key"
 export KEEPASS_DB="$HOME/Documents/se.kdbx"
 
-export PATH="$PATH:$GOBIN:$NPM_GLOBAL/bin:$SYMFONY_HOME/bin:$YARN_HOME/bin"
+export PATH="$PATH:$GOBIN:$NPM_GLOBAL/bin:$SYMFONY_HOME/bin:$YARN_HOME"

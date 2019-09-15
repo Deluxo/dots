@@ -1,4 +1,3 @@
-#[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 
 XDG_CONFIG_HOME=$HOME/.config
 LANG=en_GB.utf8
@@ -25,11 +24,11 @@ export XDG_CONFIG_HOME=$HOME/.config
 export _JAVA_AWT_WM_NONREPARENTING=1
 export allow_rgb10_configs=false
 export QT_QPA_PLATFORM=wayland-egl
-#export SDL_VIDEODRIVER=wayland
+export SDL_VIDEODRIVER=wayland
 export CLUTTER_BACKEND=wayland
 
 source ~/.devsh
 
-if [ "$(tty)" = "/dev/tty1" ]; then
-	exec sway
-fi
+[[ "$(tty)" = "/dev/tty1" ]] && exec sway
+
+#[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx

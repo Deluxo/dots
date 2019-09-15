@@ -5,3 +5,5 @@ config_version: 2
 settings:
   content.proxy:
     global: system
+  content.notifications:
+    https://www.facebook.com: true

@@ -3,12 +3,31 @@ set $left h
 set $down j
 set $up k
 set $right l
+
 set $term alacritty
 set $menu dmenu_path | rofi -show run | xargs swaymsg exec --
 set $appsmenu dmenu_path | rofi -show drun | xargs swaymsg exec --
 
-set $wallpaper /home/lukas/Pictures/Wallpapers/Minimalistic/wallhaven-839r9y.jpg
+set $thickness 4
+set $titlebarThickness 0
+set $gap 40
 
+set $unfocused_border #66B0A333
+set $focused_border #CF4866FF
+
+set $ws1 "1: "
+set $ws2 "2: "
+set $ws3 "3: "
+set $ws4 "4: "
+set $ws5 "5: "
+set $ws6 "6: "
+set $ws7 "7: "
+set $ws8 "8: "
+set $ws9 "9: "
+set $ws10 "10: "
+
+
+set $wallpaper /home/lukas/Pictures/Wallpapers/Minimalistic/VnIOLz7.jpg
 output * bg $wallpaper fill
 
 exec swayidle -w \
@@ -16,6 +35,11 @@ exec swayidle -w \
 	timeout 600 'swaymsg "output * dpms off"' \
 	resume 'swaymsg "output * dpms on"' \
 	before-sleep "swaylock --image $wallpaper"
+
+exec --no-startup_id qtox
+exec --no-startup-id redshift
+exec --no-startup-id /home/lukas/.config/sway/scripts/inactive-windows-transparency.py
+exec --no-startup-id mako
 
 input * repeat_rate 0
 input * xkb_layout "us,lt"
@@ -69,17 +93,6 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-
-set $ws1 "1: "
-set $ws2 "2: "
-set $ws3 "3: "
-set $ws4 "4: "
-set $ws5 "5: "
-set $ws6 "6: "
-set $ws7 "7: "
-set $ws8 "8: "
-set $ws9 "9: "
-set $ws10 "10: "
 
 bindsym $mod+0x5b workspace prev
 bindsym $mod+0x5d workspace next
@@ -143,16 +156,11 @@ bar {
 }
 
 focus_wrapping no
-gaps inner 40
-titlebar_border_thickness 0
+gaps inner $gap
+titlebar_border_thickness $titlebarThickness
 titlebar_padding 0 0
-default_border pixel 4
-
-#set $unfocused_border #CC666622
-#set $focused_border #CC6666CC
-
-set $unfocused_border #66B0A333
-set $focused_border #CF4866FF
+default_border pixel $thickness
+default_floating_border pixel $thickness
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $focused_border
@@ -193,10 +201,7 @@ for_window [class="mpv"] sticky enable
 
 for_window [class="Galculator"] floating enable
 for_window [class="Galculator"] sticky enable
+
 for_window [class="Android Emulator"] floating enable
 for_window [class="steam"] floating enable
 
-exec --no-startup_id qtox
-exec --no-startup-id redshift
-exec --no-startup-id /home/lukas/.config/sway/scripts/inactive-windows-transparency.py
-exec --no-startup-id mako

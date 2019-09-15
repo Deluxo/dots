@@ -30,8 +30,8 @@ debug:
   render_timer: false
 colors:
   primary:
-    background: '0x000515'
-    foreground: '0xeff0eb'
+    background: '0x292c33'
+    foreground: '0xf0f0f0'
   normal:
     black:   '0x282a36'
     red:     '0xff5c57'
@@ -65,7 +65,7 @@ colors:
 visual_bell:
   animation: EaseOutExpo
   duration: 0
-background_opacity: 0.95
+background_opacity: 1
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
 mouse:

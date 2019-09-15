@@ -1,6 +1,6 @@
 export ZSH=/home/lukas/.oh-my-zsh
 #ZSH_THEME="minimal"
-ZSH_THEME="agnoster-minimal"
+ZSH_THEME="essembeh"
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
@@ -11,17 +11,6 @@ DISABLE_LS_COLORS="true"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
-# Paths
-NPM_PACKAGES="${HOME}/.npm-packages"
-NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
-SYMFONY="$HOME/.symfony/bin:$PATH"
-SCRIPTS="${HOME}/.scripts"
-#ANDROID_TOOLS=$ANDROID_SDK_ROOT/tools/bin
-#ANDROID_PLATFORM_TOOLS=$ANDROID_SDK_ROOT/platform-tools
-#ANDROID_EMULATOR=$ANDROID_SDK_ROOT/emulator
-#ANDROID_APK_TOOLS=$ANDROID_SDK_ROOT/build-tools/28.0.3
-PATH="$NPM_PACKAGES/bin:$SCRIPTS:$SYMFONY:$PATH"
 
 # Aliases
 alias g='gotwitch --streamer '
@@ -41,7 +30,6 @@ source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 source $HOME/.config/tiny-care-terminal.sh
 
-curl --version 2>&1 > /dev/null
 if [ $? -ne 0 ]; then
   echo "Could not find curl."
   return 1
