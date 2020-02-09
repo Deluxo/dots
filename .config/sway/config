@@ -1,3 +1,7 @@
+set $wallpaper /home/lukas/Pictures/Wallpapers/Scenery/wallhaven-zmrd2g.jpg
+set $laptop eDP-1
+output * bg $wallpaper fill
+
 set $mod Mod4
 set $left h
 set $down j
@@ -12,8 +16,8 @@ set $thickness 4
 set $titlebarThickness 0
 set $gap 40
 
-set $unfocused_border #66B0A333
-set $focused_border #CF4866FF
+set $unfocused_border #FFFFFF21
+set $focused_border #FFFFFF66
 
 set $ws1 "1: "
 set $ws2 "2: "
@@ -27,9 +31,6 @@ set $ws9 "9: "
 set $ws10 "10: "
 
 
-set $wallpaper /home/lukas/Pictures/Wallpapers/Minimalistic/VnIOLz7.jpg
-output * bg $wallpaper fill
-
 exec swayidle -w \
 	timeout 300 "swaylock --image $wallpaper" \
 	timeout 600 'swaymsg "output * dpms off"' \
@@ -41,12 +42,19 @@ exec --no-startup-id redshift
 exec --no-startup-id /home/lukas/.config/sway/scripts/inactive-windows-transparency.py
 exec --no-startup-id mako
 
-input * repeat_rate 0
-input * xkb_layout "us,lt"
-input * xkb_variant "dvorak,"
-input * xkb_options "grp:rwin_switch"
+input * {
+    repeat_delay 1000
+    repeat_rate 10
+	xkb_layout us,lt
+	xkb_variant dvorak,
+	xkb_options caps:escape,grp:alt_shift_toggle
+}
 
 floating_modifier $mod normal
+
+# CLAMCHELL
+bindswitch --reload lid:on output $laptop disable
+bindswitch --reload lid:off output $laptop enable
 
 # KEYS
 bindsym $mod+ctrl+1 exec --no-startup-id qutebrowser
@@ -56,6 +64,8 @@ bindsym $mod+ctrl+4 exec --no-startup-id spotify
 bindsym $mod+ctrl+5 exec --no-startup-id steam-native
 bindsym $mod+ctrl+8 exec --no-startup-id $term -e ranger
 bindsym $mod+ctrl+9 exec --no-startup-id $term -e htop
+bindsym $mod+ctrl+p exec --no-startup-id $term -e pulsemixer
+bindsym $mod+c exec --no-startup-id ~/.scripts/./context-runner.sh
 bindsym $mod+Backspace exec --no-startup-id swaylock --image $wallpaper
 
 bindsym --whole-window button8 kill
@@ -69,7 +79,10 @@ bindsym $mod+Shift+c reload
 
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10% 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10%
-bindsym XF86AudioMute exec pactl set-sink-volume @DEFAULT_SINK@ toggle
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+bindsym XF86MonBrightnessDown exec sudo ~/.scripts/./screen-brightness.sh -5%
+bindsym XF86MonBrightnessUp exec sudo ~/.scripts/./screen-brightness.sh +5%
 
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl pause

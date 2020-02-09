@@ -1,14 +1,14 @@
 * {
 	border: none;
 	border-radius: 0;
-	font-family: "Hack", "xos4 terminus", "Inter";
+	font-family: "Hack", "xos4 terminus", "Font Awesome 5 Free";
 	font-size: 15px;
-	min-height: 30px;
+	min-height: 24px;
 }
 
 window#waybar {
-	background: linear-gradient(180deg, rgba(41, 44, 51, 0.9), rgba(41, 44, 51, 0.7));
-	color: white;
+	background: rgba(0, 0, 0, 0.7);
+	color: #ffffff;
 }
 
 #workspaces {
@@ -21,13 +21,20 @@ window#waybar {
 
 #workspaces button {
 	background: transparent;
-	color: rgba(255, 255, 255, 0.5);
+	color: #777777;
 }
 
 #workspaces button.focused {
 	color: #ffffff;
 }
 
-#pulseaudio, #network, #backlight, #clock, #tray {
+#pulseaudio, #network, #backlight, #clock, #tray, #battery {
 	margin: 0px 10px;
+}
+
+#battery.warning {
+	color: #FB9999;
+}
+#battery.critical {
+	color: #FD5050;
 }

@@ -7,7 +7,7 @@ window:
   padding:
     x: 8
     y: 8
-tabspaces: 8
+tabspaces: 4
 draw_bold_text_with_bright_colors: true
 font:
   normal:
@@ -19,7 +19,7 @@ font:
   italic:
     family: "hack"
     style: Italic
-  size: 9.0
+  size: 11
   offset:
       x: 0
       y: 2
@@ -30,8 +30,8 @@ debug:
   render_timer: false
 colors:
   primary:
-    background: '0x292c33'
-    foreground: '0xf0f0f0'
+    background: '0x000000'
+    Cforeground: '0xCCCCCC'
   normal:
     black:   '0x282a36'
     red:     '0xff5c57'
@@ -65,7 +65,7 @@ colors:
 visual_bell:
   animation: EaseOutExpo
   duration: 0
-background_opacity: 1
+background_opacity: 0.85
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
 mouse:
@@ -75,7 +75,7 @@ mouse:
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
 cursor:
-    style: Beam
+    style: Underline
 live_config_reload: true
 key_bindings:
   - { key: V,        mods: Control|Shift,    action: Paste               }

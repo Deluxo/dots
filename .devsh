@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export DEV_HOME="$HOME/Documents/dev"
+export DEV_HOME="/home/lukas/dev"
 export DEV_TOOLS="$DEV_HOME/tools"
 
 export ANDROID_HOME=$DEV_TOOLS/android/sdk
@@ -15,9 +15,9 @@ export COMPOSER_HOME="$DEV_TOOLS/composer"
 export GOPATH="$DEV_TOOLS/golang"
 export NPM_GLOBAL="$DEV_TOOLS/npm"
 export SYMFONY_HOME="$DEV_TOOLS/symfony"
-export YARN_HOME="$(yarn global bin)"
+export YARN_HOME="$HOME/.yarn"
 
 export KEEPASS_KEY="$HOME/Documents/se.key"
 export KEEPASS_DB="$HOME/Documents/se.kdbx"
 
-export PATH="$PATH:$GOBIN:$NPM_GLOBAL/bin:$SYMFONY_HOME/bin:$YARN_HOME"
+export PATH="$PATH:$GOPATH/bin:$NPM_GLOBAL/bin:$SYMFONY_HOME/bin:$YARN_HOME/bin:$DEV_TOOLS/bin:$COMPOSER_HOME/vendor/bin"
