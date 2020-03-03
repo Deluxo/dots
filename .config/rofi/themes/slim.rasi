@@ -1,0 +1,81 @@
+* {
+	li: rgba(255, 255, 255, 50%);
+	li-on: rgba(255, 255, 255, 100%);
+	none: rgba(0, 0, 0, 0%);
+	bg: rgba(16, 16, 18, 85%);
+	font: "Hack 9";
+}
+#window {
+	border: 1px;
+	border-color: rgba(255, 255, 255, 10%);
+	padding: 5px;
+	background-color: @bg;
+	color: @none;
+	location: south;
+	width: 100%;
+	height: 35%;
+}
+#mainbox {
+	border:  0;
+	padding: 0;
+	background-color: @none;
+	color: @none;
+}
+#listview {
+	background-color: @none;
+	padding: 0;
+	dynamic: true;
+}
+#inputbar {
+	spacing: 40;
+	color: @none;
+	background-color: @none;
+	padding: 0;
+	margin: 0;
+}
+#prompt {
+	spacing: 0px;
+	text-color: @none;
+	background-color: @none;
+	font: "FontAwesome 9";
+	padding: 0;
+	margin: 0;
+	display: false;
+
+}
+#mode-switcher {
+	background-color: @none;
+	border:	   2px dash 0px 0px ;
+	border-color: @separatorcolor;
+}
+
+#button {
+	margin: 0 0;
+	font: "FontAwesome 9";
+	background-color: @none;
+	text-color:	   @li;
+}
+#button.selected {
+	background-color: @none;
+	text-color:	   @li-on;
+}
+
+#element {
+	border:  0;
+	padding: 5px 0;
+	background-color: @none;
+	color: @li;
+}
+#element.selected.normal {
+	text-color:	   @li-on;
+}
+#element.selected.urgent {
+	text-color:	   @li-on;
+}
+#element.selected.active {
+	text-color:	   @li-on;
+}
+#entry {
+	background-color: @none;
+	color: @li-on;
+}

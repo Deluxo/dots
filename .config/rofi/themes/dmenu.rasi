@@ -1,0 +1,57 @@
+* {
+	background-color: #00000000;
+	color: White;
+	font: "xos4 terminus 7;
+}
+
+#window {
+	anchor: north;
+	location: north;
+	width: 100%;
+	padding: 0 11px;
+	children: [ horibox ];
+}
+
+#horibox {
+	orientation: horizontal;
+	children:   [ sidebar, entry, listview ];
+}
+
+#listview {
+	layout: horizontal;
+	padding: 0px 0;
+	spacing: 5px;
+	lines: 100;
+}
+
+#sidebar {
+}
+
+#prompt {
+	padding: 6px 0px 0px 24px;
+}
+
+#entry {
+	expand: false;
+	width: 20em;
+	padding: 6px 0px 0px 24px;
+}
+
+#element {
+	margin: 0px 30px;
+	padding: 6px 2px;
+}
+
+#element selected {
+	color: Cyan;
+}
+
+#button {
+	font: "Font Awesome 5 Free 8, Font awesome 5 Brands 8";
+	width: 40px;
+	text-color: White;
+}
+
+#button selected {
+	text-color: Cyan;
+}
