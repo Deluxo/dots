@@ -12,7 +12,7 @@ set $term alacritty
 set $menu dmenu_path | rofi -show run | xargs swaymsg exec --
 set $appsmenu dmenu_path | rofi -show drun | xargs swaymsg exec --
 
-set $thickness 2
+set $thickness 1
 set $titlebarThickness 0
 set $gap 20
 
