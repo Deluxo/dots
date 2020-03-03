@@ -18,14 +18,12 @@ LANG=en_GB.utf8
 #ssh-add ~/.ssh/hwp0.l.dedikuoti.lt
 
 export EDITOR="vim"
-export BROWSER="qutebrowser"
+export BROWSER="/usr/bin/qutebrowser"
 export PATH="$PATH:$HOME/.scripts"
 export SXHDK_SHELL=/bin/bash
 export VISUAL="$EDITOR"
 export XDG_CONFIG_HOME=$HOME/.config
 export _JAVA_AWT_WM_NONREPARENTING=1
-#export allow_rgb10_configs=false
-export BROWSER="$HOME/.scripts/qutebrowser-nouveau.sh"
 
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/fzf-extras.zsh
@@ -34,8 +32,10 @@ source ~/.devsh
 
 #[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 
-#export QT_QPA_PLATFORM=wayland-egl
-export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
+export QT_QPA_PLATFORM=wayland
+export CLUTTER_BACKEND=wayland
+export SDL_VIDEODRIVER=wayland
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export _JAVA_AWT_WM_NONREPARENTING=1
 export BEMENU_BACKEND=wayland 
 [[ "$(tty)" = "/dev/tty1" ]] && exec sway

@@ -10,6 +10,8 @@ alias bc="bluetoothctl"
 alias don="sudo systemctl start docker"
 alias doff="sudo systemctl stop docker"
 alias e="ewl.sh"
+alias new="alacritty --hold --working-directory . &!"
+alias v="vim"
 
 setopt hist_expire_dups_first
 setopt hist_find_no_dups

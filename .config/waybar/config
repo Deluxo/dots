@@ -1,5 +1,5 @@
 {
-	"height": 1,
+	"height": 35,
 	"layer": "bottom",
 	"position": "top",
 	"modules-left": ["sway/workspaces", "sway/mode"],
@@ -14,7 +14,9 @@
 	},
 	"clock": {
 		"format" : "{:%b %d %a %H:%M}",
-		"format-alt": "{:%Y-%m-%d}"
+		"format-alt": "{:%Y-%m-%d}",
+		"on-click": "gsimplecal",
+		"timezone": "Europe/Vilnius"
 	},
 	"pulseaudio": {
 		"tooltip": false,
@@ -31,7 +33,7 @@
 			"default": ["", ""]
 		},
 		"scroll-step": 1,
-		"on-click": "pavucontrol"
+		"on-click": "alacritty -e pulsemixer"
 	},
 	"network": {
 		"format": "{ifname}",

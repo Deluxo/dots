@@ -29,6 +29,7 @@ include /usr/share/doc/task/rc/solarized-dark-256.theme
 #include /usr/share/doc/task/rc/solarized-light-256.theme
 #include /usr/share/doc/task/rc/no-color.theme
 
-report.ls.labels=ID,Description,Tag,Scheduled,Due
-report.ls.columns=id,description,tags,scheduled.remaining,due.relative
+report.ls.columns=id,description,modified.age,entry.iso
 report.ls.sort=tags+\/,scheduled+\/,due+\/,id+\/,description
+report.ls.description=An ls of taskwarrion
+report.ls.labels=ID, Description, Mod, Entered

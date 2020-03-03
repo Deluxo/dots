@@ -1,4 +1,4 @@
-set $wallpaper /home/lukas/Pictures/Wallpapers/Scenery/wallhaven-zmrd2g.jpg
+set $wallpaper /home/lukas/Pictures/Wallpapers/Scenery/wallhaven-13eqyw.jpg
 set $laptop eDP-1
 output * bg $wallpaper fill
 
@@ -12,9 +12,9 @@ set $term alacritty
 set $menu dmenu_path | rofi -show run | xargs swaymsg exec --
 set $appsmenu dmenu_path | rofi -show drun | xargs swaymsg exec --
 
-set $thickness 4
+set $thickness 2
 set $titlebarThickness 0
-set $gap 40
+set $gap 20
 
 set $unfocused_border #FFFFFF21
 set $focused_border #FFFFFF66
@@ -31,11 +31,11 @@ set $ws9 "9: "
 set $ws10 "10: "
 
 
-exec swayidle -w \
-	timeout 300 "swaylock --image $wallpaper" \
-	timeout 600 'swaymsg "output * dpms off"' \
-	resume 'swaymsg "output * dpms on"' \
-	before-sleep "swaylock --image $wallpaper"
+#exec swayidle -w \
+#	timeout 300 "swaylock --image $wallpaper" \
+#	timeout 600 'swaymsg "output * dpms off"' \
+#	resume 'swaymsg "output * dpms on"' \
+#	before-sleep "swaylock --image $wallpaper"
 
 exec --no-startup_id qtox
 exec --no-startup-id redshift
@@ -43,18 +43,28 @@ exec --no-startup-id /home/lukas/.config/sway/scripts/inactive-windows-transpare
 exec --no-startup-id mako
 
 input * {
-    repeat_delay 1000
-    repeat_rate 10
+	repeat_delay 1000
+	repeat_rate 10
 	xkb_layout us,lt
 	xkb_variant dvorak,
-	xkb_options caps:escape,grp:alt_shift_toggle
+	xkb_options grp:alt_shift_toggle,grp:switch
+}
+
+input "2:7:SynPS/2_Synaptics_TouchPad" {
+	tap enabled
+	pointer_accel 0.5
+	scroll_factor 1.5
+}
+
+seat seat0 {
+	hide_cursor 1000
 }
 
 floating_modifier $mod normal
 
 # CLAMCHELL
-bindswitch --reload lid:on output $laptop disable
-bindswitch --reload lid:off output $laptop enable
+#bindswitch --reload lid:on output $laptop disable
+#bindswitch --reload lid:off output $laptop enable
 
 # KEYS
 bindsym $mod+ctrl+1 exec --no-startup-id qutebrowser
@@ -76,9 +86,10 @@ bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id $menu
 bindsym $mod+shift+d exec --no-startup-id $appsmenu
 bindsym $mod+Shift+c reload
+bindsym $mod+shift+t exec --no-startup-id rofi -show 
 
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10% 
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% 
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 bindsym XF86MonBrightnessDown exec sudo ~/.scripts/./screen-brightness.sh -5%
@@ -217,4 +228,3 @@ for_window [class="Galculator"] sticky enable
 
 for_window [class="Android Emulator"] floating enable
 for_window [class="steam"] floating enable
-
