@@ -1,4 +1,4 @@
-set $wallpaper /home/lukas/Pictures/Wallpapers/Scenery/wallhaven-13eqyw.jpg
+set $wallpaper /home/lukas/Pictures/Wallpapers/Scenery/wallhaven-zmrd2g.jpg
 set $laptop eDP-1
 output * bg $wallpaper fill
 
@@ -57,7 +57,7 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
 }
 
 seat seat0 {
-	hide_cursor 1000
+	hide_cursor 10000
 }
 
 floating_modifier $mod normal
@@ -215,16 +215,14 @@ assign [class="Gimp"] workspace $ws10
 
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
-for_window [class="Steam"] floating enable
 for_window [class='*:libreofficedev'] floating disabled
 for_window [class='*:soffice'] floating disabled
 
-for_window [class="mpv"] floating enable
-for_window [class="mpv"] move position 2740 1000
-for_window [class="mpv"] sticky enable
+for_window [app_id="mpv"] floating enable
+for_window [app_id="mpv"] move position 1120 580
+for_window [app_id="mpv"] sticky enable
 
 for_window [class="Galculator"] floating enable
 for_window [class="Galculator"] sticky enable
 
 for_window [class="Android Emulator"] floating enable
-for_window [class="steam"] floating enable

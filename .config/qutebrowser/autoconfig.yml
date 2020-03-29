@@ -6,5 +6,5 @@
 
 config_version: 2
 settings:
-  completion.delay:
-    global: 100
+  content.proxy:
+    global: system

@@ -19,24 +19,21 @@ font:
   italic:
     family: "hack"
     style: Italic
-  size: 11
+  size: 9
   offset:
       x: 0
       y: 0
   glyph_offset:
       x: 0
-      y: 1
+      y: 0
 debug:
   render_timer: false
 
-# Colors (Ayu Dark)
 colors:
-  # Default colors
   primary:
-    background: '0x000000'
+    background: '0x1d2021'
     foreground: '0xB3B1AD'
 
-  # Normal colors
   normal:
     black: '0x01060E'
     red: '0xEA6C73'
@@ -47,7 +44,6 @@ colors:
     cyan: '0x90E1C6'
     white: '0xC7C7C7'
 
-  # Bright colors
   bright:
     black: '0x686868'
     red: '0xF07178'
@@ -61,7 +57,7 @@ colors:
 visual_bell:
   animation: EaseOutExpo
   duration: 0
-background_opacity: 0.88
+background_opacity: 0.85
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
 mouse:
@@ -71,7 +67,7 @@ mouse:
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
 cursor:
-    style: Underline
+    style: Block
 live_config_reload: true
 key_bindings:
   - { key: V,        mods: Control|Shift,    action: Paste               }

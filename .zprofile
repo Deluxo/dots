@@ -37,6 +37,9 @@ export CLUTTER_BACKEND=wayland
 export SDL_VIDEODRIVER=wayland
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export _JAVA_AWT_WM_NONREPARENTING=1
-export BEMENU_BACKEND=wayland 
+export BEMENU_BACKEND=wayland
+export MOZ_ENABLE_WAYLAND=1
+export MOZ_WAYLAND_USE_VAAPI=1
+
 [[ "$(tty)" = "/dev/tty1" ]] && exec sway
 #[[ "$(tty)" = "/dev/tty1" ]] && exec sway -d 2> /home/lukas/sway.log
