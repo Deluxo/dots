@@ -13,6 +13,7 @@ alias e="ewl.sh"
 alias new="alacritty --hold --working-directory . &!"
 alias v="vim"
 alias vi="vim"
+alias wk="wineserver -k"
 
 setopt hist_expire_dups_first
 setopt hist_find_no_dups
