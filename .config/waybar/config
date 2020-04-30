@@ -6,7 +6,19 @@
 	"modules-center": ["sway/window"],
 	"modules-right": ["battery", "pulseaudio", "network", "clock", "tray"],
 	"sway/workspaces": {
-		"format": "{name}"
+		"all-outputs": true,
+		"format": "{name} {icon}",
+		"current-only": false,
+		"format-icons": {
+			"1": "",
+			"2": "",
+			"4": "",
+			"3": "",
+			"urgent": "",
+			"focused": "",
+			"default": ""
+		}
+
 	},
 	"sway/window": {
 		"tooltip": false,

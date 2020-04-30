@@ -9,54 +9,44 @@ window:
     y: 8
 draw_bold_text_with_bright_colors: true
 font:
+  size: 11
   normal:
-    family: "hack"
-    style: mono
-  bold:
-    family: "hack"
-    style: Bold
-  italic:
-    family: "hack"
-    style: Italic
-  size: 9
-  offset:
-      x: 0
-      y: 0
-  glyph_offset:
-      x: 0
-      y: 0
+    family: "Mononoki"
+    style: Regular
 debug:
   render_timer: false
 
 colors:
   primary:
-    background: '0x1d2021'
-    foreground: '0xB3B1AD'
-
+    background: '0x0a1010'
+    foreground: '0xb6bcc4'
+  cursor:
+    text:       '0x0a1010'
+    cursor:     '#074D40'
   normal:
-    black: '0x01060E'
-    red: '0xEA6C73'
-    green: '0x91B362'
-    yellow: '0xF9AF4F'
-    blue: '0x53BDFA'
-    magenta: '0xFAE994'
-    cyan: '0x90E1C6'
-    white: '0xC7C7C7'
-
+    black:      '0x0a1010'
+    red:        '0x4F374A'
+    green:      '0x085349'
+    yellow:     '0x096E4E'
+    blue:       '0x196C62'
+    magenta:    '0x298C55'
+    cyan:       '0x118D65'
+    white:      '0xb6bcc4'
   bright:
-    black: '0x686868'
-    red: '0xF07178'
-    green: '0xC2D94C'
-    yellow: '0xFFB454'
-    blue: '0x59C2FF'
-    magenta: '0xFFEE99'
-    cyan: '0x95E6CB'
-    white: '0xFFFFFF'
+    black:      '0x7f8389'
+    red:        '0x4F374A'
+    green:      '0x085349'
+    yellow:     '0x096E4E'
+    blue:       '0x196C62'
+    magenta:    '0x298C55'
+    cyan:       '0x118D65'
+    white:      '0xb6bcc4'
+
 
 visual_bell:
   animation: EaseOutExpo
   duration: 0
-background_opacity: 0.85
+background_opacity: 0.92
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
 mouse:
