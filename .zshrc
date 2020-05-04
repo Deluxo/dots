@@ -1,10 +1,8 @@
 export ZSH="/home/lukas/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
-source /usr/share/fzf/completion.zsh
-source /usr/share/fzf/fzf-extras.zsh
-source /usr/share/fzf/key-bindings.zsh
+
 alias tow3m="w3m -dump -T text/html | less"
 alias bc="bluetoothctl"
 alias don="sudo systemctl start docker"
@@ -28,3 +26,8 @@ setopt inc_append_history
 setopt no_hist_allow_clobber
 setopt no_hist_beep
 setopt share_history
+
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/fzf-extras.zsh
+source /usr/share/fzf/key-bindings.zsh
+source ~/.devsh
