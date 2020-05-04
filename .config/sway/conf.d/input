@@ -1,0 +1,17 @@
+floating_modifier $mod normal
+
+input * {
+	xkb_layout us,lt
+	xkb_variant dvorak,
+	xkb_options grp:alt_shift_toggle,grp:switch,caps:escape
+}
+
+input "2:7:SynPS/2_Synaptics_TouchPad" {
+	tap enabled
+	pointer_accel 0.5
+	scroll_factor 1.5
+}
+
+seat seat0 {
+	hide_cursor 10000
+}

@@ -5,4 +5,4 @@ rofi.show-icons: true
 rofi.dpi: 1.0
 rofi.terminal: alacritty
 rofi.theme: ~/.config/rofi/themes/slim.rasi
-rofi.font: Hack 9
+rofi.font: Hack 6

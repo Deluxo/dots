@@ -1,14 +1,14 @@
 * {
 	border: none;
 	border-radius: 0;
-	font-family: "Mononoki", "Hack", "xos4 terminus", "Font Awesome 5 Free";
-	font-size: 15px;
+	font-family: "Hack", "Font Awesome 5 Free";
+	font-size: 13px;
 	min-height: 35px;
 	padding-top: 0px;
 }
 
 window#waybar {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
 	color: #b6bcc4;
 	font-weight: 300;
 	border-bottom: 1px solid;
@@ -22,7 +22,6 @@ window#waybar.active {
 #workspaces {
 	margin-top: -3px;
 	padding-left: 0px;
-	font-weight: 400;
 }
 
 #window {

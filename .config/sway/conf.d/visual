@@ -1,0 +1,15 @@
+focus_wrapping no
+gaps inner $gap
+titlebar_border_thickness $titlebarThickness
+titlebar_padding 0 0
+default_border pixel $thickness
+default_floating_border pixel $thickness
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $focused_border
+client.focused_inactive #FFFFFF00 #FFFFFF00 #FFFFFF00 $unfocused_border   $unfocused_border
+client.unfocused        #FFFFFF00 #FFFFFF00 #FFFFFF00 $unfocused_border $unfocused_border
+client.urgent           #FFFFFF00 #FFFFFF #FFFFFF $focused_border   $focused_border
+client.placeholder      #00000000 #00000000 #00000000 #00000000 #00000000
+client.background       #FFFFFF00
+
