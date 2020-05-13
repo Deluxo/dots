@@ -18,12 +18,9 @@ export VISUAL="$EDITOR"
 export XDG_CONFIG_HOME=$HOME/.config
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-#[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
-
 export MOZ_ENABLE_WAYLAND=1
 export MOZ_WAYLAND_USE_VAAPI=1
 export QT_QPA_PLATFORM=wayland
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
-#
+
 [[ "$(tty)" = "/dev/tty1" ]] && exec sway
-#[[ "$(tty)" = "/dev/tty1" ]] && exec sway -d 2> /home/lukas/sway.log

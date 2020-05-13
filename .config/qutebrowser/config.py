@@ -88,10 +88,24 @@ config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}) AppleWebKit/53
 # Type: FormatString
 config.set('content.headers.user_agent', 'Mozilla/5.0 ({os_info}; rv:71.0) Gecko/20100101 Firefox/71.0', 'https://docs.google.com/*')
 
+# Load images automatically in web pages.
+# Type: Bool
 config.set('content.images', True, 'chrome-devtools://*')
+
+# Load images automatically in web pages.
+# Type: Bool
 config.set('content.images', True, 'devtools://*')
+
+# Enable JavaScript.
+# Type: Bool
 config.set('content.javascript.enabled', True, 'file://*')
+
+# Enable JavaScript.
+# Type: Bool
 config.set('content.javascript.enabled', True, 'chrome-devtools://*')
+
+# Enable JavaScript.
+# Type: Bool
 config.set('content.javascript.enabled', True, 'devtools://*')
 
 # Enable JavaScript.
@@ -109,9 +123,47 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 #   - false
 #   - ask
 config.set('content.media_capture', True, 'https://duo.google.com')
+
+# Allow websites to record audio/video.
+# Type: BoolAsk
+# Valid values:
+#   - true
+#   - false
+#   - ask
+config.set('content.media_capture', True, 'https://web.skype.com')
+
+# Allow websites to show notifications.
+# Type: BoolAsk
+# Valid values:
+#   - true
+#   - false
+#   - ask
 config.set('content.notifications', True, 'https://www.reddit.com')
+
+# Allow websites to show notifications.
+# Type: BoolAsk
+# Valid values:
+#   - true
+#   - false
+#   - ask
 config.set('content.notifications', True, 'https://www.facebook.com')
+
+# Allow websites to show notifications.
+# Type: BoolAsk
+# Valid values:
+#   - true
+#   - false
+#   - ask
 config.set('content.notifications', True, 'https://duo.google.com')
+
+
+# Allow websites to show notifications.
+# Type: BoolAsk
+# Valid values:
+#   - true
+#   - false
+#   - ask
+config.set('content.notifications', True, 'https://web.skype.com')
 
 # Proxy to use. In addition to the listed values, you can use a
 # `socks://...` or `http://...` URL.
@@ -133,7 +185,7 @@ c.completion.delay = 200
 # `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
 # Same as `{column}`, but starting from index 0.
 # Type: ShellCommand
-c.editor.command = ['alacritty', '-e', 'vim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
+c.editor.command = ['kitty', '-e', 'vim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
 
 # Languages to use for spell checking. You can check for available
 # languages and install dictionaries using scripts/dictcli.py. Run the
@@ -579,7 +631,7 @@ c.colors.tabs.pinned.selected.even.bg = '#83a598'
 # Background color for webpages if unset (or empty to use the theme's
 # color).
 # Type: QtColor
-c.colors.webpage.bg = '#1d2021'
+c.colors.webpage.bg = 'white'
 
 # Force `prefers-color-scheme: dark` colors for websites.
 # Type: Bool
@@ -587,55 +639,55 @@ c.colors.webpage.prefers_color_scheme_dark = True
 
 # Font used in the completion widget.
 # Type: Font
-c.fonts.completion.entry = 'normal 9pt Hack'
+c.fonts.completion.entry = 'normal 9pt Fira Code'
 
 # Font used in the completion categories.
 # Type: Font
-c.fonts.completion.category = 'normal 9pt Hack'
+c.fonts.completion.category = 'normal 9pt Fira Code'
 
 # Font used for the downloadbar.
 # Type: Font
-c.fonts.downloads = 'normal 9pt Hack'
+c.fonts.downloads = 'normal 9pt Fira Code'
 
 # Font used for the hints.
 # Type: Font
-c.fonts.hints = 'normal 9pt Hack'
+c.fonts.hints = 'normal 9pt Fira Code'
 
 # Font used in the keyhint widget.
 # Type: Font
-c.fonts.keyhint = 'normal 9pt Hack'
+c.fonts.keyhint = 'normal 9pt Fira Code'
 
 # Font used for prompts.
 # Type: Font
-c.fonts.prompts = 'normal 9pt Hack'
+c.fonts.prompts = 'normal 9pt Fira Code'
 
 # Font used in the statusbar.
 # Type: Font
-c.fonts.statusbar = 'normal 9pt Hack'
+c.fonts.statusbar = 'normal 9pt Fira Code'
 
 # Font used in the tab bar.
 # Type: QtFont
-c.fonts.tabs = 'normal 9pt Hack'
+c.fonts.tabs = 'normal 9pt Fira Code'
 
 # Font family for standard fonts.
 # Type: FontFamily
-c.fonts.web.family.standard = 'Hack'
+c.fonts.web.family.standard = 'Fira Code'
 
 # Font family for fixed fonts.
 # Type: FontFamily
-c.fonts.web.family.fixed = 'Hack'
+c.fonts.web.family.fixed = 'Fira Code'
 
 # Font family for serif fonts.
 # Type: FontFamily
-c.fonts.web.family.serif = 'Hack'
+c.fonts.web.family.serif = 'Fira Code'
 
 # Font family for sans-serif fonts.
 # Type: FontFamily
-c.fonts.web.family.sans_serif = 'Hack'
+c.fonts.web.family.sans_serif = 'Fira Code'
 
 # Font family for cursive fonts.
 # Type: FontFamily
-c.fonts.web.family.cursive = 'Hack'
+c.fonts.web.family.cursive = 'Fira Code'
 
 # Bindings for normal mode
 config.bind('M', 'hint links spawn mpv {hint-url}')
@@ -646,3 +698,14 @@ config.bind('zl', 'spawn --userscript qute-pass')
 config.bind('zol', 'spawn --userscript qute-pass --otp-only')
 config.bind('zpl', 'spawn --userscript qute-pass --password-only')
 config.bind('zul', 'spawn --userscript qute-pass --username-only')
+
+import dracula.draw
+
+config.load_autoconfig()
+
+dracula.draw.blood(c, {
+    'spacing': {
+        'vertical': 6,
+        'horizontal': 8
+    }
+})
