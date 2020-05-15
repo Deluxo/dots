@@ -8,8 +8,8 @@
 }
 
 window#waybar {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
-	color: #97979f;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+	color: #b6bcc4;
 	font-weight: 300;
 	border-bottom: 1px solid;
 	border-color: rgba(255, 255, 255, 0);

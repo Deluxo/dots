@@ -6,5 +6,5 @@
 
 config_version: 2
 settings:
-  content.proxy:
-    global: system
+  colors.webpage.bg:
+    global: white
