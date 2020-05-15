@@ -1,4 +1,4 @@
-set $wallpaper /home/lukas/Pictures/Wallpapers/uhd/wallhaven-6k1egx.jpg
+set $wallpaper /home/lukas/Pictures/Wallpapers/custom/faux-code.png
 set $laptop eDP-1
 
 set $mod Mod4
@@ -29,11 +29,11 @@ bar {
 	swaybar_command waybar
 }
 
-set $thickness 1
+set $thickness 2
 set $titlebarThickness 0
 set $gap 30
 
-set $unfocused_border #FFFFFF21
-set $focused_border #FFFFFF66
+set $unfocused_border #bd93f921
+set $focused_border #bd93f966
 
 include "./conf.d/*"
