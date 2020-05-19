@@ -34,14 +34,14 @@ window#waybar.active {
 
 #workspaces button {
 	background: transparent;
-	color: #b6bcc4;
+	color: #bd93f9;
 	animation-duration: 0.1s;
 }
 
 #workspaces button:hover,
 #workspaces button.focused,
 #workspaces button.focused:hover {
-	color: #ffffff;
+	color: #69ff94;
 	text-shadow: none;
 	box-shadow: none;
 }
@@ -71,7 +71,7 @@ window#waybar.active {
 
 @keyframes blink {
 	to {
-		color: #ffffff;
+		color: #bd93f9;
 	}
 }
 
