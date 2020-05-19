@@ -18,3 +18,5 @@
 	prompt = false
 [diff]
 	tool = vimdiff
+[commit]
+	template = .gitmessage

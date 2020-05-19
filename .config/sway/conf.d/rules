@@ -30,4 +30,3 @@ for_window [class="Galculator"] floating enable
 for_window [class="Galculator"] sticky enable
 
 for_window [class="Android Emulator"] floating enable
-

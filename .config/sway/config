@@ -36,4 +36,10 @@ set $gap 30
 set $unfocused_border #FFFFFF21
 set $focused_border #FFFFFF66
 
+exec swayidle -w \
+	 timeout 120 'swaylock --image $wallpaper' \
+	 timeout 150 'swaymsg "output * dpms off"' \
+	 resume 'swaymsg "output * dpms on"' \
+	 before-sleep 'swaylock --image $wallpaper'
+
 include "./conf.d/*"

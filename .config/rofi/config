@@ -3,6 +3,6 @@ rofi.modi::~/.scripts/dmenu-power.sh,:~/.scripts/dmenu-task.sh,:~/.scri
 rofi.scroll-method: 1
 rofi.show-icons: true
 rofi.dpi: 1.0
-rofi.terminal: alacritty
+rofi.terminal: kitty
 rofi.theme: ~/.config/rofi/themes/slim.rasi
-rofi.font: Hack 6
+rofi.font: Hack 9

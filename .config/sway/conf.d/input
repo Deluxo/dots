@@ -4,6 +4,8 @@ input * {
 	xkb_layout us,lt
 	xkb_variant dvorak,
 	xkb_options grp:alt_shift_toggle,grp:switch,caps:escape
+	accel_profile flat
+	pointer_accel -0.4
 }
 
 input "2:7:SynPS/2_Synaptics_TouchPad" {
