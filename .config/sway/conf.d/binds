@@ -32,6 +32,8 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+bindsym XF86AudioMicMute exec pactl set-source-mute alsa_input.pci-0000_06_00.6.analog-stereo toggle
+
 bindsym $mod+ctrl+0x3b exec playerctl previous
 bindsym $mod+ctrl+0x71 exec playerctl play-pause
 bindsym $mod+ctrl+0x6a exec playerctl next

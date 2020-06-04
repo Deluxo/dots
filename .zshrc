@@ -12,6 +12,7 @@ alias new="$TERM --hold -d . &!"
 alias v="vim"
 alias vi="vim"
 alias wk="wineserver -k"
+alias cp-terminfo="kitty +kitten ssh"
 
 setopt hist_expire_dups_first
 setopt hist_find_no_dups
