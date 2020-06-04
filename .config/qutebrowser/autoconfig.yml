@@ -6,5 +6,5 @@
 
 config_version: 2
 settings:
-  colors.webpage.bg:
-    global: white
+  statusbar.hide:
+    global: false

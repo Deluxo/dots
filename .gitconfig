@@ -19,4 +19,4 @@
 [diff]
 	tool = vimdiff
 [commit]
-	template = .gitmessage
+	template = ~/.gitmessage
