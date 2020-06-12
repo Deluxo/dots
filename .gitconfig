@@ -20,3 +20,5 @@
 	tool = vimdiff
 [commit]
 	template = ~/.gitmessage
+[pull]
+	rebase = false

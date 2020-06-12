@@ -3,12 +3,12 @@
 	border-radius: 0;
 	font-family: "Hack", "Font Awesome 5 Free";
 	font-size: 13px;
-	min-height: 35px;
+	min-height: 30px;
 	padding-top: 0px;
 }
 
 window#waybar {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 	color: #b6bcc4;
 	font-weight: 300;
 	border-bottom: 1px solid;

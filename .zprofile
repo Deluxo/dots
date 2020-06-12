@@ -22,5 +22,7 @@ export MOZ_ENABLE_WAYLAND=1
 export MOZ_WAYLAND_USE_VAAPI=1
 export QT_QPA_PLATFORM=wayland
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+export XDG_CURRENT_DESKTOP=sway
+export XDG_SESSION_TYPE=wayland
 
 [[ "$(tty)" = "/dev/tty1" ]] && exec sway

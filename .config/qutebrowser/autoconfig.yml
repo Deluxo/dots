@@ -6,9 +6,7 @@
 
 config_version: 2
 settings:
-  colors.webpage.bg:
-    global: white
   content.notifications:
-    https://synergyeffect.teamwork.com: true
-  downloads.remove_finished:
-    global: 5000
+    https://tomato-timer.com: true
+  statusbar.hide:
+    global: false
