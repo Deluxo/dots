@@ -1,7 +1,7 @@
-font=Inter 13
-background-color=#000000CC
-text-color=#FFFFFF
-border-color=#FFFFFF1A
-default-timeout=3000
-anchor=top-center
-width=400
+font=OperatorMonoLig Light 15
+background-color=#222222CC
+text-color=#ffffff
+border-color=#ffffff99
+default-timeout=4000
+anchor=bottom-center
+width=350

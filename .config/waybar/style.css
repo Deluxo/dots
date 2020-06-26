@@ -8,8 +8,8 @@
 }
 
 window#waybar {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-	color: #b6bcc4;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+	color: #ffffff;
 	font-weight: 300;
 	border-bottom: 1px solid;
 	border-color: rgba(255, 255, 255, 0);
@@ -34,14 +34,14 @@ window#waybar.active {
 
 #workspaces button {
 	background: transparent;
-	color: #bd93f9;
+	color: #ffffff;
 	animation-duration: 0.1s;
 }
 
 #workspaces button:hover,
 #workspaces button.focused,
 #workspaces button.focused:hover {
-	color: #69ff94;
+	color: #ebff87;
 	text-shadow: none;
 	box-shadow: none;
 }

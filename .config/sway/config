@@ -1,4 +1,4 @@
-set $wallpaper /home/lukas/Pictures/Wallpapers/Plants/wallhaven-r2lw7m.jpg
+set $wallpaper /home/lukas/Pictures/Wallpapers/Plants/wallhaven-oxrrj7.png
 set $laptop eDP-1
 
 set $mod Mod4
@@ -33,8 +33,8 @@ set $thickness 2
 set $titlebarThickness 0
 set $gap 15
 
-set $unfocused_border #95e6cb2f
-set $focused_border #95e6cb66
+set $unfocused_border #ffffff26
+set $focused_border #ffffff66
 
 exec swayidle -w \
 	 timeout 120 'swaylock --image $wallpaper' \

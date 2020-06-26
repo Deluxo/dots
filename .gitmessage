@@ -1,19 +1,11 @@
-# Hey there o/!
-#
-# We just wanted to let you know that we care a great deal about
-# making our git history clean, maintainable and easy to access for
-# all our contributors. Commit messages are very important to us,
-# which is why we have a strict commit message policy in place.
-# Please use the following guidelines to format all your commit
-# messages:
-#
-#     <type>(<scope>): <subject>
-#     <BLANK LINE>
-#     <body>
-#     <BLANK LINE>
-#     <footer>
+# <type>(<scope>): <subject>
+# <BLANK LINE>
+# <body>
+# <BLANK LINE>
+# <footer>
 #
 # Please note that:
+#
 #  - The HEADER is a single line of max. 50 characters that
 #    contains a succinct description of the change. It contains a
 #    type, an optional scope, and a subject
@@ -34,9 +26,11 @@
 #               “changed”/“changes”
 #             * no capitalised first letter
 #             * no dot (.) at the end
+#
 #  - The BODY should include the motivation for the change and
 #    contrast this with previous behavior and must be phrased in
 #    imperative present tense
+#
 #  - The FOOTER should contain any information about Breaking
 #    Changes and is also the place to reference GitHub issues that
 #    this commit closes
