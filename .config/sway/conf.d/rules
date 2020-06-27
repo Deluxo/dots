@@ -17,16 +17,11 @@ assign [class="Mail"] workspace $ws9
 assign [class="Thunderbird"] workspace $ws9
 assign [class="Gimp"] workspace $ws10
 
-for_window [window_role="pop-up"] floating enable
-for_window [window_role="task_dialog"] floating enable
+for_window [app_id="galculator"] floating enable, sticky enable
+for_window [app_id="mpv"] floating enable, move position 1120 580, sticky enable
+for_window [class="Android Emulator"] floating enable
 for_window [class='*:libreofficedev'] floating disabled
 for_window [class='*:soffice'] floating disabled
-
-for_window [app_id="mpv"] floating enable
-for_window [app_id="mpv"] move position 1120 580
-for_window [app_id="mpv"] sticky enable
-
-for_window [class="Galculator"] floating enable
-for_window [class="Galculator"] sticky enable
-
-for_window [class="Android Emulator"] floating enable
+for_window [title="Sticky Term"] floating enable, sticky enable, resize set 50ppt 50ppt
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
