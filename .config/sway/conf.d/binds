@@ -21,6 +21,7 @@ bindsym $mod+d exec --no-startup-id $menu
 bindsym $mod+shift+d exec --no-startup-id $appsmenu
 bindsym $mod+Shift+c reload
 bindsym $mod+shift+t exec --no-startup-id rofi -show 
+bindsym $mod+shift+b exec --no-startup-id rofi -show bc
 
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
