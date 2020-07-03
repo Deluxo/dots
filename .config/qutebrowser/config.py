@@ -297,10 +297,6 @@ c.hints.border = '1px solid #282a36'
 #   - vi-VN: Vietnamese (Viet Nam)
 c.spellcheck.languages = ['en-US', 'lt-LT']
 
-# Hide the statusbar unless a message is shown.
-# Type: Bool
-c.statusbar.hide = True
-
 # Padding (in pixels) for the statusbar.
 # Type: Padding
 c.statusbar.padding = {'top': 6, 'right': 8, 'bottom': 6, 'left': 8}
@@ -762,10 +758,6 @@ c.fonts.prompts = 'normal 9pt Fira Code'
 # Font used in the statusbar.
 # Type: Font
 c.fonts.statusbar = 'normal 9pt Fira Code'
-
-# Font used in the tab bar.
-# Type: QtFont
-c.fonts.tabs = 'normal 9pt Fira Code'
 
 # Font family for standard fonts.
 # Type: FontFamily
