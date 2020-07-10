@@ -9,6 +9,7 @@
 	c = commit
 	tw = "! git rev-parse --abbrev-ref HEAD | wl-copy && $HOME/.scripts/context-runner.sh"
 	mergetest = "! git pull --all && git merge --no-commit --no-ff \"$1\" && git merge --abort"
+	checkout-to = "! mkdir -p $2 && git archive $1 | tar -x -C $2 && echo"
 [credential]
 	helper = cache --timeout=3600
 [core]
