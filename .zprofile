@@ -9,7 +9,7 @@ LANG=en_GB.utf8
 	#echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 #fi
 
-export TERM="kitty"
+export TERM_CMD="kitty"
 export EDITOR="vim"
 export BROWSER="/usr/bin/qutebrowser"
 export PATH="$PATH:$HOME/.scripts"

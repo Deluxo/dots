@@ -1,4 +1,5 @@
 export ZSH="/home/lukas/.oh-my-zsh"
+export TERM_CMD="kitty"
 ZSH_THEME="nicoulaj"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
@@ -8,7 +9,8 @@ alias bc="bluetoothctl"
 alias don="sudo systemctl start docker"
 alias doff="sudo systemctl stop docker"
 alias e="ewl.sh"
-alias new="$TERM --hold -d . &!"
+alias new="$TERM_CMD --hold -d . >> /dev/null 2>&1 &!"
+#alias new="$TERM_CMD --hold -d . &!"
 alias v="vim"
 alias vi="vim"
 alias wk="wineserver -k"

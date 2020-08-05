@@ -1,4 +1,4 @@
-set $wallpaper /home/lukas/Pictures/Wallpapers/Plants/wallhaven-oxrrj7.png
+set $wallpaper /home/lukas/Pictures/Wallpapers/Scenery/wallhaven-j52e2y.png
 set $laptop eDP-1
 
 set $mod Mod4
@@ -29,12 +29,12 @@ bar {
 	swaybar_command waybar
 }
 
-set $thickness 2
+set $thickness 3
 set $titlebarThickness 0
-set $gap 15
+set $gap 20
 
-set $unfocused_border #ffffff26
-set $focused_border #ffffff66
+set $unfocused_border #6272a426
+set $focused_border #6272a477
 
 exec swayidle -w \
 	 timeout 60 'swaymsg "output * dpms off"' \

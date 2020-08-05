@@ -117,14 +117,22 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-#mode "chooser" {
-	#bindsym 1 exec $term, mode "default"
-	#bindsym 2 exec alacritty, mode "default"
-	#bindsym Return mode "default"
-	#bindsym Escape mode "default"
-#}
+mode "gap" {
+	bindsym 1 gaps inner 10, mode "default"
+	bindsym 2 gaps inner 20, mode "default"
+	bindsym 3 gaps inner 30, mode "default"
+	bindsym 4 gaps inner 40, mode "default"
+	bindsym 5 gaps inner 50, mode "default"
+	bindsym 6 gaps inner 60, mode "default"
+	bindsym 7 gaps inner 70, mode "default"
+	bindsym 8 gaps inner 80, mode "default"
+	bindsym 9 gaps inner 90, mode "default"
+	bindsym 0 gaps inner 0, mode "default"
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
 
-#bindsym $mod+i mode chooser
+bindsym $mod+i mode gap
 
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable

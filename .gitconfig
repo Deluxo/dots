@@ -3,7 +3,9 @@
 	name = Lukas Levickas
 [alias]
 	today = log --reverse --author 'Lukas Levickas' --since='00:00' --no-merges --pretty='format:* [%h] %s.'
+	yesterday = log --reverse --author 'Lukas Levickas' --since='yesterday' --no-merges --pretty='format:* [%h] %s.'
 	aw = log --graph --all --color --stat --oneline --pretty=format:'%C(red)%h%C(yellow)% d %C(green)% s%C(blue)% aN, %aE%C(magenta)% ci%+b'
+	w = log --graph --color --stat --oneline --pretty=format:'%C(red)%h%C(yellow)% d %C(green)% s%C(blue)% aN, %aE%C(magenta)% ci%+b'
 	sta = status
 	s = status
 	c = commit

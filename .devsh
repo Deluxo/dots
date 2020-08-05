@@ -3,6 +3,8 @@
 export DEV_HOME="/home/lukas/dev"
 export DEV_TOOLS="$DEV_HOME/tools"
 
+export CARGO_BIN="$HOME/.cargo/bin"
+
 export ANDROID_HOME=$DEV_TOOLS/android/sdk
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -20,4 +22,4 @@ export YARN_HOME="$HOME/.yarn"
 export KEEPASS_KEY="$HOME/Documents/se.key"
 export KEEPASS_DB="$HOME/Documents/se.kdbx"
 
-export PATH="$PATH:$GOPATH/bin:$NPM_GLOBAL/bin:$SYMFONY_HOME/bin:$YARN_HOME/bin:$DEV_TOOLS/bin:$COMPOSER_HOME/vendor/bin"
+export PATH="$PATH:$GOPATH/bin:$NPM_GLOBAL/bin:$SYMFONY_HOME/bin:$YARN_HOME/bin:$DEV_TOOLS/bin:$COMPOSER_HOME/vendor/bin:$CARGO_BIN"

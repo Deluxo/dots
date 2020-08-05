@@ -1,4 +1,4 @@
-assign [class="qutebrowser"] workspace $ws1
+assign [app_id="qutebrowser"] workspace $ws1
 assign [class="Firefox"] workspace $ws1
 assign [class="vim"] workspace $ws2
 assign [class="Skype"] workspace $ws3
@@ -25,3 +25,4 @@ for_window [class='*:soffice'] floating disabled
 for_window [title="Sticky Term"] floating enable, sticky enable, resize set 50ppt 50ppt
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
+for_window [app_id="qutebrowser"] inhibit_idle fullscreen
