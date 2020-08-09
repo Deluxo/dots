@@ -1,4 +1,4 @@
-set $wallpaper /home/lukas/Pictures/Wallpapers/Scenery/wallhaven-j52e2y.png
+set $wallpaper /home/lukas/Pictures/Wallpapers/ROG-2.png
 set $laptop eDP-1
 
 set $mod Mod4
@@ -8,8 +8,6 @@ set $up k
 set $right l
 
 set $term kitty
-set $menu dmenu_path | rofi -show run | xargs swaymsg exec --
-set $appsmenu dmenu_path | rofi -show drun | xargs swaymsg exec --
 
 set $ws1 "1"
 set $ws2 "2"
@@ -29,17 +27,15 @@ bar {
 	swaybar_command waybar
 }
 
-set $thickness 3
+set $thickness 2
 set $titlebarThickness 0
-set $gap 20
+set $gap 30
 
-set $unfocused_border #6272a426
-set $focused_border #6272a477
+set $unfocused_border #24a8b426
+set $focused_border #24a8b477
 
 exec swayidle -w \
 	 timeout 60 'swaymsg "output * dpms off"' \
-	 resume 'swaymsg "output * dpms on"' \
-	 timeout 120 'swaylock --image $wallpaper' \
-	 before-sleep 'swaylock --image $wallpaper'
+	 resume 'swaymsg "output * dpms on"'
 
 include "./conf.d/*"

@@ -6,5 +6,5 @@
 
 config_version: 2
 settings:
-  statusbar.hide:
-    global: true
+  content.notifications:
+    http://localhost:8025: true

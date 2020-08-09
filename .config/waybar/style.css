@@ -3,12 +3,15 @@
 	border-radius: 0;
 	font-family: "Hack", "Font Awesome 5 Free";
 	font-size: 13px;
-	min-height: 30px;
-	padding-top: 0px;
+	min-height: 100px;
+}
+
+window > * > *  {
+	margin-top: -60px;
 }
 
 window#waybar {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
 	color: #ffffff;
 	font-weight: 300;
 	border-bottom: 1px solid;
@@ -19,17 +22,12 @@ window#waybar.active {
 	background: rgba(0, 0, 0, 1);
 }
 
-#workspaces {
-	margin-top: -3px;
-	padding-left: 0px;
-}
-
-#window {
-	margin-top: -5px;
-}
-
 #clock, #tray {
 	padding-right: 10px;
+}
+
+#workspaces {
+	margin-left: 20px;
 }
 
 #workspaces button {
@@ -47,9 +45,8 @@ window#waybar.active {
 }
 
 #pulseaudio, #network, #backlight, #clock, #tray, #battery {
-	margin: -5px 10px 0px;
+	margin-right: 20px;
 }
-
 
 #battery.warning:not(.charging) {
 	color: #FB9999;

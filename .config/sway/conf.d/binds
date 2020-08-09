@@ -17,8 +17,8 @@ bindsym --whole-window button9 exec --no-startup-id ~/.scripts/./context-runner.
 
 bindsym $mod+Return exec --no-startup-id $term
 bindsym $mod+q kill
-bindsym $mod+d exec --no-startup-id $menu
-bindsym $mod+shift+d exec --no-startup-id $appsmenu
+bindsym $mod+d exec --no-startup-id bemenu.sh
+bindsym $mod+shift+d exec --no-startup-id bemenu.sh
 bindsym $mod+Shift+c reload
 bindsym $mod+shift+t exec --no-startup-id rofi -show 
 bindsym $mod+shift+b exec --no-startup-id rofi -show bc
