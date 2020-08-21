@@ -1,4 +1,4 @@
-set $wallpaper /home/lukas/Pictures/Wallpapers/ROG-2.png
+set $wallpaper /home/lukas/Pictures/Wallpapers/cyberpunk-red-blue-1.jpg
 set $laptop eDP-1
 
 set $mod Mod4
@@ -21,6 +21,7 @@ set $ws9 "9"
 set $ws10 "10"
 
 output * bg $wallpaper fill
+output * adaptive_sync on
 
 bar {
 	strip_workspace_numbers yes

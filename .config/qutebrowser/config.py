@@ -1086,6 +1086,6 @@ c.colors.tabs.selected.even.bg = base0D
 
 # Background color for webpages if unset (or empty to use the theme's
 # color).
-c.colors.webpage.bg = base00
+c.colors.webpage.bg = '#ffffff'
 
 # Base16 END
