@@ -13,13 +13,21 @@ finish() {
 	task done $id >> /dev/null
 }
 
+OUTPUT=''
+
 if [[ -z "$1" ]]; then
-	main
+	OUTPUT=$(main)
 else
 	if [[ "$@" =~ ^\+  ]]; then
-		add "$1"
+		OUTPUT=$(add "$1")
 	else
-		finish $@
+		OUTPUT=$(finish $@)
 	fi
-	main
+	OUTPUT=$(main)
+fi
+
+OUTPUT=$(echo "$OUTPUT" | $DMENU)
+
+if [[ ! -z "$OUTPUT" ]]; then
+	$0 "$OUTPUT"
 fi

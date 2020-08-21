@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
-if [ -z "$@" ]; then
-    echo "$(bluetoothctl devices)"
-else
-	selected=$(echo "$@" | awk '{print $2}')
 
-	if [[ -z $(bluetoothctl info | egrep $selected) ]]; then
-		bluetoothctl connect $selected > /dev/null 2>&1 &!
-	else
-		bluetoothctl disconnect $selected > /dev/null 2>&1 &!
-	fi
+DEVICES=$(bluetoothctl paired-devices)
+SELECTION=$(echo "$DEVICES" | grep "$(echo "$DEVICES" | cut -f 3- -d ' '| $DMENU)" | cut -f 2 -d ' ')
+
+if [[ -z $(bluetoothctl info | egrep $SELECTION) ]]; then
+	bluetoothctl connect $SELECTION > /dev/null 2>&1 &!
+else
+	bluetoothctl disconnect $SELECTION > /dev/null 2>&1 &!
 fi

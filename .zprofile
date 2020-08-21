@@ -26,4 +26,6 @@ export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export XDG_CURRENT_DESKTOP=sway
 export XDG_SESSION_TYPE=wayland
 
+source ~/.scripts/bemenu.sh
+
 [[ "$(tty)" = "/dev/tty1" ]] && exec sway

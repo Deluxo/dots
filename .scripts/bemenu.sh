@@ -10,18 +10,19 @@ color6='#24a8b4'
 color7='#cbced0'
 
 export BEMENU_BACKEND=wayland
-
-bemenu-run \
--b \
--i \
--w \
--p '❯' \
---fn 'Overpass Semibold 18px' \
---nb "$color0" \
---tb "$color0" \
---fb "$color0" \
---ff "$color2" \
---hb "$color0" \
---sb "$color0" \
---scb "$color0" \
---nf "$color7" \
+export BEMENU_OPTS=$(cat <<EOF
+-b
+-i
+-w
+-p '❯'
+--fn 'Overpass Semibold 18px'
+--nb "$color0"
+--tb "$color0"
+--fb "$color0"
+--ff "$color2"
+--hb "$color0"
+--sb "$color0"
+--scb "$color0"
+--nf "$color7"
+EOF
+)

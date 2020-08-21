@@ -17,8 +17,7 @@ bindsym --whole-window button9 exec --no-startup-id ~/.scripts/./context-runner.
 
 bindsym $mod+Return exec --no-startup-id $term
 bindsym $mod+q kill
-bindsym $mod+d exec --no-startup-id bemenu.sh
-bindsym $mod+shift+d exec --no-startup-id bemenu.sh
+bindsym $mod+d exec --no-startup-id bemenu-run
 bindsym $mod+Shift+c reload
 bindsym $mod+shift+t exec --no-startup-id rofi -show 
 bindsym $mod+shift+b exec --no-startup-id rofi -show bc
@@ -134,6 +133,15 @@ mode "gap" {
 
 bindsym $mod+i mode gap
 
+mode "menu" {
+	bindsym b exec --no-startup-id ~/.scripts/dmenu-bluetooth.sh, mode "default"
+	bindsym t exec --no-startup-id ~/.scripts/dmenu-task.sh, mode "default"
+	bindsym p exec --no-startup-id ~/.scripts/dmenu-passtask.sh, mode "default"
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+}
+
+bindsym $mod+shift+d mode menu
+
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
-
