@@ -137,6 +137,8 @@ mode "menu" {
 	bindsym b exec --no-startup-id ~/.scripts/dmenu-bluetooth.sh, mode "default"
 	bindsym t exec --no-startup-id ~/.scripts/dmenu-task.sh, mode "default"
 	bindsym p exec --no-startup-id ~/.scripts/dmenu-passtask.sh, mode "default"
+	bindsym e exec --no-startup-id ~/.scripts/dmenu-emoji.sh, mode "default"
+	bindsym w exec --no-startup-id ~/.scripts/dmenu-wifi.sh, mode "default"
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
 }
