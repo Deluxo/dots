@@ -9,6 +9,7 @@ LANG=en_GB.utf8
 	#echo 'export DBUS_SESSION_BUS_ADDRESS' >> $HOME/.dbus/Xdbus
 #fi
 
+export BASE16_SHELL=$HOME/.config/base16-shell
 export DMENU="bemenu"
 export TERM_CMD="kitty"
 export EDITOR="vim"

@@ -733,51 +733,54 @@ c.colors.webpage.darkmode.enabled = False
 
 # Font used in the completion widget.
 # Type: Font
-c.fonts.completion.entry = 'normal 9pt Fira Code'
+c.fonts.completion.entry = 'normal 11pt scientifica, normal 11pt Noto Color Emoji'
 
 # Font used in the completion categories.
 # Type: Font
-c.fonts.completion.category = 'normal 9pt Fira Code'
+c.fonts.completion.category = 'normal 11pt scientifica, normal 11pt Noto Color Emoji'
 
 # Font used for the downloadbar.
 # Type: Font
-c.fonts.downloads = 'normal 9pt Fira Code'
+c.fonts.downloads = 'normal 11pt scientifica, normal 11pt Noto Color Emoji'
 
 # Font used for the hints.
 # Type: Font
-c.fonts.hints = 'normal 9pt Fira Code'
+c.fonts.hints = 'bold 11pt scientifica, normal 11pt Noto Color Emoji'
 
 # Font used in the keyhint widget.
 # Type: Font
-c.fonts.keyhint = 'normal 9pt Fira Code'
+c.fonts.keyhint = 'normal 11pt scientifica, normal 11pt Noto Color Emoji'
 
 # Font used for prompts.
 # Type: Font
-c.fonts.prompts = 'normal 9pt Fira Code'
+c.fonts.prompts = 'normal 11pt scientifica, normal 11pt Noto Color Emoji'
 
 # Font used in the statusbar.
 # Type: Font
-c.fonts.statusbar = 'normal 9pt Fira Code'
+c.fonts.statusbar = 'normal 11pt scientifica, normal 11pt Noto Color Emoji'
 
 # Font family for standard fonts.
 # Type: FontFamily
-c.fonts.web.family.standard = 'Fira Code'
+c.fonts.web.family.standard = 'scientifica, normal 11pt Noto Color Emoji'
 
 # Font family for fixed fonts.
 # Type: FontFamily
-c.fonts.web.family.fixed = 'Fira Code'
+c.fonts.web.family.fixed = 'Fira Code, normal 11pt Noto Color Emoji'
 
 # Font family for serif fonts.
 # Type: FontFamily
-c.fonts.web.family.serif = 'Fira Code'
+c.fonts.web.family.serif = 'Libertinus Serif, normal 11pt Noto Color Emoji'
 
 # Font family for sans-serif fonts.
 # Type: FontFamily
-c.fonts.web.family.sans_serif = 'Fira Code'
+c.fonts.web.family.sans_serif = 'scientifica, normal 11pt Noto Color Emoji'
 
 # Font family for cursive fonts.
 # Type: FontFamily
-c.fonts.web.family.cursive = 'Fira Code'
+c.fonts.web.family.cursive = 'scientifica, normal 11pt Noto Color Emoji'
+
+c.fonts.tabs.selected = 'bold 11pt scientifica, 11pt Noto Color Emoji'
+c.fonts.tabs.unselected = 'bold 11pt scientifica, 11pt Noto Color Emoji'
 
 # Bindings for normal mode
 config.bind('M', 'hint links spawn mpv {hint-url}')
@@ -790,26 +793,22 @@ config.bind('zpl', 'spawn --userscript qute-pass --password-only')
 config.bind('zul', 'spawn --userscript qute-pass --username-only')
 
 # BASE16 START
- # base16-qutebrowser (https://github.com/theova/base16-qutebrowser)
-# Base16 qutebrowser template by theova and Daniel Mulford
-# Horizon Dark scheme by Michaël Ball (http://github.com/michael-ball/)
-
-base00 = "#1C1E26"
-base01 = "#232530"
-base02 = "#2E303E"
-base03 = "#6F6F70"
-base04 = "#9DA0A2"
-base05 = "#CBCED0"
-base06 = "#DCDFE4"
-base07 = "#E3E6EE"
-base08 = "#E93C58"
-base09 = "#E58D7D"
-base0A = "#EFB993"
-base0B = "#EFAF8E"
-base0C = "#24A8B4"
-base0D = "#DF5273"
-base0E = "#B072D1"
-base0F = "#E4A382"
+base00 = "#282936"
+base01 = "#3a3c4e"
+base02 = "#4d4f68"
+base03 = "#626483"
+base04 = "#62d6e8"
+base05 = "#e9e9f4"
+base06 = "#f1f2f8"
+base07 = "#f7f7fb"
+base08 = "#ea51b2"
+base09 = "#b45bcf"
+base0A = "#00f769"
+base0B = "#ebff87"
+base0C = "#a1efe4"
+base0D = "#62d6e8"
+base0E = "#b45bcf"
+base0F = "#00f769"
 
 # set qutebrowser colors
 
@@ -836,19 +835,19 @@ c.colors.completion.category.border.top = base00
 c.colors.completion.category.border.bottom = base00
 
 # Foreground color of the selected completion item.
-c.colors.completion.item.selected.fg = base00
+c.colors.completion.item.selected.fg = base05
 
 # Background color of the selected completion item.
-c.colors.completion.item.selected.bg = base0D
+c.colors.completion.item.selected.bg = base02
 
-# Top border color of the selected completion item
-c.colors.completion.item.selected.border.top = base0D
+# Top border color of the selected completion item.
+c.colors.completion.item.selected.border.top = base02
 
 # Bottom border color of the selected completion item.
-c.colors.completion.item.selected.border.bottom = base0D
+c.colors.completion.item.selected.border.bottom = base02
 
 # Foreground color of the matched text in the selected completion item.
-c.colors.completion.item.selected.match.fg = base00
+c.colors.completion.item.selected.match.fg = base05
 
 # Foreground color of the matched text in the completion.
 c.colors.completion.match.fg = base09
@@ -872,10 +871,10 @@ c.colors.contextmenu.menu.bg = base00
 c.colors.contextmenu.menu.fg =  base05
 
 # Background color of the context menu’s selected item. If set to null, the Qt default is used.
-c.colors.contextmenu.selected.bg = base0D
+c.colors.contextmenu.selected.bg = base02
 
 #Foreground color of the context menu’s selected item. If set to null, the Qt default is used.
-c.colors.contextmenu.selected.fg = base00
+c.colors.contextmenu.selected.fg = base05
 
 # Background color for the download bar.
 c.colors.downloads.bar.bg = base00
@@ -896,11 +895,11 @@ c.colors.downloads.stop.bg = base0C
 c.colors.downloads.error.fg = base08
 
 # Font color for hints.
-c.colors.hints.fg = base00
+c.colors.hints.fg = base0A
 
 # Background color for hints. Note that you can use a `rgba(...)` value
 # for transparency.
-c.colors.hints.bg = base0A
+c.colors.hints.bg = base00
 
 # Font color for the matched part of hints.
 c.colors.hints.match.fg = base05
@@ -951,7 +950,7 @@ c.colors.prompts.border = base00
 c.colors.prompts.bg = base00
 
 # Background color for the selected item in filename prompts.
-c.colors.prompts.selected.bg = base0A
+c.colors.prompts.selected.bg = base02
 
 # Foreground color of the statusbar.
 c.colors.statusbar.normal.fg = base05
@@ -1061,31 +1060,31 @@ c.colors.tabs.pinned.odd.bg = base0B
 c.colors.tabs.pinned.odd.fg = base00
 
 # Background color of pinned selected even tabs.
-c.colors.tabs.pinned.selected.even.bg = base0D
+c.colors.tabs.pinned.selected.even.bg = base02
 
 # Foreground color of pinned selected even tabs.
-c.colors.tabs.pinned.selected.even.fg = base00
+c.colors.tabs.pinned.selected.even.fg = base05
 
 # Background color of pinned selected odd tabs.
-c.colors.tabs.pinned.selected.odd.bg = base0D
+c.colors.tabs.pinned.selected.odd.bg = base02
 
 # Foreground color of pinned selected odd tabs.
-c.colors.tabs.pinned.selected.odd.fg = base00
+c.colors.tabs.pinned.selected.odd.fg = base05
 
 # Foreground color of selected odd tabs.
-c.colors.tabs.selected.odd.fg = base00
+c.colors.tabs.selected.odd.fg = base05
 
 # Background color of selected odd tabs.
-c.colors.tabs.selected.odd.bg = base0D
+c.colors.tabs.selected.odd.bg = base02
 
 # Foreground color of selected even tabs.
-c.colors.tabs.selected.even.fg = base00
+c.colors.tabs.selected.even.fg = base05
 
 # Background color of selected even tabs.
-c.colors.tabs.selected.even.bg = base0D
+c.colors.tabs.selected.even.bg = base02
 
 # Background color for webpages if unset (or empty to use the theme's
 # color).
-c.colors.webpage.bg = '#ffffff'
+c.colors.webpage.bg = base00
 
 # Base16 END

@@ -4,6 +4,7 @@ ZSH_THEME="nicoulaj"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
+alias md2html="pandoc -t html | wl-copy"
 alias tow3m="w3m -dump -T text/html | less"
 alias bc="bluetoothctl"
 alias don="sudo systemctl start docker"

@@ -1,13 +1,13 @@
 #! /bin/sh
 
-color0='#1b2b34'
-color1='#ec5f67'
-color2='#99c794'
-color3='#fac863'
-color4='#6699cc'
-color5='#c594c5'
-color6='#5fb3b3'
-color7='#c0c5ce'
+color0=#0c0d0e
+color1=#e31a1c
+color2=#31a354
+color3=#dca060
+color4=#3182bd
+color5=#756bb1
+color6=#80b1d3
+color7=#b7b8b9
 
 export BEMENU_BACKEND=wayland
 export BEMENU_OPTS=$(cat <<EOF
@@ -15,7 +15,7 @@ export BEMENU_OPTS=$(cat <<EOF
 -i
 -w
 -p '❯'
---fn 'Overpass Semibold 18px'
+--fn 'Scientifica 18px'
 --nb "$color0"
 --tb "$color0"
 --fb "$color0"

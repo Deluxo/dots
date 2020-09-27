@@ -1,5 +1,5 @@
 {
-	"height": 13,
+	"height": 0,
 	"layer": "bottom",
 	"position": "top",
 	"modules-left": ["sway/workspaces", "sway/mode"],
@@ -7,7 +7,7 @@
 	"modules-right": ["battery", "pulseaudio", "network", "clock", "tray"],
 	"sway/workspaces": {
 		"all-outputs": true,
-		"format": "{name} {icon}",
+		"format": "{name}",
 		"current-only": false,
 		"format-icons": {
 			"1": "",
@@ -32,8 +32,8 @@
 	},
 	"pulseaudio": {
 		"tooltip": false,
-		"format": "{volume} {icon}",
-		"format-bluetooth": "{volume} {icon}",
+		"format": "Vol: {volume}",
+		"format-bluetooth": "Vol: {volume}",
 		"format-muted": "",
 		"format-icons": {
 			"headphones": "",
@@ -49,12 +49,12 @@
 	},
 	"network": {
 		"format": "{ifname}",
-		"format-wifi": "{essid} ",
-		"format-ethernet": "{ifname} ",
+		"format-wifi": "{essid}",
+		"format-ethernet": "{ifname}",
 		"format-disconnected": "",
 		"tooltip-format": "{ifname}",
-		"tooltip-format-wifi": "{essid} ({signalStrength}) ",
-		"tooltip-format-ethernet": "{ifname} ",
+		"tooltip-format-wifi": "{essid} ({signalStrength})",
+		"tooltip-format-ethernet": "{ifname}",
 		"tooltip-format-disconnected": "Disconnected",
 		"max-length": 50
 	},
@@ -64,8 +64,8 @@
 			"warning": 20,
 			"critical": 10
 		},
-		"format": "{time} {icon}",
-		"format-alt": "{time}% {icon}",
+		"format": "{time}",
+		"format-alt": "{time} {icon}",
 		"format-charging": "{capacity}% {icon}",
 		"format-full": "",
 		"format-icons": ["", "", "", "", ""],

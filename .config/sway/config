@@ -1,4 +1,4 @@
-set $wallpaper /home/lukas/Pictures/Wallpapers/cyberpunk-red-blue-1.jpg
+set $wallpaper /home/lukas/Pictures/Wallpapers/archcode.png
 set $laptop eDP-1
 
 set $mod Mod4
@@ -21,7 +21,7 @@ set $ws9 "9"
 set $ws10 "10"
 
 output * bg $wallpaper fill
-output * adaptive_sync on
+output * adaptive_sync off
 
 bar {
 	strip_workspace_numbers yes
@@ -30,10 +30,10 @@ bar {
 
 set $thickness 2
 set $titlebarThickness 0
-set $gap 30
+set $gap 40
 
-set $unfocused_border #24a8b426
-set $focused_border #24a8b477
+set $unfocused_border #ffffff22
+set $focused_border #ffffff55
 
 exec swayidle -w \
 	 timeout 60 'swaymsg "output * dpms off"' \
