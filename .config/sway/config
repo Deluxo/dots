@@ -1,4 +1,4 @@
-set $wallpaper /home/lukas/Pictures/Wallpapers/2041.png
+set $wallpaper /home/lukas/Pictures/Wallpapers/lofi-coffeeshop.jpg
 set $laptop eDP-1
 
 set $mod Mod4
@@ -21,19 +21,19 @@ set $ws9 "9"
 set $ws10 "10"
 
 output * bg $wallpaper fill
-output * adaptive_sync on
+output * adaptive_sync off
 
 bar {
 	strip_workspace_numbers yes
 	swaybar_command waybar
 }
 
-set $thickness 2
+set $thickness 3
 set $titlebarThickness 0
-set $gap 30
+set $gap 50
 
-set $unfocused_border #24a8b426
-set $focused_border #24a8b477
+set $unfocused_border #24a8b477
+set $focused_border #24a8b4
 
 exec swayidle -w \
 	 timeout 60 'swaymsg "output * dpms off"' \

@@ -7,7 +7,8 @@ bindsym $mod+ctrl+5 exec --no-startup-id steam-native
 bindsym $mod+ctrl+8 exec --no-startup-id $term -e ranger
 bindsym $mod+ctrl+9 exec --no-startup-id $term -e htop
 bindsym $mod+ctrl+p exec --no-startup-id $term -e pulsemixer
-bindsym $mod+m exec --no-startup-id $term -e spt
+bindsym $mod+s exec --no-startup-id $term -e spt
+bindsym $mod+m exec --no-startup-id $term -e neomutt
 bindsym $mod+t exec --no-startup-id $term --title 'Sticky Term'
 bindsym $mod+c exec --no-startup-id ~/.scripts/./context-runner.sh
 bindsym $mod+Backspace exec --no-startup-id swaylock --image $wallpaper
@@ -96,7 +97,7 @@ bindsym $mod+f fullscreen
 bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
-bindsym $mod+s sticky toggle
+bindsym $mod+Shift+s sticky toggle
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show

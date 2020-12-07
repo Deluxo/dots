@@ -14,6 +14,8 @@ alias v="vim"
 alias vi="vim"
 alias wk="wineserver -k"
 alias cp-terminfo="kitty +kitten ssh"
+#alias docker=podman
+#alias sudo='sudo '
 
 setopt hist_expire_dups_first
 setopt hist_find_no_dups
