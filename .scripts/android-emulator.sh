@@ -9,5 +9,5 @@ export QT_QPA_PLATFORM=xcb
 if [[ $1 == '--no-fork' ]]; then
 	$binPath @q
 else
-	$binPath @q &> /dev/null &!
+	$binPath @q $@ &> /dev/null &!
 fi

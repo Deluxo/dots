@@ -30,7 +30,7 @@ bar {
 
 set $thickness 3
 set $titlebarThickness 0
-set $gap 50
+set $gap 80
 
 set $unfocused_border #24a8b477
 set $focused_border #24a8b4
