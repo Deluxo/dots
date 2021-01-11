@@ -62,7 +62,7 @@ window#waybar.active {
 }
 
 #custom-mailcounter.full {
-	color: #99FF55;
+	color: #FB9999;
 	animation-name: blink;
 	animation-duration: 0.5s;
 	animation-timing-function: linear;

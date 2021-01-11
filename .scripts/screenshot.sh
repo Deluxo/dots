@@ -9,7 +9,7 @@ mkdir -p $path;
 sway=$(ps a -o command | grep ^sway)
 
 
-toClipboardCmd='wl-copy'
+toClipboardCmd='wl-copy -n'
 captureCmd='grim'
 captureAreaCmd='grim -g "$(slurp)"'
 
