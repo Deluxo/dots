@@ -74,6 +74,11 @@ window#waybar.active {
 	animation-direction: alternate;
 }
 
+#custom-mailcounter.offline {
+	color: #CCCCEE;
+	opacity: 0.4;
+}
+
 @keyframes blink {
 	to {
 		color: #000000;

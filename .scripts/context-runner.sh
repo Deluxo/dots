@@ -10,16 +10,14 @@ torrent() {
 	if [[ -n $lsblkItem ]]; then
 		altDestination="/mnt/lukas/videos"
 		if [[ ! -d $altDestination ]]; then
-			$TERM -e zsh -c "echo mount external disk for destination;sudo mount /dev/$(lsblk -l | tail -n 1 | awk '{print $1}') /mnt; mkdir -p $altDestination"
+			$TERM_CMD -e zsh -c "echo mount external disk for destination;sudo mount /dev/$(lsblk -l | tail -n 1 | awk '{print $1}') /mnt; mkdir -p $altDestination"
 		fi
 		destination=$altDestination
 	fi
-	if [[ $freshness -lt 3000 ]]; then
-		msg="Latest torrent file"
-		echo "destination = $destination"
-		$TERM -e zsh -c "echo Downloading to $(lsblk -l | tail -n 1 | awk '{print $1 " " $4}'): $destination; peerflix \"$file\" -f $destination/ -k -l"
+	msg="Latest torrent file"
+	echo "destination = $destination"
+	$TERM_CMD -e zsh -c "echo Downloading to $(lsblk -l | tail -n 1 | awk '{print $1 " " $4}'): $destination; peerflix \"$file\" -f $destination/ -k -l"
 
-	fi
 }
 
 if [[ "$context" =~ "twitch.tv" ]]; then
@@ -30,7 +28,7 @@ elif [[ "$context" =~ "youtube" ]]; then
 	mpv "$context" &!
 elif [[ "$context" =~ "magnet:" ]]; then
 	msg="Magnet"
-	$TERM -e zsh -c "peerflix \""$context"\" -f \"Downloads/\" -k -l"
+	$TERM_CMD -e zsh -c "peerflix \""$context"\" -f \"Downloads/\" -k -l"
 elif [[ "$context" =~ ".torrent" ]]; then
 	msg="selected torrent file"
 	torrent "$context" &!
