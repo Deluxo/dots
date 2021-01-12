@@ -3,10 +3,11 @@ floating_modifier $mod normal
 input * {
 	xkb_layout us,lt
 	xkb_variant dvorak,
-	xkb_options grp:alt_shift_toggle,grp:switch
-	#xkb_options grp:alt_shift_toggle,grp:switch,caps:escape
+	xkb_options grp:alt_shift_toggle,grp:switch,caps:escape
+	#xkb_options grp:alt_shift_toggle,grp:switch
 	accel_profile flat
 	pointer_accel -0.4
+	#repeat_rate 0
 }
 
 input "2:7:SynPS/2_Synaptics_TouchPad" {

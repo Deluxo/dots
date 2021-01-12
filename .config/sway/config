@@ -28,7 +28,7 @@ bar {
 	swaybar_command waybar
 }
 
-set $thickness 2
+set $thickness 1
 set $titlebarThickness 0
 set $gap 4
 

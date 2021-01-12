@@ -4,7 +4,7 @@
 	"position": "top",
 	"modules-left": ["sway/workspaces", "sway/mode"],
 	"modules-center": ["sway/window"],
-	"modules-right": ["battery", "pulseaudio", "network", "clock", "tray"],
+	"modules-right": ["battery", "pulseaudio", "custom/mailcounter", "network", "clock", "tray"],
 	"sway/workspaces": {
 		"all-outputs": true,
 		"format": "{name}",
@@ -73,5 +73,12 @@
 	},
 	"temperature": {
 		"format": "{temperatureC}°C  "
+	},
+	"custom/mailcounter": {
+		"format": "{}  ",
+		"return-type": "json",
+		"interval": 30,
+		"exec": "$HOME/.scripts/mail-counter.sh 2> /dev/null",
+		"on-click": "$HOME/.scripts/mail-counter.sh 2> /dev/null",
 	}
 }

@@ -7,9 +7,13 @@ bindsym $mod+ctrl+5 exec --no-startup-id steam-native
 bindsym $mod+ctrl+8 exec --no-startup-id $term -e ranger
 bindsym $mod+ctrl+9 exec --no-startup-id $term -e htop
 bindsym $mod+ctrl+p exec --no-startup-id $term -e pulsemixer
-bindsym $mod+m exec --no-startup-id $term -e spt
+bindsym $mod+s exec --no-startup-id $term -e spt
+bindsym $mod+m exec --no-startup-id $term -e neomutt
 bindsym $mod+t exec --no-startup-id $term --title 'Sticky Term'
+bindsym $mod+shift+t exec --no-startup-id $term --title 'Term Cal' -o window_padding_width=50 -o font_size=17 -o cursor_shape=underline -o cursor_stop_blinking_after=1 -o cursor_underline_thickness=0 sh -c '/usr/bin/cal -3w && read && exit'
 bindsym $mod+c exec --no-startup-id ~/.scripts/./context-runner.sh
+bindsym Print exec --no-startup-id ~/.scripts/./screenshot.sh
+bindsym Print+Shift exec --no-startup-id ~/.scripts/./screenshot.sh area
 bindsym $mod+Backspace exec --no-startup-id swaylock --image $wallpaper
 
 bindsym --whole-window button8 kill
@@ -19,8 +23,6 @@ bindsym $mod+Return exec --no-startup-id $term
 bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id bemenu-run
 bindsym $mod+Shift+c reload
-bindsym $mod+shift+t exec --no-startup-id rofi -show 
-bindsym $mod+shift+b exec --no-startup-id rofi -show bc
 
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -95,7 +97,7 @@ bindsym $mod+f fullscreen
 bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
-bindsym $mod+s sticky toggle
+bindsym $mod+Shift+s sticky toggle
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show

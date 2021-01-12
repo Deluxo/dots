@@ -6,5 +6,5 @@
 
 config_version: 2
 settings:
-  content.notifications:
-    http://localhost:8025: true
+  content.media.audio_capture:
+    https://www.facebook.com: true

@@ -1,15 +1,16 @@
 * {
 	border: none;
 	border-radius: 0;
-	font-family: "Sarasa UI SC Light";
-	font-size: 13px;
+	font-family: "FiraCode Nerd Font";
+	font-size: 15px;
 }
 
 window#waybar {
-	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.5));
-	/*border-bottom: 2px solid;*/
-	border-color: #b45bcf;
-	color: #ffffff;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+	color: #CCCCEE;
+	font-weight: 700;
+	border-bottom: 1px solid;
+	border-color: rgba(255, 255, 255, 0);
 }
 
 window#waybar.active {
@@ -26,14 +27,14 @@ window#waybar.active {
 
 #workspaces button {
 	background: transparent;
-	color: #ffffff;
+	color: #666688;
 	animation-duration: 0.1s;
 }
 
 #workspaces button:hover,
 #workspaces button.focused,
 #workspaces button.focused:hover {
-	color: #ebff87;
+	color: #CCCCEE;
 	text-shadow: none;
 	box-shadow: none;
 }
@@ -59,6 +60,15 @@ window#waybar.active {
 	color: #FF0000;
 	animation-name: blink;
 	animation-duration: 0.2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#custom-mailcounter.full {
+	color: #FB9999;
+	animation-name: blink;
+	animation-duration: 0.5s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;

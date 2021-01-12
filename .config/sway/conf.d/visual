@@ -1,5 +1,6 @@
 focus_wrapping no
 gaps inner $gap
+gaps top -$gap
 titlebar_border_thickness $titlebarThickness
 titlebar_padding 0 0
 default_border pixel $thickness

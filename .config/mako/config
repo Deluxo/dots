@@ -1,7 +1,9 @@
-font=OperatorMonoLig Light 15
-background-color=#222222CC
-text-color=#ffffff
-border-color=#ffffff99
-default-timeout=4000
+#border-color=#ffffff99
 anchor=bottom-center
+background-color=#222222CC
+border-radius=5
+border-size=1
+default-timeout=4000
+font=OperatorMonoLig Light 15
+text-color=#ffffff
 width=350
