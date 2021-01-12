@@ -11,7 +11,7 @@ input * {
 
 input "2:7:SynPS/2_Synaptics_TouchPad" {
 	tap enabled
-	pointer_accel 0.5
+	pointer_accel 1
 	scroll_factor 1.5
 }
 

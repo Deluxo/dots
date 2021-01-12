@@ -1,4 +1,4 @@
-set $wallpaper /home/lukas/Pictures/Wallpapers/archcode.png
+set $wallpaper /home/lukas/Pictures/Wallpapers/bw/wallhaven-vg6yj8.png
 set $laptop eDP-1
 
 set $mod Mod4
@@ -30,10 +30,10 @@ bar {
 
 set $thickness 2
 set $titlebarThickness 0
-set $gap 40
+set $gap 4
 
 set $unfocused_border #ffffff22
-set $focused_border #ffffff55
+set $focused_border #ffffff77
 
 exec swayidle -w \
 	 timeout 60 'swaymsg "output * dpms off"' \

@@ -6,7 +6,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias md2html="pandoc -t html | wl-copy"
 alias tow3m="w3m -dump -T text/html | less"
-alias bc="bluetoothctl"
 alias don="sudo systemctl start docker"
 alias doff="sudo systemctl stop docker"
 alias e="ewl.sh"
@@ -15,6 +14,7 @@ alias v="vim"
 alias vi="vim"
 alias wk="wineserver -k"
 alias cp-terminfo="kitty +kitten ssh"
+alias docker=podman
 
 setopt hist_expire_dups_first
 setopt hist_find_no_dups

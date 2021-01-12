@@ -1,15 +1,14 @@
 * {
 	border: none;
 	border-radius: 0;
-	font-family: "Scientifica";
-	font-size: 17px;
-	font-weight: 900;
+	font-family: "Sarasa UI SC Light";
+	font-size: 13px;
 }
 
 window#waybar {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 1) 100%);
-	border-bottom: 1px solid;
-	border-color: rgba(255, 255, 255, 0);
+	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.5));
+	/*border-bottom: 2px solid;*/
+	border-color: #b45bcf;
 	color: #ffffff;
 }
 
@@ -22,7 +21,7 @@ window#waybar.active {
 }
 
 #workspaces {
-	margin-left: 15px;
+	margin-left: 25px;
 }
 
 #workspaces button {
@@ -44,7 +43,7 @@ window#waybar.active {
 }
 
 #clock {
-	margin-right: 20px;
+	margin-right: 25px;
 }
 
 #battery.warning:not(.charging) {
