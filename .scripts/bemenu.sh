@@ -1,29 +1,30 @@
 #! /bin/sh
 
-color0=#0c0d0e
-color1=#e31a1c
-color2=#31a354
-color3=#dca060
-color4=#3182bd
-color5=#756bb1
-color6=#80b1d3
-color7=#b7b8b9
+color0='#1f222e22'
+color1='#ea51b2'
+color2='#9294b3'
+color3='#00f769'
+color4='#62d6e8'
+color5='#b45bcf'
+color6='#a1efe4'
+color7='#e9e9f4'
 
 export BEMENU_BACKEND=wayland
 export BEMENU_OPTS=$(cat <<EOF
--b
--i
--w
--p '❯'
---fn 'Scientifica 18px'
---nb "$color0"
---tb "$color0"
---fb "$color0"
---ff "$color2"
---hb "$color0"
---hf "$color3"
---sb "$color0"
---scb "$color0"
---nf "$color7"
+-biw 
+-P "❯" 
+-p "❯" 
+-H 38 
+--fn "Fira Code 13" 
+--tb "$color0" 
+--tf "$color7" 
+--fb "$color0" 
+--ff "$color7" 
+--hb "$color0" 
+--hf "$color1" 
+--sb "$color0" 
+--scb "$color0" 
+--nb "$color0" 
+--nf "$color2" 
 EOF
 )

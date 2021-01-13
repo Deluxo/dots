@@ -1,4 +1,4 @@
-set $wallpaper /home/lukas/Pictures/Wallpapers/bw/wallhaven-vg6yj8.png
+set $wallpaper /home/lukas/Pictures/Wallpapers/trees.jpg
 set $laptop eDP-1
 
 set $mod Mod4
@@ -30,7 +30,7 @@ bar {
 
 set $thickness 1
 set $titlebarThickness 0
-set $gap 4
+set $gap 80
 
 set $unfocused_border #ffffff22
 set $focused_border #ffffff77
