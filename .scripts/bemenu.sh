@@ -1,6 +1,6 @@
 #! /bin/sh
 
-color0='#1f222e22'
+color0='#1f222e55'
 color1='#ea51b2'
 color2='#9294b3'
 color3='#00f769'
@@ -19,12 +19,12 @@ export BEMENU_OPTS=$(cat <<EOF
 --tb "$color0" 
 --tf "$color7" 
 --fb "$color0" 
---ff "$color7" 
+--ff "$color2" 
 --hb "$color0" 
 --hf "$color1" 
 --sb "$color0" 
 --scb "$color0" 
 --nb "$color0" 
---nf "$color2" 
+--nf "$color7" 
 EOF
 )

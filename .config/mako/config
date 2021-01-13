@@ -1,9 +1,8 @@
-#border-color=#ffffff99
 anchor=bottom-center
-background-color=#222222CC
+background-color=#0f1218CC
 border-radius=5
 border-size=1
 default-timeout=4000
-font=OperatorMonoLig Light 15
+font=Fira Code 15
 text-color=#ffffff
 width=350

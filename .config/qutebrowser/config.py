@@ -58,6 +58,7 @@ config.bind('zl', 'spawn --userscript qute-pass')
 config.bind('zol', 'spawn --userscript qute-pass --otp-only')
 config.bind('zpl', 'spawn --userscript qute-pass --password-only')
 config.bind('zul', 'spawn --userscript qute-pass --username-only')
+
 base00 = "#282936"
 base01 = "#3a3c4e"
 base02 = "#4d4f68"
@@ -101,8 +102,8 @@ c.colors.downloads.start.bg = base0D
 c.colors.downloads.stop.fg = base00
 c.colors.downloads.stop.bg = base0C
 c.colors.downloads.error.fg = base08
-c.colors.hints.fg = base0A
-c.colors.hints.bg = base00
+c.colors.hints.fg = base00
+c.colors.hints.bg = base0A
 c.colors.hints.match.fg = base05
 c.colors.keyhint.fg = base05
 c.colors.keyhint.suffix.fg = base05

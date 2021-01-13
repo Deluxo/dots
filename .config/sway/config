@@ -28,12 +28,12 @@ bar {
 	swaybar_command waybar
 }
 
-set $thickness 1
+set $thickness 2
 set $titlebarThickness 0
-set $gap 80
+set $gap 60
 
-set $unfocused_border #ffffff22
-set $focused_border #ffffff77
+set $unfocused_border #8284b322
+set $focused_border   #8284b377
 
 exec swayidle -w \
 	 timeout 60 'swaymsg "output * dpms off"' \
