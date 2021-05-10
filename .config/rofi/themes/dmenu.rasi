@@ -1,7 +1,7 @@
 * {
 	background-color: #00000000;
 	color: White;
-	font: "xos4 terminus 12";
+	font: "xos4 terminus 7;
 }
 
 #window {
@@ -47,7 +47,7 @@
 }
 
 #button {
-	font: "Font Awesome 5 Free 11, Font awesome 5 Brands 11";
+	font: "Font Awesome 5 Free 8, Font awesome 5 Brands 8";
 	width: 40px;
 	text-color: White;
 }
