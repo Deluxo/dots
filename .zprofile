@@ -10,7 +10,7 @@ LANG=en_GB.utf8
 #fi
 
 export BASE16_SHELL=$HOME/.config/base16-shell
-export DMENU="bemenu"
+export DMENU="rofi"
 export TERM_CMD="kitty"
 export EDITOR="vim"
 export BROWSER="/usr/bin/qutebrowser"
@@ -19,14 +19,4 @@ export SXHDK_SHELL=/bin/bash
 export VISUAL="$EDITOR"
 export XDG_CONFIG_HOME=$HOME/.config
 export _JAVA_AWT_WM_NONREPARENTING=1
-
-export MOZ_ENABLE_WAYLAND=1
-export MOZ_WAYLAND_USE_VAAPI=1
-export QT_QPA_PLATFORM=wayland
-export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
-export XDG_CURRENT_DESKTOP=sway
-export XDG_SESSION_TYPE=wayland
-
-source ~/.scripts/bemenu.sh
-
-[[ "$(tty)" = "/dev/tty1" ]] && exec sway
+startx

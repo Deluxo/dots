@@ -1,0 +1,34 @@
+Config {
+    font = "xft:Operator Mono Lig Book:Regular:size=11:antialias=true"
+    --font = "xft:reMarkable Portrait Web:Regular:size=16:antialias=true"
+    additionalFonts = ["xft:FontAwesome:pixelsize=13"]
+    , alpha = 200
+    , bgColor =      "#162219"
+    , fgColor =      "#efefef"
+    , position = TopSize C 100 50
+    --, position = Static { xpos = 50 , ypos = 20, width = 3340, height = 10 }
+    , borderColor =  "#2e3440"
+    , sepChar =  "%"   -- delineator between plugin names and straight text
+    , alignSep = "||"  -- separator between left-right alignment
+    , template = "     %UnsafeStdinReader% || %battery%     %date%     "
+    , lowerOnStart =     True    -- send to bottom of window stack on start
+    , hideOnStart =      False   -- start with window unmapped (hidden)
+    , allDesktops =      True    -- show on all desktops
+    , overrideRedirect = True    -- set the Override Redirect flag (Xlib)
+    , pickBroadest =     False   -- choose widest display (multi-monitor)
+    , persistent =       True    -- enable/disable hiding (True = disabled)
+    , commands = [
+          Run Date "%H:%M" "date" 30
+        , Run UnsafeStdinReader
+        , Run BatteryP ["BAT0"] [
+            "-t", "<acstatus> <left>% [<timeleft>]"
+            , "--"
+            , "-o", ""
+            , "-O", "Charging"
+            , "-i", "Full"
+            , "-a", "notify-send -u critical 'Battery low'"
+            , "-A", "9"
+        ] 600
+    ]
+}
+-- vim: ts=4 sw=4 et ft=haskell

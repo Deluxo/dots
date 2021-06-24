@@ -1,6 +1,6 @@
 #! /bin/zsh
 
-context=${1:-$(wl-paste)};
+context=${1:-$(xclip -selection clipboard -o)};
 msg="couldn't find anything to play"
 
 torrent() {

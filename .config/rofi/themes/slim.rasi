@@ -2,8 +2,8 @@
 	li: rgba(255, 255, 255, 50%);
 	li-on: rgba(255, 255, 255, 100%);
 	none: rgba(0, 0, 0, 0%);
-	bg: rgba(16, 16, 18, 85%);
-	font: "Hack 9";
+	bg: rgba(16, 16, 18, 35%);
+	font: "Hack 13";
 }
 #window {
 	border: 1px;
